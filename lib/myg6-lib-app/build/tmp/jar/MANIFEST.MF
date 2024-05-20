@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Jar-Id: 
+Project-Name: myg6-lib-app
+Build-Tool: Gradle 7.6.3
+Build-Date: 2024-05-20 19:54:21
+Built-By: Kingdee Cosmic Developer Tools
+Build-Num: 20240520195421465
+App-Name: 
+Git-Branch: 
+Cloud-Name: 
+Group-Name: myg6.cosmic
+Bundle-Version: 1.0.0
+Git-Commit-Hash: 
+Build-Image: 
+Build-Jdk: 1.8.0_401
+
