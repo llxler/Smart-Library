@@ -7,12 +7,9 @@
  */
 
 dependencies {
-
 	// 公共基础包
 	implementation project(':myg6-base-common')
 	implementation project(':myg6-base-helper')
-
 	// 引入lib云 - app应用模块
 	implementation project(':myg6-lib-app')
-	
 } 

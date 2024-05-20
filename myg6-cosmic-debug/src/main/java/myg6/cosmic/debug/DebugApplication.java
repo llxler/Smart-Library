@@ -40,4 +40,3 @@ public class DebugApplication {
     }
 }
 // 10.21.207.149:8881/ierp/login.html
-// 10.21.207.149:8881/ierp/login.html?redirect=http%3A%2F%2F172.20.10.4%3A8080%2Fierp%2F

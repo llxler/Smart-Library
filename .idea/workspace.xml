@@ -1,10 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="GROUP_BY_SEVERITY" value="true" />
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4436a5f8-a7fe-413a-ab09-538ca3d435d9" name="更改" comment="" />
+    <list default="true" id="4436a5f8-a7fe-413a-ab09-538ca3d435d9" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240520_1.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/IndexMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.6.3/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6.3/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.6.3/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6.3/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.6.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6.3/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.6.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6.3/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.6.3/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6.3/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base/myg6-base-common/build/libs/myg6-base-common-1.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/base/myg6-base-common/build/libs/myg6-base-common-1.0.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base/myg6-base-common/build/tmp/jar/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/base/myg6-base-common/build/tmp/jar/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base/myg6-base-helper/build/libs/myg6-base-helper-1.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/base/myg6-base-helper/build/libs/myg6-base-helper-1.0.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base/myg6-base-helper/build/tmp/jar/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/base/myg6-base-helper/build/tmp/jar/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/myg6-lib-app/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/myg6-lib-app/build/classes/java/main/myg6/lib/app/LxlerTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/myg6-lib-app/build/classes/java/main/myg6/lib/app/common/AppflgConstant.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/myg6-lib-app/build/libs/myg6-lib-app-1.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/myg6-lib-app/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/myg6-lib-app/build/tmp/jar/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/myg6-lib-app/src/main/java/myg6/lib/app/common/AppflgConstant.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/cosmic_out.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/cosmic_out.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/myg6/cosmic/debug/DebugApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/myg6/cosmic/debug/DebugApplication.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,6 +50,9 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand />
@@ -30,6 +65,20 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;llxler&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="b2a317b7-27f6-44b0-b88f-94434846b134" />
+        <option name="url" value="https://github.com/llxler/-.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -37,34 +86,37 @@
   &quot;associatedIndex&quot;: 1
 }</component>
   <component name="ProjectId" id="2ggPpPrZ3mwQGWruTDnDAfnh1zA" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/24996/kingdee/cosmic",
+    "last_opened_file_path": "C:/Users/24996/kingdee/cosmic/library",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "模块",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "http.proxy",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "configurable.group.appearance",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="应用程序.DebugApplication">
     <configuration name="DebugApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="myg6.cosmic.debug.DebugApplication" />
       <module name="myg6-cosmic.myg6-cosmic-debug.main" />
@@ -78,8 +130,54 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="cosmic [buildJar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="buildJar" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="cosmic [deployJar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="deployJar" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.cosmic [deployJar]" />
+        <item itemvalue="Gradle.cosmic [buildJar]" />
         <item itemvalue="应用程序.DebugApplication" />
       </list>
     </recent_temporary>
@@ -97,6 +195,9 @@
       <workItem from="1716203406259" duration="183000" />
       <workItem from="1716203598876" duration="1956000" />
       <workItem from="1716205912998" duration="512000" />
+      <workItem from="1716207942172" duration="986000" />
+      <workItem from="1716209254211" duration="313000" />
+      <workItem from="1716209764836" duration="4041000" />
     </task>
     <servers />
   </component>
@@ -104,14 +205,44 @@
     <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
+    <option name="RECENT_FILTERS">
       <map>
-        <entry key="MAIN">
+        <entry key="Branch">
           <value>
-            <State />
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/main" />
+                </option>
+              </RecentGroup>
+            </list>
           </value>
         </entry>
       </map>
     </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
