@@ -40,8 +40,9 @@ allprojects {
 		maven{ url'https://maven.aliyun.com/repository/public/'}
 		maven{ url'https://maven.aliyun.com/repository/gradle-plugin'}
 		mavenCentral()
-		//maven { url 'https://repo.gradle.org/gradle/libs-releases' }
-		//gradlePluginPortal()
+		maven { url 'https://repo.gradle.org/gradle/libs-releases' }
+		google()
+		gradlePluginPortal()
 	}
 	
 	group = System.getProperty('groupId')
@@ -56,6 +57,7 @@ allprojects {
 	}
 
 	dependencies {
+		implementation 'org.springframework.boot:spring-boot-devtools:2.5.4'
 		//implementation 'cn.hutool:hutool-all:5.8.20'
 		//implementation 'ch.qos.logback:logback-classic:1.2.12'
 		//implementation 'org.slf4j:log4j-over-slf4j:1.7.36'
@@ -102,6 +104,7 @@ allprojects {
 	        attributes 'App-Name': ''
 	        attributes 'Jar-Id': ''
 	        attributes 'Build-Image': ''
+			attributes 'Main-Class': 'myg6.cosmic.debug.DebugApplication'
 	    }
 	}
 	
@@ -143,7 +146,5 @@ subprojects {
 	 }
 	 
 	test.ignoreFailures true
-	
-	
 }
 
