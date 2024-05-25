@@ -11,7 +11,7 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/base/myg6-base-common" />
             <option value="$PROJECT_DIR$/base/myg6-base-helper" />
-            <option value="$PROJECT_DIR$/lib/myg6-lib-app" />
+            <option value="$PROJECT_DIR$/libapp/myg6-libapp-app" />
             <option value="$PROJECT_DIR$/myg6-cosmic-debug" />
           </set>
         </option>

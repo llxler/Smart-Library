@@ -1,6 +1,6 @@
 Manifest-Version: 1.0
 Jar-Id: 
-Project-Name: myg6-lib-app
+Project-Name: myg6-libapp-app
 Build-Tool: Gradle 7.6.3
 Build-Date: 2024-05-23 17:12:40
 Built-By: Kingdee Cosmic Developer Tools

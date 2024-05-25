@@ -14,7 +14,7 @@ import java.util.Map;
 public class GetBooks implements IGPTAction {
     @Override
     public Map<String, String> invokeAction(String action, Map<String, String> params) {
-        Map<String , String> result = new HashMap<>();
+        Map<String, String> result = new HashMap<>();
         if ("GET_BOOK_INFO".equalsIgnoreCase(action)) {
             //获取DynamicObject列表
             String fields = "number,name,myg6_bookscore,myg6_bookcomment";

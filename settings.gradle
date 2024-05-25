@@ -11,8 +11,7 @@ include(
 		'myg6-cosmic-debug',
 		':myg6-base-common',
 		':myg6-base-helper',
-		
-		':myg6-lib-app',
+		':myg6-libapp-app',
 )
 
 // -------------- 引入苍穹调试工程模块 --------------
@@ -23,4 +22,4 @@ project(':myg6-base-common').projectDir = new File('base/myg6-base-common')
 project(':myg6-base-helper').projectDir = new File('base/myg6-base-helper')
 
 // -------------- 引入lib云-app应用模块 --------------
-project(':myg6-lib-app').projectDir = new File('lib/myg6-lib-app')
+project(':myg6-libapp-app').projectDir = new File('libapp/myg6-libapp-app')
