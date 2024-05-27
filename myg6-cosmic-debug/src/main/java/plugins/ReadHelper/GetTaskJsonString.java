@@ -9,6 +9,10 @@ import kd.bos.servicehelper.BusinessDataServiceHelper;
 import kd.bos.servicehelper.operation.SaveServiceHelper;
 import kd.bos.dataentity.entity.DynamicObject;
 
+import java.text.SimpleDateFormat;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.util.Date;
 import java.util.Map;
 import java.util.HashMap;
 
@@ -24,7 +28,7 @@ public class GetTaskJsonString implements IGPTAction {
                 // 若全部生成JSON字符串，则不会进入catch
                 resultJsonObject = JSON.parseObject(jsonResult);
             } catch (Exception ee) {
-                // 将"dayname"的上一个字符作为开始，以}]}字符作为结束，则最后需要+3
+                // 将"TaskName  "的上一个字符作为开始，以}]}字符作为结束，则最后需要+3
                 jsonResult = jsonResult.substring(jsonResult.indexOf("\"TaskName\"") - 1, jsonResult.indexOf("}]}") + 3);
                 resultJsonObject = JSON.parseObject(jsonResult);
             }
@@ -41,7 +45,8 @@ public class GetTaskJsonString implements IGPTAction {
             dynamicObject.set("name", resultJsonObject.getString("TaskName"));
             dynamicObject.set("status", "C");
             dynamicObject.set("creator", RequestContext.get().getCurrUserId());
-            dynamicObject.set("myg6_created_time", RequestContext.get().getLoginTime());
+            Date todayDate = new Date(); // 设置时间
+            dynamicObject.set("myg6_created_time", todayDate);
             // 操作单据体
             DynamicObjectCollection dynamicObjectCollection = dynamicObject.getDynamicObjectCollection("myg6_per_plan_body");
             for (Object object : resultJsonObject.getJSONArray("TaskList")) {
