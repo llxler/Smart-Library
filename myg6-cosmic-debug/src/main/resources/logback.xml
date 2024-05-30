@@ -40,8 +40,8 @@ Generate Date: 2024-05-20 15:47:39
 		<rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
 			<cleanHistoryOnStart>false</cleanHistoryOnStart>
 			<fileNamePattern>${LOG_DIR}/cosmic_out_%d{yyyyMMdd}_%i.log</fileNamePattern>
-			<maxFileSize>10MB</maxFileSize>
-			<maxHistory>7</maxHistory>
+			<maxFileSize>1MB</maxFileSize>
+			<maxHistory>2</maxHistory>
 			<totalSizeCap>0</totalSizeCap>
 		</rollingPolicy>
 	</appender>

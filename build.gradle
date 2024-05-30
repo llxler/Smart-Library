@@ -104,7 +104,7 @@ allprojects {
 	        attributes 'App-Name': ''
 	        attributes 'Jar-Id': ''
 	        attributes 'Build-Image': ''
-			attributes 'Main-Class': 'myg6.cosmic.debug.DebugApplication'
+//			attributes 'Main-Class': 'myg6.cosmic.debug.DebugApplication'
 	    }
 	}
 	
