@@ -7,67 +7,135 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4436a5f8-a7fe-413a-ab09-538ca3d435d9" name="更改" comment="feat(rdhelper): add the function of evaluate plan">
-      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202405/202405/myg6_booksmanage/myg6_book_list/images/mgCtqcS2F4Q45XYus3/物理学简明教程.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202405/202405/myg6_booksmanage/myg6_book_list/images/ymuhJKgs2LYFdU1Bmv/大计机.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202405/bos/ide_controlschema/1961126346243440640/attachments/f168dadca0e948acb23d90cf8508ebaa/clickbt.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202405/bos/ide_importresource/rc-upload-1716794896934-3/attachments/ad5277ab52664eb9b83dac1a9e8b430a/myg6.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202405/bos/ide_importresource/rc-upload-1716795563028-3/attachments/65bbbea58e1147e6a874241442ced9c7/myg6.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202405/bos/ide_importresource/rc-upload-1716796083971-3/attachments/0e3de60196da471e8843b700eb33c2ee/myg6.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202405/bos/ide_importresource/rc-upload-1716796384753-3/attachments/f4c6e81ee3c045b187733e46cdad9f75/myg6.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240529_0.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240529_1.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240529_10.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240529_11.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240529_12.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240529_13.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240529_14.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240529_15.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240529_16.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240529_17.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240529_18.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240529_19.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240529_2.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240529_20.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240529_21.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240529_22.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240529_23.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240529_24.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240529_25.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240529_26.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240529_27.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240529_28.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240529_29.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240529_3.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240529_30.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240529_31.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240529_32.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240529_33.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240529_34.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240529_35.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240529_36.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240529_37.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240529_38.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240529_39.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240529_4.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240529_40.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240529_41.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240529_5.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240529_6.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240529_7.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240529_8.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240529_9.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240530_0.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240530_1.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240530_2.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240530_3.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240530_4.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240530_5.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240530_6.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/ReadHelper/GenerateAnalysis.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/bkmanagement/ANALHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/homepage/IndexShowMsg.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/homepage/JumpToUrl_mng.java" afterDir="false" />
+    <list default="true" id="4436a5f8-a7fe-413a-ab09-538ca3d435d9" name="更改" comment="feat(bkmng): add the function of evaluate single book">
+      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202406/202406/myg6_booksmanage/myg6_book_list/images/3f2meX2HMPR704K1Fo/金蝶照片.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202406/202406/myg6_booksmanage/myg6_book_list/images/LoPC3az5MUQsoI411p/高等数学.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202406/202406/myg6_booksmanage/myg6_book_list/images/TN63pA3A3drqvj9Bav/游戏学导论.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202406/202406/myg6_booksmanage/myg6_book_list/images/Vpl2i1Anse2MULXJWG/法律与文学.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202406/202406/myg6_booksmanage/myg6_book_list/images/VwQoplc97chA8lHaXZ/数学分析.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202406/202406/myg6_booksmanage/myg6_book_list/images/XO1zyASRKl8CrXi14n/概率论.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202406/202406/myg6_booksmanage/myg6_book_list/images/bBiSgkW5pNER0OqXpl/计算机导论.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202406/202406/myg6_booksmanage/myg6_book_list/images/hp2vOrWTSUqSJ3Gliv/解析几何.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202406/202406/myg6_booksmanage/myg6_book_list/images/xdpXWx8gFArxZ5xBz1/高等代数.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202406/202406/myg6_booksmanage/myg6_book_list/images/y0CQGvKlaAyTYCW1CO/复变.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202406/202406/myg6_booksmanage/myg6_book_list/images/yyQbUcY3CKMaGbS1D8/线性代数图书封面.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240601_0.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240601_1.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240601_10.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240601_11.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240601_12.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240601_13.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240601_14.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240601_15.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240601_16.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240601_17.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240601_18.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240601_19.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240601_2.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240601_20.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240601_21.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240601_22.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240601_23.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240601_24.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240601_25.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240601_26.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240601_27.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240601_28.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240601_29.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240601_3.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240601_30.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240601_31.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240601_32.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240601_33.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240601_34.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240601_35.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240601_36.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240601_37.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240601_38.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240601_39.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240601_4.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240601_40.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240601_41.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240601_42.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240601_43.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240601_44.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240601_45.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240601_46.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240601_47.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240601_48.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240601_49.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240601_5.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240601_6.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240601_7.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240601_8.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240601_84.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240601_9.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240603_0.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240603_1.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240603_10.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240603_11.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240603_12.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240603_13.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240603_14.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240603_15.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240603_16.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240603_17.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240603_18.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240603_19.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240603_2.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240603_20.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240603_21.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240603_22.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240603_23.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240603_24.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240603_25.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240603_26.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240603_27.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240603_28.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240603_29.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240603_3.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240603_30.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240603_31.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240603_32.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240603_33.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240603_34.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240603_35.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240603_36.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240603_37.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240603_38.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240603_39.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240603_4.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240603_40.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240603_41.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240603_42.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240603_43.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240603_44.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240603_45.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240603_46.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240603_47.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240603_48.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240603_49.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240603_5.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240603_50.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240603_51.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240603_52.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240603_53.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240603_54.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240603_55.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240603_56.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240603_57.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240603_58.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240603_59.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240603_6.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240603_60.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240603_61.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240603_62.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240603_7.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240603_8.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240603_9.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/homepage/SearchPlugin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/seatmng/GetSeatJsonString.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.6.3/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6.3/checksums/checksums.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.6.3/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6.3/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.6.3/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6.3/executionHistory/executionHistory.bin" afterDir="false" />
@@ -77,34 +145,13 @@
       <change beforePath="$PROJECT_DIR$/.gradle/7.6.3/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6.3/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/base/myg6-base-common/build/libs/myg6-base-common-1.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/base/myg6-base-common/build/libs/myg6-base-common-1.0.0.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/base/myg6-base-common/build/tmp/jar/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/base/myg6-base-common/build/tmp/jar/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/base/myg6-base-helper/build/libs/myg6-base-helper-1.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/base/myg6-base-helper/build/libs/myg6-base-helper-1.0.0.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/base/myg6-base-helper/build/tmp/jar/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/base/myg6-base-helper/build/tmp/jar/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/myg6-lib-app/build/libs/myg6-lib-app-1.0.0-sources.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/myg6-lib-app/build/libs/myg6-lib-app-1.0.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/myg6-lib-app/build/tmp/jar/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/myg6-lib-app/build/tmp/sourcesJar/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/cosmic_out.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/cosmic_out.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/cosmic_out_20240523_0.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/cosmic_out_20240523_1.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/cosmic_out_20240523_2.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/cosmic_out_20240523_3.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/cosmic_out_20240524_0.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/cosmic_out_20240524_4.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/cosmic_out_20240524_5.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/cosmic_out_20240525_0.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/cosmic_out_20240525_1.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/cosmic_out_20240525_2.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/build/libs/myg6-cosmic-debug-1.0.0-sources.jar" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/build/libs/myg6-cosmic-debug-1.0.0-sources.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/build/libs/myg6-cosmic-debug-1.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/build/libs/myg6-cosmic-debug-1.0.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/build/resources/main/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/build/resources/main/logback.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cosmic.properties" beforeDir="false" afterPath="$PROJECT_DIR$/cosmic.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/build/tmp/jar/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/build/tmp/jar/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/resources/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/resources/logback.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -361,7 +408,13 @@
       <workItem from="1716865668385" duration="3849000" />
       <workItem from="1716875205325" duration="1247000" />
       <workItem from="1716983152137" duration="6278000" />
-      <workItem from="1717040479701" duration="3106000" />
+      <workItem from="1717040479701" duration="4802000" />
+      <workItem from="1717049085931" duration="2482000" />
+      <workItem from="1717132913649" duration="7000" />
+      <workItem from="1717142395065" duration="184000" />
+      <workItem from="1717143467022" duration="2166000" />
+      <workItem from="1717226641442" duration="5070000" />
+      <workItem from="1717383049136" duration="11440000" />
     </task>
     <task id="LOCAL-00001" summary="refactor: modify the structure of the project">
       <option name="closed" value="true" />
@@ -403,7 +456,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716776028897</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="feat(bkmng): add the function of evaluate single book">
+      <option name="closed" value="true" />
+      <created>1717043792278</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1717043792278</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -455,6 +516,7 @@
     <MESSAGE value="feat(bkmng): add the function of GetQingHtml" />
     <MESSAGE value="feat(rdhelper): add the function of generater plan" />
     <MESSAGE value="feat(rdhelper): add the function of evaluate plan" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(rdhelper): add the function of evaluate plan" />
+    <MESSAGE value="feat(bkmng): add the function of evaluate single book" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(bkmng): add the function of evaluate single book" />
   </component>
 </project>
