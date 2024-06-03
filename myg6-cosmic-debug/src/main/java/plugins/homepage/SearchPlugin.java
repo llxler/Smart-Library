@@ -1,5 +1,6 @@
 package plugins.homepage;
 
+
 import java.util.ArrayList;
 import java.util.EventObject;
 import java.util.HashMap;
@@ -10,6 +11,7 @@ import kd.bos.bill.BillOperationStatus;
 import kd.bos.bill.BillShowParameter;
 import kd.bos.bill.OperationStatus;
 import kd.bos.dataentity.entity.DynamicObject;
+import kd.bos.dataentity.entity.DynamicObjectCollection;
 import kd.bos.dataentity.serialization.SerializationUtils;
 import kd.bos.dataentity.utils.StringUtils;
 import kd.bos.form.ShowType;
@@ -17,6 +19,9 @@ import kd.bos.form.control.Search;
 import kd.bos.form.control.events.SearchEnterEvent;
 import kd.bos.form.control.events.SearchEnterListener;
 import kd.bos.form.plugin.AbstractFormPlugin;
+import kd.bos.list.ListFilterParameter;
+import kd.bos.list.ListShowParameter;
+import kd.bos.orm.ORM;
 import kd.bos.orm.query.QCP;
 import kd.bos.orm.query.QFilter;
 import kd.bos.servicehelper.BusinessDataServiceHelper;
@@ -50,8 +55,9 @@ public class SearchPlugin extends AbstractFormPlugin implements SearchEnterListe
     /**
      * 模糊搜索币别中编码和名字包含搜索关键字的结果
      * 实现搜索列表，在搜索框输入后列举出搜索到的数组
+     *
      * @param searchText
-     * @return    搜索到的数据
+     * @return 搜索到的数据
      */
     private List<String> doSearchList(String searchText) {
         // 模糊搜索结算方式
@@ -59,7 +65,7 @@ public class SearchPlugin extends AbstractFormPlugin implements SearchEnterListe
         String fields = "number,name";
         // Create an empty filter array (no filters)
         QFilter filter1 = new QFilter("name", QCP.like, "%" + searchText + "%");
-        QFilter[] filter = new QFilter[] { filter1 };
+        QFilter[] filter = new QFilter[]{filter1};
         // Load the data
         DynamicObject[] collection = BusinessDataServiceHelper.load("myg6_book_list", fields, filter);
 
@@ -70,10 +76,8 @@ public class SearchPlugin extends AbstractFormPlugin implements SearchEnterListe
 //        QFilter filter2 = new QFilter("name", QCP.like, "%" + searchText + "%");
 //        QFilter filters = filter1.or(filter2);
 //        DynamicObjectCollection collection = orm.query("bd_currency", new QFilter[] { filters });
-        System.out.println("fuck1");
         for (DynamicObject obj : collection) {
-            System.out.println("fuck" + obj.get("number").toString() + " " + obj.get("name"));
-            searchList.put("myg6_book_list" + " " + obj.get("number").toString(), " " + obj.get("name"));
+            searchList.put("myg6_book_list" + " " + obj.get("number").toString(), "" + obj.get("name"));
         }
         // 把本次搜索结果放到页面缓存：后续search事件要用到
         getPageCache().put("searchList", SerializationUtils.toJsonString(searchList));
@@ -86,7 +90,7 @@ public class SearchPlugin extends AbstractFormPlugin implements SearchEnterListe
     @Override
     public void search(SearchEnterEvent evt) {
         Search search = (Search) evt.getSource();
-        if (StringUtils.equals(KEY_SEARCH, search.getKey())){
+        if (StringUtils.equals(KEY_SEARCH, search.getKey())) {
             String searchText = evt.getText();
             this.doSearch(searchText);
         }
@@ -94,24 +98,28 @@ public class SearchPlugin extends AbstractFormPlugin implements SearchEnterListe
 
     /**
      * 实现搜索
-     * @param searchText    搜索文本
+     *
+     * @param searchText 搜索文本
      */
+
     private void doSearch(String searchText) {
         // 从模糊查询结果中，匹配搜索文本：找到后，打开对应的币别详情界面
-        if (getPageCache().get("searchList") != null) {
-            Map<String, String> searchList = SerializationUtils.fromJsonString(getPageCache().get("searchList"), Map.class);
-            searchList.forEach((key, value) -> {
-                if (searchText.equals(value)) {
-                    String[] arr = key.split(" ");
-                    BillShowParameter param = new BillShowParameter();
-                    param.setPkId(arr[1]);
-                    param.setFormId(arr[0]);
-                    param.getOpenStyle().setShowType(ShowType.Modal);
-                    param.setBillStatus(BillOperationStatus.VIEW);
-                    param.setStatus(OperationStatus.VIEW);
-                    getView().showForm(param);
-                }
-            });
-        }
+        ListShowParameter lsp = new ListShowParameter();
+        lsp.setFormId("bos_list");
+        lsp.setBillFormId("myg6_book_list");
+        lsp.getOpenStyle().setShowType(ShowType.Modal);
+        ListFilterParameter listFilterParameter = new ListFilterParameter();
+        QFilter qFilter = new QFilter("name", QCP.like, "%" + searchText + "%");
+        listFilterParameter.setFilter(qFilter);
+        lsp.setListFilterParameter(listFilterParameter);
+//                    BillShowParameter param = new BillShowParameter();
+//                    param.setPkId(arr[1]);
+//                    param.setFormId(arr[0]);
+//                    param.getOpenStyle().setShowType(ShowType.Modal);
+//                    param.setBillStatus(BillOperationStatus.VIEW);
+//                    param.setStatus(OperationStatus.VIEW);
+        this.getView().showForm(lsp);
+
+
     }
 }
