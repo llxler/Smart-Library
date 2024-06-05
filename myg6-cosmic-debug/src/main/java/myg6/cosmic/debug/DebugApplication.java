@@ -33,6 +33,7 @@ public class DebugApplication {
         cosmic.setFsServerUrl("10.21.207.149", 8100);
         cosmic.setImageServerUrl("10.21.207.149", 8100);
 
+        cosmic.setMqConsumerRegister(true, "testlxler");
         //自定义本地苍穹调试服务的端口
         cosmic.setCosmicWepPort(8881);
 //        cosmic.setDubboConfig(false, true, true);
