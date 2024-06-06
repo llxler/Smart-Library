@@ -28,7 +28,7 @@ public class GetTaskJsonString implements IGPTAction {
                 // 若全部生成JSON字符串，则不会进入catch
                 resultJsonObject = JSON.parseObject(jsonResult);
             } catch (Exception ee) {
-                // 将"TaskName  "的上一个字符作为开始，以}]}字符作为结束，则最后需要+3
+                // 将"TaskName"的上一个字符作为开始，以}]}字符作为结束，则最后需要+3
                 jsonResult = jsonResult.substring(jsonResult.indexOf("\"TaskName\"") - 1, jsonResult.indexOf("}]}") + 3);
                 resultJsonObject = JSON.parseObject(jsonResult);
             }

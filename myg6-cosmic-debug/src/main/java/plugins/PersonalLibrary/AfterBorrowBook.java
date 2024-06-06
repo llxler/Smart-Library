@@ -13,17 +13,20 @@ import kd.bos.dataentity.entity.DynamicObject;
 public class AfterBorrowBook implements IWorkflowPlugin {
     @Override
     public void notify(AgentExecution execution) {
-        String businessKey = execution.getBusinessKey();//单据的BusinessKey(业务ID)
+        String businessKey = execution.getBusinessKey(); // 单据的BusinessKey(业务ID)
         DynamicObject fatherDynamic = BusinessDataServiceHelper.loadSingle(businessKey, "myg6_book_subscribe");
-        DynamicObject goalDynamic = (DynamicObject) fatherDynamic.get("myg6_nameofbook");
+        DynamicObject midDynamic = (DynamicObject) fatherDynamic.get("myg6_nameofbook");
+        String bookName = midDynamic.getString("name");
+
+        QFilter qFilter = new QFilter("name", QCP.equals, bookName);
+        DynamicObject goalDynamic = BusinessDataServiceHelper.loadSingle("myg6_book_list", new QFilter[]{qFilter});
 
         // modify the value
         Integer curnum = Integer.valueOf(goalDynamic.getString("myg6_curnum")) - 1;
         goalDynamic.set("myg6_curnum", curnum.toString());
+
         Integer subcribe_cnt = Integer.valueOf(goalDynamic.getString("myg6_subcribe_cnt")) + 1;
         goalDynamic.set("myg6_subcribe_cnt", subcribe_cnt.toString());
-
-        System.out.println("goalDynamic Info: " + goalDynamic);
 
         SaveServiceHelper.update(goalDynamic);
 
