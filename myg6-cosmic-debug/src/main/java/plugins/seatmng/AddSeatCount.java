@@ -28,7 +28,7 @@ public class AddSeatCount extends AbstractOperationServicePlugIn implements Plug
         List<ExtendedDataEntity> rows = e.getSelectedRows();
         for (ExtendedDataEntity row : rows) {
             DynamicObject dataEntity = row.getDataEntity();
-            DynamicObject o = (DynamicObject)dataEntity.get("myg6_basedatafield");
+            DynamicObject o = (DynamicObject) dataEntity.get("myg6_basedatafield");
             Integer num = Integer.valueOf(o.getString("myg6_integerfield1")) + 1;
             o.set("myg6_integerfield1", num.toString());
             SaveServiceHelper.update(o);

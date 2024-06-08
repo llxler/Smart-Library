@@ -7,12 +7,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4436a5f8-a7fe-413a-ab09-538ca3d435d9" name="更改" comment="feat: add PersonLibrary">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202406/bos/ide_importresource/rc-upload-1717656488211-3/attachments/316a5163ceb04ee0b62bd55436e9135d/images.zip" afterDir="false" />
+    <list default="true" id="4436a5f8-a7fe-413a-ab09-538ca3d435d9" name="更改" comment="feat(PLib): add the function of return book">
+      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202406/202406/myg6_booksmanage/myg6_book_list/images/yD8i6vzk9KiDOBcyWJ/深度学习入门.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202406/202406/myg6_seat_reservation/myg6_room/images/Sc0rJCIqJzqWcuBJjO/下载.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202406/202406/myg6_seat_reservation/myg6_room/images/f2OxzwMg3UGmKuaS6V/OIP-C (1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202406/202406/myg6_seat_reservation/myg6_room/images/jEwftKdfmBg13cv3VC/OIP-C (3).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202406/202406/myg6_seat_reservation/myg6_room/images/unPlD62v1KeiqrHvTc/OIP-C.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202406/bos/ide_importresource/rc-upload-1717680052027-3/attachments/c243b71381964f8ba3fe5f942ede729e/images.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202406/bos/ide_importresource/rc-upload-1717740253944-3/attachments/c72c297e78844838a01bc36c94440aa4/images.zip" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/logs/cosmic_out.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240606_512.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/PersonalLibrary/AutoReturnBook.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240606_0.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240607_0.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/extendedfun/OpenWebUrl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/seatmng/SeatSelectBill.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/seatmng/SeatSelectForm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.6.3/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6.3/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.6.3/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6.3/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.6.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6.3/fileHashes/fileHashes.bin" afterDir="false" />
@@ -25,10 +33,8 @@
       <change beforePath="$PROJECT_DIR$/base/myg6-base-common/build/tmp/jar/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/base/myg6-base-common/build/tmp/jar/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/base/myg6-base-helper/build/libs/myg6-base-helper-1.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/base/myg6-base-helper/build/libs/myg6-base-helper-1.0.0.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/base/myg6-base-helper/build/tmp/jar/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/base/myg6-base-helper/build/tmp/jar/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/build/resources/main/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/build/resources/main/logback.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/PersonalLibrary/AfterBorrowBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/PersonalLibrary/AfterBorrowBook.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/ReadHelper/GetTaskJsonString.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/ReadHelper/GetTaskJsonString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/seatmng/AddSeatCount.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/seatmng/AddSeatCount.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +136,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -300,7 +306,11 @@
       <workItem from="1717400691441" duration="14216000" />
       <workItem from="1717468805080" duration="15832000" />
       <workItem from="1717562333910" duration="15565000" />
-      <workItem from="1717639222914" duration="15855000" />
+      <workItem from="1717639222914" duration="26028000" />
+      <workItem from="1717725341072" duration="16477000" />
+      <workItem from="1717762865206" duration="53000" />
+      <workItem from="1717775854829" duration="106000" />
+      <workItem from="1717830241008" duration="608000" />
     </task>
     <task id="LOCAL-00001" summary="refactor: modify the structure of the project">
       <option name="closed" value="true" />
@@ -382,7 +392,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717591313006</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="feat(PLib): add the function of return book">
+      <option name="closed" value="true" />
+      <created>1717659865100</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1717659865100</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -439,7 +457,8 @@
     <MESSAGE value="feat(seatmng): add the function of seatcount" />
     <MESSAGE value="fix(seatmng): fix the bug of seatcount" />
     <MESSAGE value="feat: add PersonLibrary" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add PersonLibrary" />
+    <MESSAGE value="feat(PLib): add the function of return book" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(PLib): add the function of return book" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -450,5 +469,9 @@
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
