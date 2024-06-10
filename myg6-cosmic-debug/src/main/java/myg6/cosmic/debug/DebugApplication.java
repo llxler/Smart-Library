@@ -20,24 +20,24 @@ public class DebugApplication {
         CosmicLauncher cosmic = new CosmicLauncher(false);
 
         cosmic.setClusterNumber("cosmic");
+
         cosmic.setTenantNumber("ierp");
 
         cosmic.setConfigUrl("10.21.207.149:2181?user=zookeeper&password=zookeeper");
-//        cosmic.setConfigUrl("10.21.207.149:2181");
 
-//        cosmic.setMcServerUrl("http://127.0.0.1:8090");
         cosmic.setMcServerUrl("http://10.21.207.149:8090/");
 
         cosmic.setWebResPath("E:/ruanjianbei/static-file-service");
 
         cosmic.setFsServerUrl("10.21.207.149", 8100);
+
         cosmic.setImageServerUrl("10.21.207.149", 8100);
 
         cosmic.setMqConsumerRegister(true, "testlxler");
         //自定义本地苍穹调试服务的端口
         cosmic.setCosmicWepPort(8881);
 //        cosmic.setDubboConfig(false, true, true);
+        //开启轻分析
         cosmic.start();
     }
 }
-// 10.21.207.149:8881/ierp/login.html
