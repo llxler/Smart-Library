@@ -19,7 +19,7 @@ public class MindMapGenerator extends AbstractFormPlugin implements Plugin {
     public void afterCreateNewData(EventObject e) {
         super.afterCreateNewData(e);
         IFrame iframe = this.getControl("myg6_MindMap");
-        iframe.setSrc("http://127.0.0.1:7000/");
+        iframe.setSrc("http://10.21.207.149:7000/");
     }
     @Override
     public void registerListener(EventObject e) {
@@ -35,7 +35,7 @@ public class MindMapGenerator extends AbstractFormPlugin implements Plugin {
         if (source instanceof Button) {
             Button button = (Button) source;
             String key = button.getKey();
-            if (StringUtils.equals("myg6_buttonap", key)){
+            if (StringUtils.equals("myg6_buttonap", key)) {
                 // todo: 从数据模型中获取数据
 //                Object txt = this.getModel().getValue("myg6_txt");
                 Object txt = "# 如何读好一本书\n" +
@@ -75,6 +75,7 @@ public class MindMapGenerator extends AbstractFormPlugin implements Plugin {
                         "### 分享和讨论\n" +
                         "- 与他人讨论书本内容，交流心得体会。\n" +
                         "- 写书评或读书笔记，记录自己的理解和收获。\n";
+                System.out.println("打印txt内容" + txt);
 
                 IFrame iframe = this.getView().getControl("myg6_MindMap");
                 IFrameMessage message = new IFrameMessage();

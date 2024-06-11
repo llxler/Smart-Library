@@ -12,7 +12,7 @@ import java.util.List;
 /**
  * 单据操作插件
  */
-public class SubSearCountByUnaudit extends AbstractOperationServicePlugIn implements Plugin {
+public class SubSeatCountByUnaudit extends AbstractOperationServicePlugIn implements Plugin {
     private final static String ROOM = "myg6_basedatafield";
 
     private final static String SEAT_NUM = "myg6_integerfield1";

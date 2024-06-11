@@ -59,7 +59,7 @@ public class GetQingHtml implements IGPTAction {
             } catch (IOException e) {
                 e.printStackTrace();
             }
-            // 返回URL，其中gaiIframeSize = {"height":380,"width":1000} 用于调整展示窗口宽高
+            // 返回URL，其中gaiIframeSize = {"height":380, "width":1000} 用于调整展示窗口宽高
             result.put("resultHtmlUrl", System.getProperty("domain.contextUrl") + "/isv/gptQing/" + directoryName + "/" + sb + ".html?" + "gaiIframeSize={\"height\":380,\"width\":1000}");
             result.put("htmlNewString", htmlString);
         }

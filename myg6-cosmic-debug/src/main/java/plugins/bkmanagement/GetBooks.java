@@ -35,7 +35,7 @@ public class GetBooks implements IGPTAction {
                 jsonArray.add(jsonObject);
             }
             System.out.println(jsonArray.toString());
-            //加入resultDynamicObject参数，将JsonArray加入到这个参数当中，然后返回
+            // 加入resultDynamicObject参数，将JsonArray加入到这个参数当中，然后返回
             result.put("resultDynamicObject", jsonArray.toString());
         }
         return result;

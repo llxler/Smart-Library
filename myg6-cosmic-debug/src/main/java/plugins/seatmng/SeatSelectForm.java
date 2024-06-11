@@ -105,7 +105,6 @@ public class SeatSelectForm extends AbstractFormPlugin {
                     System.out.println(KEY_PARAM + i);
                     billShowParameter.setCustomParam("myg6_basedatafield_seat",KEY_PARAM + i);
 
-
                     StyleCss styleCss = new StyleCss();
                     styleCss.setHeight("600");
                     styleCss.setWidth("900");

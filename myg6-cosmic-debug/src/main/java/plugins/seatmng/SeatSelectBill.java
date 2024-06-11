@@ -54,13 +54,9 @@ public class SeatSelectBill extends AbstractFormPlugin {
         QFilter qFilter = new QFilter("number", QCP.equals, seatId);
         DynamicObject goalSeat = BusinessDataServiceHelper.loadSingle("myg6_seat", new QFilter[]{qFilter});
 
-//        System.out.println("eatshit");
-//        System.out.println(value);
-
         IDataModel parentModel = this.getView().getParentView().getModel();
         //给子页面相关属性赋值
         this.getModel().setValue("myg6_basedatafield_seat", goalSeat);
-        System.out.println("fuckyou");
 //        this.getModel().setValue(KEY_ORG, parentModel.getValue(KEY_ORG));
 //        this.getModel().setValue(KEY_LEAVE_DAYS, parentModel.getValue(KEY_LEAVE_DAYS));
     }
@@ -70,7 +66,6 @@ public class SeatSelectBill extends AbstractFormPlugin {
      * 特别说明：
      * 这个事件，是在表单界面层执行的，没有事务保护。
      * 不允许在此事件同步修改数据库数据，以免同步失败导致数据不一致。
-     * <p>
      * 这里使用了监控save操作，也可以监控按钮点击事件或者工具栏按钮点击事件
      *
      * @param e
