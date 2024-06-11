@@ -90,7 +90,7 @@ public class SeatSelectBill extends AbstractFormPlugin {
                 //this.getView().returnDataToParent(map);
                 //this.getView().close();
             } else {
-                //如果save操作失败则弹窗提示
+                // 如果save操作失败则弹窗提示
                 this.getView().showErrMessage("保存数据失败，请重试或联系管理员~", "数据保存失败");
             }
         }
