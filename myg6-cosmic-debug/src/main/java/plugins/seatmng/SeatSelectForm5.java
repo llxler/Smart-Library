@@ -5,17 +5,13 @@ import kd.bos.form.plugin.AbstractFormPlugin;
 import kd.bos.orm.query.QCP;
 import kd.bos.orm.query.QFilter;
 import kd.bos.servicehelper.BusinessDataServiceHelper;
-import kd.sdk.plugin.Plugin;
 import kd.bos.bill.BillShowParameter;
-import kd.bos.entity.datamodel.events.PropertyChangedArgs;
 import kd.bos.form.CloseCallBack;
 import kd.bos.form.ShowType;
 import kd.bos.form.StyleCss;
-import kd.bos.form.events.ClosedCallBackEvent;
 import org.apache.commons.lang3.StringUtils;
 import kd.bos.form.control.Control;
 import java.util.EventObject;
-import java.util.HashMap;
 
 /**
  * 动态表单插件
@@ -23,7 +19,7 @@ import java.util.HashMap;
 
 
 
-public class SeatSelectForm extends AbstractFormPlugin {
+public class SeatSelectForm5 extends AbstractFormPlugin {
 
     //父页面的请假天数标识
     private final String KEY_LEAVE_DAYS = "leavedays";
@@ -54,15 +50,16 @@ public class SeatSelectForm extends AbstractFormPlugin {
     public void registerListener(EventObject e) {
         super.registerListener(e);
         //注册工作交接安排控件的监听
-        for(int i = 1;i <= 36;i++){
+        for(int i = 1;i <= 76;i++){
             this.addClickListeners(KEY_WORK_ARRANGE + i);
+            this.addClickListeners(redseat + i);
         }
 
     }
     @Override
     public void afterCreateNewData(EventObject e) {
         super.afterCreateNewData(e);
-        for(int i = 1;i <= 36;i++){
+        for(int i = 1;i <= 76;i++){
             String str = KEY_PARAM;
             if(i < 10) str += '0';
             QFilter qFilter = new QFilter("number", QCP.equals, str + i);
@@ -84,8 +81,9 @@ public class SeatSelectForm extends AbstractFormPlugin {
         super.click(evt);
         //获取被点击的控件对象
         Control source = (Control) evt.getSource();
+        System.out.println("shit" + source.getKey());
         if (source != null) {
-            for(int i = 1;i <= 36;i++){
+            for(int i = 1;i <= 76;i++){
                 if (StringUtils.equals(KEY_WORK_ARRANGE + i, source.getKey())) {
                     //当工作交接安排控件被点击的时候，创建弹出表单页面的对象
                     BillShowParameter billShowParameter = new BillShowParameter();
@@ -112,6 +110,8 @@ public class SeatSelectForm extends AbstractFormPlugin {
                     billShowParameter.getOpenStyle().setInlineStyleCss(styleCss);
                     //弹出表单和本页面绑定
                     this.getView().showForm(billShowParameter);
+                    this.getView().setVisible(false, KEY_WORK_ARRANGE + i);
+                    this.getView().setVisible(true, redseat + i);
                     break;
                 } else if (StringUtils.equals(redseat + i, source.getKey())) {
                     this.getView().showMessage("该座位已被预定，请选择其他座位");
@@ -120,25 +120,4 @@ public class SeatSelectForm extends AbstractFormPlugin {
 
         }
     }
-
-
-    /**
-     * 子界面关闭时，触发父界面的closedCallBack事件；
-     * 父界面的插件，可以在此事件，接收子界面返回的数据。
-     * 特别说明：
-     * 需要在显示子界面时，调用FormShowParameter参数的setCloseCallBack方法，设置回调属性，才会在子界面关闭时触发此事件：
-     * @param closedCallBackEvent
-     */
-//    @Override
-//    public void closedCallBack(ClosedCallBackEvent closedCallBackEvent) {
-//        super.closedCallBack(closedCallBackEvent);
-//        //返回数据不为空并且标识为常量KEY_LEAVE_DAYS对应的值，代表是我们所监控的子页面关闭事件
-//        if (closedCallBackEvent.getReturnData() != null && StringUtils.equals(KEY_LEAVE_DAYS, closedCallBackEvent.getActionId())) {
-//            //给父页面相关属性赋值
-//            HashMap<String, String> returnData = (HashMap<String, String>) closedCallBackEvent.getReturnData();
-//            this.getModel().setValue(KEY_WORK_ARRANGE, returnData.get(KEY_WORK_ARRANGE));
-//            this.getModel().setValue(KEY_REMARK, returnData.get(KEY_REMARK));
-//            this.getModel().setValue(KEY_PKID, returnData.get(KEY_PKID));
-//        }
-//    }
 }

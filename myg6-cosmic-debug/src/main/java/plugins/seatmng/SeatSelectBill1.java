@@ -1,7 +1,5 @@
 package plugins.seatmng;
 
-import kd.bos.bill.AbstractBillPlugIn;
-import kd.bos.bill.BillShowParameter;
 import kd.bos.dataentity.entity.DynamicObject;
 import kd.bos.entity.datamodel.IDataModel;
 import kd.bos.form.FormShowParameter;
@@ -12,15 +10,14 @@ import kd.bos.servicehelper.BusinessDataServiceHelper;
 import org.apache.commons.lang3.StringUtils;
 
 import java.util.EventObject;
-import java.util.HashMap;
+
 import kd.bos.form.plugin.AbstractFormPlugin;
-import kd.sdk.plugin.Plugin;
 
 /**
  * 动态表单插件
  */
 
-public class SeatSelectBill extends AbstractFormPlugin {
+public class SeatSelectBill1 extends AbstractFormPlugin {
 
     //子页面的申请人标识
     private final String KEY_CREATOR = "creator";
@@ -53,10 +50,13 @@ public class SeatSelectBill extends AbstractFormPlugin {
         String seatId = showParameter.getCustomParam("myg6_basedatafield_seat");
         QFilter qFilter = new QFilter("number", QCP.equals, seatId);
         DynamicObject goalSeat = BusinessDataServiceHelper.loadSingle("myg6_seat", new QFilter[]{qFilter});
+        DynamicObject goalRoom = (DynamicObject) goalSeat.get("myg6_basedatafield");
+        System.out.println("fuck info: " + goalRoom);
 
         IDataModel parentModel = this.getView().getParentView().getModel();
         //给子页面相关属性赋值
         this.getModel().setValue("myg6_basedatafield_seat", goalSeat);
+        this.getModel().setValue("myg6_basedatafield", goalRoom);
 //        this.getModel().setValue(KEY_ORG, parentModel.getValue(KEY_ORG));
 //        this.getModel().setValue(KEY_LEAVE_DAYS, parentModel.getValue(KEY_LEAVE_DAYS));
     }
