@@ -7,6 +7,7 @@ import kd.bos.exception.KDException;
 import kd.bos.orm.query.QFilter;
 import kd.bos.schedule.executor.AbstractTask;
 import kd.bos.servicehelper.BusinessDataServiceHelper;
+import kd.bos.servicehelper.operation.DeleteServiceHelper;
 import kd.bos.servicehelper.user.UserServiceHelper;
 import kd.bos.servicehelper.workflow.MessageCenterServiceHelper;
 import kd.bos.workflow.engine.msg.info.MessageInfo;
@@ -22,9 +23,9 @@ import java.util.Map;
 public class ReturnSeatSchedule extends AbstractTask {
     @Override
     public void execute(RequestContext requestContext, Map<String, Object> map) throws KDException {
-        //获取DynamicObject列表
+        // 获取DynamicObject列表
         String fields = "number,myg6_basedatafield,myg6_basedatafield_seat,myg6_timefield_end";
-        // Create an empty filter array (no filters)
+        // Create an empty filter array   (no filters)
         QFilter[] filters = new QFilter[0];
         // Load the data
         DynamicObject[] dys = BusinessDataServiceHelper.load("myg6_seat_apply", fields, filters);
@@ -76,15 +77,16 @@ public class ReturnSeatSchedule extends AbstractTask {
         title.setLocaleValue_zh_CN("座位逾期提示");
         messageInfo.setMessageTitle(title);
         LocaleString content = new LocaleString();
-
         content.setLocaleValue_zh_CN(info);
         messageInfo.setMessageContent(content);
+
         //获取当前的业务单元
         long orgId = requestContext.getOrgId();
 
         // 获取业务单元中所有的用户
         List<Long> allUsersOfOrg = UserServiceHelper.getAllUsersOfOrg(orgId);
         ArrayList<Long> ids = new ArrayList<Long>();
+
         // 获取当前登录用户id
         ids.add(requestContext.getCurrUserId());
         messageInfo.setUserIds(ids);

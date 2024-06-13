@@ -7,19 +7,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4436a5f8-a7fe-413a-ab09-538ca3d435d9" name="更改" comment="fix(seatmng): add the function of Alert &amp; showForm">
-      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202406/202406/myg6_seat_reservation/myg6_room/images/9qpLOU4XwoklblrVpu/4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202406/202406/myg6_seat_reservation/myg6_room/images/A7nsB61bfK4tlB1HF2/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202406/202406/myg6_seat_reservation/myg6_room/images/W6I1WwYNeEuw35HqOC/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202406/202406/myg6_seat_reservation/myg6_room/images/ffP6Q4pntOTN0M49TZ/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202406/fa7c734d56004f13a0cbdbc042cc96b0/小抄.pdf" afterDir="false" />
+    <list default="true" id="4436a5f8-a7fe-413a-ab09-538ca3d435d9" name="更改" comment="fix(seatmng): fix the function of Alert">
       <change afterPath="$PROJECT_DIR$/logs/cosmic_out.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240612_0.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240612_1.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240612_2.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/seatmng/ReturnSeatSchedule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.6.3/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6.3/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.6.3/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6.3/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/extendedfun/KgViewGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.6.3/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6.3/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.6.3/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6.3/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.6.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6.3/fileHashes/fileHashes.bin" afterDir="false" />
@@ -32,13 +22,8 @@
       <change beforePath="$PROJECT_DIR$/base/myg6-base-common/build/tmp/jar/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/base/myg6-base-common/build/tmp/jar/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/base/myg6-base-helper/build/libs/myg6-base-helper-1.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/base/myg6-base-helper/build/libs/myg6-base-helper-1.0.0.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/base/myg6-base-helper/build/tmp/jar/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/base/myg6-base-helper/build/tmp/jar/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/build/resources/main/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/build/resources/main/logback.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/seatmng/Alert/WriteOut.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/seatmng/SeatSelectBill.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/seatmng/SeatSelectBill1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/seatmng/SeatSelectForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/seatmng/SeatSelectForm5.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/seatmng/SeatSubscribeBtt.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/seatmng/SeatSubscribeBtt1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/resources/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/resources/logback.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/seatmng/ReturnSeatSchedule.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/seatmng/ReturnSeatSchedule.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -320,7 +305,10 @@
       <workItem from="1717983779528" duration="22093000" />
       <workItem from="1718072445524" duration="16430000" />
       <workItem from="1718114750148" duration="1169000" />
-      <workItem from="1718155831116" duration="22519000" />
+      <workItem from="1718155831116" duration="22870000" />
+      <workItem from="1718244568496" duration="1171000" />
+      <workItem from="1718246602990" duration="2911000" />
+      <workItem from="1718266823151" duration="213000" />
     </task>
     <task id="LOCAL-00001" summary="refactor: modify the structure of the project">
       <option name="closed" value="true" />
@@ -458,7 +446,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718115900762</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="fix(seatmng): fix the function of Alert">
+      <option name="closed" value="true" />
+      <created>1718199165928</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1718199165928</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -522,7 +518,8 @@
     <MESSAGE value="feat(seatmng): add the function of Alert" />
     <MESSAGE value="fix(seatmng): add the function of Alert" />
     <MESSAGE value="fix(seatmng): add the function of Alert &amp; showForm" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix(seatmng): add the function of Alert &amp; showForm" />
+    <MESSAGE value="fix(seatmng): fix the function of Alert" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix(seatmng): fix the function of Alert" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
