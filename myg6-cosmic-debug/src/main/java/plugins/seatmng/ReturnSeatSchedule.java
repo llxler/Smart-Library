@@ -8,6 +8,7 @@ import kd.bos.orm.query.QFilter;
 import kd.bos.schedule.executor.AbstractTask;
 import kd.bos.servicehelper.BusinessDataServiceHelper;
 import kd.bos.servicehelper.operation.DeleteServiceHelper;
+import kd.bos.servicehelper.operation.SaveServiceHelper;
 import kd.bos.servicehelper.user.UserServiceHelper;
 import kd.bos.servicehelper.workflow.MessageCenterServiceHelper;
 import kd.bos.workflow.engine.msg.info.MessageInfo;
@@ -52,7 +53,7 @@ public class ReturnSeatSchedule extends AbstractTask {
                 // 比较两个时间
                 LocalTime nowyeah = LocalTime.parse(nowTime);
                 LocalTime endyeah = LocalTime.parse(endTime);
-                System.out.println("debug info" + nowyeah + endyeah);
+                System.out.println("time info" + nowyeah + endyeah);
 
                 if (endyeah.isAfter(nowyeah)) continue;
 
@@ -61,8 +62,11 @@ public class ReturnSeatSchedule extends AbstractTask {
                 String seatNumber = seat.getString("number");
                 System.out.println("seatName info" + seatNumber);
 
-                // begin modify
+                // 添加信息, 并修改座位的状态为可用
                 info += seatNumber + "\n";
+                seat.set("myg6_combofield", 0);
+                SaveServiceHelper.update(seat);
+
             } else {
                 System.out.println("跳过了这些");
                 System.out.println(single.getString("myg6_basedatafield"));
@@ -92,6 +96,7 @@ public class ReturnSeatSchedule extends AbstractTask {
         messageInfo.setUserIds(ids);
         messageInfo.setType(MessageInfo.TYPE_MESSAGE);
         messageInfo.setTag("座位逾期");
+
         // 发送消息
         MessageCenterServiceHelper.sendMessage(messageInfo);
     }
