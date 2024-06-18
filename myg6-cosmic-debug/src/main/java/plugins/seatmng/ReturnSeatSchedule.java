@@ -59,6 +59,10 @@ public class ReturnSeatSchedule extends AbstractTask {
 
                 // 获取该座位名称
                 DynamicObject seat = (DynamicObject) single.get("myg6_basedatafield_seat");
+                String seatState = seat.getString("myg6_combofield");
+                // 如果已经是空闲状态了, 则跳过
+                if (seatState == "0") continue;
+
                 String seatNumber = seat.getString("number");
                 System.out.println("seatName info" + seatNumber);
 
@@ -74,7 +78,7 @@ public class ReturnSeatSchedule extends AbstractTask {
                 System.out.println(single.getString("myg6_timefield_end"));
             }
         }
-
+        if (info.equals("这些座位已经逾期了：\n")) return;
         // 发送站内消息
         MessageInfo messageInfo = new MessageInfo();
         LocaleString title = new LocaleString();

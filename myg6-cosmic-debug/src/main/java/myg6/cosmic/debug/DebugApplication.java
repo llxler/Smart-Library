@@ -12,7 +12,10 @@ import kd.cosmic.debug.tools.CosmicLauncher;
 /**
  * 启动本地应用程序(微服务节点)
  */
+
 public class DebugApplication {
+
+    private static final String MY_IP = "10.21.204.111";
     public static void main(String[] args) {
 
 //    	Thread.currentThread().setContextClassLoader(new KDSecurityClassLoader(Thread.currentThread().getContextClassLoader()));
@@ -23,15 +26,15 @@ public class DebugApplication {
 
         cosmic.setTenantNumber("ierp");
 
-        cosmic.setConfigUrl("10.21.207.149:2181?user=zookeeper&password=zookeeper");
+        cosmic.setConfigUrl(MY_IP + ":2181?user=zookeeper&password=zookeeper");
 
-        cosmic.setMcServerUrl("http://10.21.207.149:8090/");
+        cosmic.setMcServerUrl("http://" + MY_IP + ":8090/");
 
         cosmic.setWebResPath("E:/ruanjianbei/static-file-service");
 
-        cosmic.setFsServerUrl("10.21.207.149", 8100);
+        cosmic.setFsServerUrl(MY_IP, 8100);
 
-        cosmic.setImageServerUrl("10.21.207.149", 8100);
+        cosmic.setImageServerUrl(MY_IP, 8100);
 
         cosmic.setMqConsumerRegister(true, "testlxler");
         //自定义本地苍穹调试服务的端口

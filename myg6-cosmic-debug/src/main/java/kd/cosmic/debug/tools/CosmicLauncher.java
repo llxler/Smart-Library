@@ -27,7 +27,7 @@ import kd.bos.service.bootstrap.Booter;
  */
 public final class CosmicLauncher {
     //自己添加部分
-    private static final String MY_IP = "10.21.207.149";
+    private static final String MY_IP = "10.21.204.111";
     /**
      * 苍穹安装目录的环境变量名称（即苍穹依赖包和静态资源目录的上级目录）
      */
