@@ -60,6 +60,7 @@ public class ReturnSeatSchedule extends AbstractTask {
                 // 获取该座位名称
                 DynamicObject seat = (DynamicObject) single.get("myg6_basedatafield_seat");
                 String seatState = seat.getString("myg6_combofield");
+                
                 // 如果已经是空闲状态了, 则跳过
                 if (seatState == "0") continue;
 
