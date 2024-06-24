@@ -2,7 +2,6 @@ package plugins.CreditSystem;
 
 import kd.bos.context.RequestContext;
 import kd.bos.dataentity.entity.DynamicObject;
-import kd.bos.dataentity.entity.DynamicObjectCollection;
 import kd.bos.dataentity.entity.LocaleString;
 import kd.bos.exception.KDException;
 import kd.bos.orm.query.QCP;
@@ -18,7 +17,7 @@ import kd.sdk.plugin.Plugin;
 import java.util.*;
 
 // sch_taskdefine
-public class CreditSchedule extends AbstractTask implements Plugin {
+public class CreditScheFinal extends AbstractTask implements Plugin {
     @Override
     public void execute(RequestContext requestContext, Map<String, Object> map) throws KDException {
         // 获取DynamicObject列表
@@ -41,7 +40,6 @@ public class CreditSchedule extends AbstractTask implements Plugin {
             System.out.println("\n--------auto task info----------\n");
             QFilter qFilter = new QFilter("billno", QCP.equals, o.getString("billno"));
             DynamicObject single = BusinessDataServiceHelper.loadSingle("myg6_book_subscribe", new QFilter[]{qFilter});
-            System.out.println("\n----------info over----------\n");
 
             // 该预定记录的时间
             Date endDate = single.getDate("myg6_date_ed");
@@ -64,7 +62,7 @@ public class CreditSchedule extends AbstractTask implements Plugin {
 
                 // 获取这个人的信誉表单
                 QFilter qFilter2 = new QFilter("myg6_textfield", QCP.equals, creator);
-                String fields2 = "myg6_textfield,myg6_integerfield,entryentity,myg6_largetextfield,myg6_integerfield1,myg6_billstatusfield";
+                String fields2 = "myg6_textfield,myg6_integerfield,myg6_shixin";
                 DynamicObject credituser = BusinessDataServiceHelper.loadSingle("myg6_credibility_table", fields2, new QFilter[]{qFilter2});
                 System.out.println("fuck credituser: " + credituser);
 
@@ -77,23 +75,19 @@ public class CreditSchedule extends AbstractTask implements Plugin {
                 int subnum = random.nextInt(16) + 5; // 生成5到20之间的随机数
                 credituser.set("myg6_integerfield", score - subnum);
 
-                // 获取它的单据体
-                DynamicObjectCollection dynamicObjectCollection = credituser.getDynamicObjectCollection("entryentity");
-
-                // 塞入信息
-                DynamicObject newinfo = dynamicObjectCollection.addNew();
-                newinfo.set("myg6_largetextfield", "逾期未还书: " + nameofbook);
-                newinfo.set("myg6_integerfield1", subnum);
-                System.out.println("fuck info " + newinfo);
+                // 塞入信息到文本记录
+                String newinfo = credituser.getString("myg6_shixin");
+                newinfo += "bookname: " + nameofbook + "subnum: " + subnum + "*";
+                credituser.set("myg6_shixin", newinfo);
 
                 // 修改整个
-                SaveServiceHelper.update(newinfo);
                 SaveServiceHelper.update(credituser);
 
             } else if (endDate.equals(yesterdayDate)) {
                 // 如果明天就是endDate，提前一天提醒
                 info += "用户：" + creator + "，书名：" + nameofbook + "，明天就要还书了！\n";
             }
+            System.out.println("\n----------info over----------\n");
         }
         // 没有人逾期不归还
         if (info.equals("")) return;
