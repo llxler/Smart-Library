@@ -87,6 +87,7 @@ public class CreditSchedule extends AbstractTask implements Plugin {
                 System.out.println("fuck info " + newinfo);
 
                 // 修改整个
+                SaveServiceHelper.update(newinfo);
                 SaveServiceHelper.update(credituser);
 
             } else if (endDate.equals(yesterdayDate)) {
