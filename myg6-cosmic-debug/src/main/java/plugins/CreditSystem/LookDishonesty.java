@@ -72,7 +72,7 @@ public class LookDishonesty extends AbstractFormPlugin implements Plugin {
         dataModel.batchCreateNewEntryRow("entryentity", size);
         for (int i = currRowCnt; i < (currRowCnt + size); ++i) {
             int idx = i - currRowCnt;
-            dataModel.setValue("myg6_largetextfield", bookNameArray[idx], i);
+            dataModel.setValue("myg6_largetextfield", "图书逾期: " + bookNameArray[idx], i);
             dataModel.setValue("myg6_integerfield1", subNumArray[idx], i);
         }
     }
