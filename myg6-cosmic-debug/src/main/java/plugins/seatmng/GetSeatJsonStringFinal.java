@@ -4,17 +4,18 @@ import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import kd.bos.context.RequestContext;
 import kd.bos.dataentity.entity.DynamicObject;
-import kd.bos.form.field.TimeEdit;
 import kd.bos.form.gpt.IGPTAction;
 import kd.bos.orm.query.QCP;
 import kd.bos.orm.query.QFilter;
 import kd.bos.servicehelper.BusinessDataServiceHelper;
 import kd.bos.servicehelper.operation.SaveServiceHelper;
+import java.time.LocalTime;
+import java.time.temporal.ChronoUnit;
 
 import java.util.HashMap;
 import java.util.Map;
 
-public class GetSeatJsonString implements IGPTAction {
+public class GetSeatJsonStringFinal implements IGPTAction {
     @Override
     public Map<String, String> invokeAction(String action, Map<String, String> params) {
         Map<String, String> result = new HashMap<>();
@@ -49,18 +50,29 @@ public class GetSeatJsonString implements IGPTAction {
             QFilter qFilter1 = new QFilter("number", QCP.equals, seatid);
             DynamicObject dys_seat = BusinessDataServiceHelper.loadSingle("myg6_seat", new QFilter[]{qFilter1});
 
-            // 时间格式化
-            TimeEdit beginTime = new TimeEdit(resultJsonObject.getString("beginTime"));
-            TimeEdit endTime = new TimeEdit(resultJsonObject.getString("endTime"));
-            TimeEdit duringTime = new TimeEdit(resultJsonObject.getString("duringTime"));
+            // 获取时间
+            String beginnum = resultJsonObject.getString("beginTime");
+            String endnum = resultJsonObject.getString("endTime");
+
+            // Parse the time strings
+            LocalTime beginTime = LocalTime.parse(beginnum);
+            LocalTime endTime = LocalTime.parse(endnum);
+
+            // Calculate the seconds from the start of the day
+            long beginSeconds = ChronoUnit.SECONDS.between(LocalTime.MIDNIGHT, beginTime);
+            long endSeconds = ChronoUnit.SECONDS.between(LocalTime.MIDNIGHT, endTime);
+
+            // Assign the seconds back to the variables
+            beginnum = String.valueOf(beginSeconds);
+            endnum = String.valueOf(endSeconds);
+
             // 设置对应属性
             dynamicObject.set("number", sb1.toString());
             dynamicObject.set("creator", RequestContext.get().getCurrUserId());
             dynamicObject.set("myg6_basedatafield", dys_room);
             dynamicObject.set("myg6_basedatafield_seat", dys_seat);
-//            dynamicObject.set("myg6_timefield_start", beginTime);
-//            dynamicObject.set("myg6_timefield_end", endTime);
-//            dynamicObject.set("myg6_timefield_during", duringTime);
+            dynamicObject.set("myg6_timefield_start", beginnum);
+            dynamicObject.set("myg6_timefield_end", endnum);
 
             SaveServiceHelper.saveOperate("myg6_seat_apply", new DynamicObject[]{dynamicObject}, null);
             Long pkId = (Long) dynamicObject.getPkValue();

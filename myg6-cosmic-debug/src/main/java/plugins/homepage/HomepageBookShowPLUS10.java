@@ -1,12 +1,17 @@
 package plugins.homepage;
 
+import kd.bos.bill.BillShowParameter;
+import kd.bos.bill.OperationStatus;
 import kd.bos.dataentity.entity.DynamicObject;
 import kd.bos.entity.ListboxItem;
 import kd.bos.ext.form.control.Listbox;
+import kd.bos.form.ShowType;
+import kd.bos.form.control.Control;
 import kd.bos.form.control.Label;
 import kd.bos.form.control.events.ListboxClickListener;
 import kd.bos.form.control.events.ListboxEvent;
 import kd.bos.form.plugin.AbstractFormPlugin;
+import kd.bos.orm.query.QCP;
 import kd.bos.orm.query.QFilter;
 import kd.bos.servicehelper.BusinessDataServiceHelper;
 import org.apache.commons.lang3.StringUtils;
@@ -14,10 +19,12 @@ import org.apache.commons.lang3.StringUtils;
 import java.util.*;
 
 
-public class HomepageBookShowPLUS extends AbstractFormPlugin implements ListboxClickListener {
+public class HomepageBookShowPLUS10 extends AbstractFormPlugin implements ListboxClickListener {
 
     private final String LISTBOX = "myg6_listboxap";
     private List<String> bookTitles = new ArrayList<>();
+    private final String IMAGEID = "myg6_picturefield";
+    private final String LABELID = "myg6_labelap";
     private Map<String, Map<String, String>> booksInfo = new HashMap<>();
 
     private void init() {
@@ -26,6 +33,7 @@ public class HomepageBookShowPLUS extends AbstractFormPlugin implements ListboxC
         // Create an empty filter array (no filters)
         QFilter[] filters = new QFilter[0];
         // Load the data
+
         DynamicObject[] dys = BusinessDataServiceHelper.load("myg6_book_list", fields, filters);
         for (DynamicObject dy : dys) {
             String bookName = dy.getString("name");
@@ -78,8 +86,20 @@ public class HomepageBookShowPLUS extends AbstractFormPlugin implements ListboxC
 
     public void registerListener(EventObject event) {
         // 注册监听
+        super.registerListener(event);
         Listbox box = this.getView().getControl(LISTBOX);
         box.addListboxClickListener(this);
+        for (int i = 1;i <= 5;i++) {
+            this.addClickListeners(LABELID + "h" + i);
+            this.addClickListeners(LABELID + "n" + i);
+            this.addClickListeners(LABELID + "s" + i);
+        }
+        for (int i = 0;i < 5;i++) {
+            this.addClickListeners(IMAGEID + i);
+        }
+        for (int i = 1;i <= 10;i++) {
+            this.addClickListeners(IMAGEID + '0' + i);
+        }
     }
 
     @Override
@@ -96,10 +116,61 @@ public class HomepageBookShowPLUS extends AbstractFormPlugin implements ListboxC
         box.addItems(itemlist);
     }
 
+    public void click(EventObject evt) {
+        init();
+        System.out.println("ohyeah---------------\n");
+        for (String title : bookTitles) {
+            Map<String, String> info = booksInfo.get(title);
+            String coverUrl = info.keySet().iterator().next();
+            String borrowCountStr = info.values().iterator().next();
+            System.out.println("书名: " + title +
+                    ", 图像URL: " + coverUrl +
+                    ", 借阅次数: " + borrowCountStr);
+        }
+        System.out.println("\nohyeah---------------");
+
+        super.click(evt);
+        //获取被点击的控件对象
+        Control source = (Control) evt.getSource();
+        if (source != null) {
+            BillShowParameter billShowParameter = new BillShowParameter();
+            billShowParameter.setFormId("myg6_book_list");
+            billShowParameter.getOpenStyle().setShowType(ShowType.Modal);
+            billShowParameter.setStatus(OperationStatus.VIEW);
+
+            String bookname = "";
+            for(int i = 0;i < 5;i++) {
+                int t = i + 1;
+                if (StringUtils.equals(LABELID + "h1", source.getKey())) {
+                    System.out.println("fucki" + i);
+                    int j = 0;
+                    for (String title : bookTitles) {
+                        // 设置标签 -> url -> 借阅次数
+                        System.out.println("shit" + title);
+                        if (i == j) {
+                            bookname = title;
+                            System.out.println("sbsb" + bookname);
+                            QFilter qFilter = new QFilter("name", QCP.equals, bookname);
+                            DynamicObject bookitself = BusinessDataServiceHelper.loadSingle("myg6_book_list", new QFilter[]{qFilter});
+                            Long pkId = (Long) bookitself.getPkValue();
+                            System.out.println("fuck" + pkId);
+                            billShowParameter.setPkId(pkId);
+                            this.getView().showForm(billShowParameter);
+                            System.out.println("ass" + bookname);
+                            break;
+                        }  ++j;
+                    }
+                    //billShowParameter.setCustomParam("myg6_basedatafield_seat",KEY_PARAM + i);
+
+                    break;
+                }
+            }
+
+        }
+    }
     @Override
     public void listboxClick(ListboxEvent listboxEvent) {
         String cur = listboxEvent.getItemId();
-        this.getView().showSuccessNotification("当前点击菜单:" + listboxEvent.getItemId());
         if (StringUtils.equals(cur, "1")) {
             this.getView().setVisible(true, "myg6_hot");
             this.getView().setVisible(false, "myg6_new");

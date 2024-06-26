@@ -64,7 +64,6 @@ public class CreditScheFinal extends AbstractTask implements Plugin {
                 QFilter qFilter2 = new QFilter("myg6_textfield", QCP.equals, creator);
                 String fields2 = "myg6_textfield,myg6_integerfield,myg6_shixin";
                 DynamicObject credituser = BusinessDataServiceHelper.loadSingle("myg6_credibility_table", fields2, new QFilter[]{qFilter2});
-                System.out.println("fuck credituser: " + credituser);
 
                 // 分数 -20
                 String scoreString = credituser.getString("myg6_integerfield");

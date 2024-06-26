@@ -81,7 +81,6 @@ public class SeatSelectForm5 extends AbstractFormPlugin {
         super.click(evt);
         //获取被点击的控件对象
         Control source = (Control) evt.getSource();
-        System.out.println("shit" + source.getKey());
         if (source != null) {
             for(int i = 1;i <= 76;i++){
                 if (StringUtils.equals(KEY_WORK_ARRANGE + i, source.getKey())) {

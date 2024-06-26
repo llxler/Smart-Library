@@ -24,8 +24,7 @@ public class LookDishonesty extends AbstractFormPlugin implements Plugin {
         if (e.getItemKey().equalsIgnoreCase("myg6_buttonshixin")) {
             // 首先得到失信档案记录
             String txt = (String) this.getModel().getValue("myg6_shixin");
-            System.out.println("失信档案记录：" + txt);
-
+            if (txt == null) return;
             // 开始处理失信档案记录
             entryentitySetVal(txt);
         }

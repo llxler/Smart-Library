@@ -17,7 +17,7 @@ import kd.bos.form.plugin.AbstractFormPlugin;
  * 动态表单插件
  */
 
-public class SeatSelectBill1 extends AbstractFormPlugin {
+public class SeatSelectBill101 extends AbstractFormPlugin {
 
     //子页面的申请人标识
     private final String KEY_CREATOR = "creator";
@@ -48,15 +48,16 @@ public class SeatSelectBill1 extends AbstractFormPlugin {
 
         // 获取座位基础资料
         String seatId = showParameter.getCustomParam("myg6_basedatafield_seat");
+        if (seatId == null) return;
         QFilter qFilter = new QFilter("number", QCP.equals, seatId);
         DynamicObject goalSeat = BusinessDataServiceHelper.loadSingle("myg6_seat", new QFilter[]{qFilter});
         DynamicObject goalRoom = (DynamicObject) goalSeat.get("myg6_basedatafield");
-        System.out.println("fuck info: " + goalRoom);
 
         IDataModel parentModel = this.getView().getParentView().getModel();
         //给子页面相关属性赋值
         this.getModel().setValue("myg6_basedatafield_seat", goalSeat);
         this.getModel().setValue("myg6_basedatafield", goalRoom);
+
 //        this.getModel().setValue(KEY_ORG, parentModel.getValue(KEY_ORG));
 //        this.getModel().setValue(KEY_LEAVE_DAYS, parentModel.getValue(KEY_LEAVE_DAYS));
     }

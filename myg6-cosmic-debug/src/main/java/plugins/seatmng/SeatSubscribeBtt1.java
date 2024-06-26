@@ -23,19 +23,15 @@ public class SeatSubscribeBtt1 extends AbstractListPlugin {
 
             FormShowParameter baseShowParameter = new FormShowParameter();
             if (roomname.equals("一号自习室")) {
-                System.out.println("fuckyou1");
                 baseShowParameter.setFormId("myg6_house1_choose");
             }
             if (roomname.equals("二号自习室")) {
-                System.out.println("fuckyou2");
                 baseShowParameter.setFormId("myg6_house2_choose");
             }
             if (roomname.equals("三号自习室")) {
-                System.out.println("fuckyou3");
                 baseShowParameter.setFormId("myg6_house3_choose");
             }
             if (roomname.equals("四号自习室")) {
-                System.out.println("fuckyou4");
                 baseShowParameter.setFormId("myg6_house4_choose");
             }
              // 弹窗的对象
