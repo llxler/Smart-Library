@@ -161,11 +161,9 @@ public class HomepageBookShowPLUS10 extends AbstractFormPlugin implements Listbo
                         }  ++j;
                     }
                     //billShowParameter.setCustomParam("myg6_basedatafield_seat",KEY_PARAM + i);
-
                     break;
                 }
             }
-
         }
     }
     @Override

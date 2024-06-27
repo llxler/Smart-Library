@@ -16,6 +16,11 @@ import kd.cosmic.debug.tools.CosmicLauncher;
 public class DebugApplication {
 
     private static final String MY_IP = "10.21.204.111";
+
+    //这里是redis在本地的地址
+
+    private static final String REDIS_IP = "127.0.0.1:6379";
+
     public static void main(String[] args) {
 
 //    	Thread.currentThread().setContextClassLoader(new KDSecurityClassLoader(Thread.currentThread().getContextClassLoader()));
@@ -41,6 +46,9 @@ public class DebugApplication {
         cosmic.setCosmicWepPort(8881);
 //        cosmic.setDubboConfig(false, true, true);
         //开启轻分析
+        //打开redis设置
+        cosmic.setRedisConfig(REDIS_IP);
+
         cosmic.start();
     }
 }
