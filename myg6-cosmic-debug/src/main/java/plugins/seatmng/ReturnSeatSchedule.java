@@ -72,6 +72,8 @@ public class ReturnSeatSchedule extends AbstractTask {
                 seat.set("myg6_combofield", 0);
                 SaveServiceHelper.update(seat);
 
+                // TODO: 删除申请单
+
             } else {
                 System.out.println("跳过了这些");
                 System.out.println(single.getString("myg6_basedatafield"));
