@@ -51,7 +51,6 @@ public class NewsPolishFinal extends AbstractFormPlugin implements Plugin {
                 JSONObject jsonObjectData = jsonObjectResult.getJSONObject("data");
                 // 设置值
                 String s = jsonObjectData.getString("llmValue");
-                System.out.println("fuck " + s);
                 // 处理s
                 String[] paragraphs = s.split("\n");
 

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<w:document xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main">
+    <w:body>
+        <w:p>
+            <w:r>
+                <w:t>统计数据：</w:t>
+            </w:r>
+        </w:p>
+        <w:p>
+            <w:r>
+                <w:t><Book><Title>法律与文学:跨越边界的对话</Title><Category>法律类</Category><BorrowTime>2024-06-06 00:00:00.0</BorrowTime><ReturnTime>2024-06-08 00:00:00.0</ReturnTime><Status>0</Status></Book><Book><Title>计算机导论 专著</Title><Category>计算机类</Category><BorrowTime>2024-06-06 13:36:09.04</BorrowTime><ReturnTime>2024-07-05 00:00:00.0</ReturnTime><Status>1</Status></Book><Book><Title>概率论与数理统计</Title><Category>数学类</Category><BorrowTime>2024-06-07 00:00:00.0</BorrowTime><ReturnTime>2024-06-09 00:00:00.0</ReturnTime><Status>0</Status></Book><Book><Title>数学分析</Title><Category>数学类</Category><BorrowTime>2024-06-07 00:00:00.0</BorrowTime><ReturnTime>2024-06-19 00:00:00.0</ReturnTime><Status>1</Status></Book><Book><Title>解析几何</Title><Category></Category><BorrowTime>2024-06-06 00:00:00.0</BorrowTime><ReturnTime>2024-06-21 00:00:00.0</ReturnTime><Status>1</Status></Book><Book><Title>法律与文学:跨越边界的对话</Title><Category>法律类</Category><BorrowTime>2024-06-06 00:00:00.0</BorrowTime><ReturnTime>2024-06-08 00:00:00.0</ReturnTime><Status>1</Status></Book><Book><Title>线性代数</Title><Category></Category><BorrowTime>2024-06-06 00:00:00.0</BorrowTime><ReturnTime>2024-06-26 00:00:00.0</ReturnTime><Status>1</Status></Book><Book><Title>数学分析</Title><Category>数学类</Category><BorrowTime>2024-06-07 00:00:00.0</BorrowTime><ReturnTime>2024-06-19 00:00:00.0</ReturnTime><Status>1</Status></Book><Book><Title>基于哈佛框架和利润池理论的金蝶战略转型研究</Title><Category>产业类</Category><BorrowTime>2024-07-11 00:00:00.0</BorrowTime><ReturnTime>2024-08-29 00:00:00.0</ReturnTime><Status>1</Status></Book><Book><Title>基于哈佛框架和利润池理论的金蝶战略转型研究</Title><Category>产业类</Category><BorrowTime>2024-07-11 00:00:00.0</BorrowTime><ReturnTime>2024-08-29 00:00:00.0</ReturnTime><Status>0</Status></Book><Book><Title>概率论与数理统计</Title><Category>数学类</Category><BorrowTime>2024-06-07 00:00:00.0</BorrowTime><ReturnTime>2024-06-09 00:00:00.0</ReturnTime><Status>1</Status></Book></w:t>
+            </w:r>
+        </w:p>
+        <w:p>
+            <w:r>
+                <w:t>分析结果：</w:t>
+            </w:r>
+        </w:p>
+        <w:p>
+            <w:r>
+                <w:t>{{dayPrompt}}</w:t>
+            </w:r>
+        </w:p>
+    </w:body>
+</w:document>

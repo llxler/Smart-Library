@@ -126,7 +126,6 @@ public class HomepageBookShowPLUS extends AbstractFormPlugin implements ListboxC
                 boolean flag = false;
                 for (int i = 0;i < 5;++i) {
                     String label = "myg6_labelap" + (j == 0 ? "h" : j == 1 ? "n" : "s") + (i + 1);
-                    System.out.println("fuck label" + label);
                     if (StringUtils.equals(label, source.getKey())) {
                         flag = true;
                         String bookname = "";
@@ -175,7 +174,6 @@ public class HomepageBookShowPLUS extends AbstractFormPlugin implements ListboxC
                             }
                         }
                         // 找到了bookname
-                        System.out.println("fuck bookname" + bookname);
                         QFilter qFilter = new QFilter("name", QCP.equals, bookname);
                         DynamicObject bookitself = BusinessDataServiceHelper.loadSingle("myg6_book_list", new QFilter[]{qFilter});
                         Long pkId = (Long) bookitself.getPkValue();

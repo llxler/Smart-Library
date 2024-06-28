@@ -7,41 +7,48 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4436a5f8-a7fe-413a-ab09-538ca3d435d9" name="更改" comment="feat(adminfuns): add polish fun">
-      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202406/202406/myg6_admin_center/myg6_avtivity_pub/images/F5NrdpWq85Y2pD0ra3/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202406/202406/myg6_admin_center/myg6_avtivity_pub/images/MLIXZoJnWZNWisLfsi/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202406/202406/myg6_admin_center/myg6_avtivity_pub/images/PMJrt10rae3IbdJlZK/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202406/202406/myg6_admin_center/myg6_avtivity_pub/images/VZQuXM8wwy63HzbZlL/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202406/202406/myg6_admin_center/myg6_avtivity_pub/images/bYeI02pAGwvVl4zplF/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202406/202406/myg6_admin_center/myg6_avtivity_pub/images/e2okx7L6fEuG3FJxaZ/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202406/202406/myg6_admin_center/myg6_avtivity_pub/images/gFKsjgjMY13LfK57xp/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202406/202406/myg6_admin_center/myg6_avtivity_pub/images/pkyttUppa6VMx3DHFV/12E9C87D488F3CECB0CBDB1002D_52ED6DE1_83832.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202406/202406/myg6_admin_center/myg6_avtivity_pub/images/rrI8IE9QwOqN2daQH5/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202406/202406/myg6_admin_center/myg6_avtivity_pub/images/tSLNdAl7QvJzCE62eK/6D0625C0DA6241DC29F839BE5DB_1E889A6D_16306.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202406/202406/myg6_admin_center/myg6_avtivity_pub/images/w3LgZvqgUakvAQSCYu/3.png" afterDir="false" />
+    <list default="true" id="4436a5f8-a7fe-413a-ab09-538ca3d435d9" name="更改" comment="feat(homepg): add JumpCredit &amp;&amp; ActivityContain &amp;&amp; GetShelfData">
+      <change afterPath="$PROJECT_DIR$/filestorage/User/DayEvaluate/0410343303622625229518210655983.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/filestorage/User/DayEvaluate/1054083802516596721000555437383.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/filestorage/User/DayEvaluate/1806581315263188737234739801482.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/filestorage/User/DayEvaluate/2182025841518196455148578112870.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/filestorage/User/DayEvaluate/2643870831249172221493754655041.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/filestorage/User/DayEvaluate/2647208850584624519788736481222.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/filestorage/User/DayEvaluate/3128206061037572747111110237638.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/filestorage/User/DayEvaluate/4048821642025950198806740264207.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/filestorage/User/DayEvaluate/4081738603783749926239672782192.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/filestorage/User/DayEvaluate/5105221700018291910298176693033.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/filestorage/User/DayEvaluate/5301078751361211070522969248556.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/filestorage/User/DayEvaluate/5548812348121476144457716774696.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/filestorage/User/DayEvaluate/5813787851146065187762745450278.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/filestorage/User/DayEvaluate/6303471855389096060084208586928.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/filestorage/User/DayEvaluate/7366834307088535664809957735260.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/filestorage/User/DayEvaluate/7803080851071791984171844409101.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/filestorage/User/DayEvaluate/8044456272602359827142995317173.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/filestorage/User/DayEvaluate/8803885853481933989420022951594.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202406/bos/ide_controlschema/1982848436038283264/attachments/7be3ce8c3e414356824f0d08ac163eb9/clickbt.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202406/bos/ide_importresource/rc-upload-1719575143636-5/attachments/0bc9d3e5ef6b4a14a68df49e55c93e93/images.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202406/bos/ide_importresource/rc-upload-1719576037726-3/attachments/32588257e2f34db1b857eea482fcf52f/images.zip" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/logs/cosmic_out.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240628_0.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/PersonalLibrary/GetShelfData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/homepage/ActivityContain29.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/homepage/JumpCredit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/homepage/NewsTimeLine1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.6.3/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6.3/checksums/checksums.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/PersonalLibrary/DocGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/extendedfun/ExtendedFunctionOpen2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.6.3/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6.3/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.6.3/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6.3/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.6.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6.3/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.6.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6.3/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.6.3/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6.3/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/base/myg6-base-common/build/libs/myg6-base-common-1.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/base/myg6-base-common/build/libs/myg6-base-common-1.0.0.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/base/myg6-base-common/build/tmp/jar/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/base/myg6-base-common/build/tmp/jar/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/base/myg6-base-helper/build/libs/myg6-base-helper-1.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/base/myg6-base-helper/build/libs/myg6-base-helper-1.0.0.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/base/myg6-base-helper/build/tmp/jar/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/base/myg6-base-helper/build/tmp/jar/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/homepage/ActivityContain7.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/homepage/ActivityRendering14.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/homepage/ActivityRendering16.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/homepage/HomepageBookShowPLUS10.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/homepage/HomepageBookShowPLUS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/homepage/NewsTimeLine.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202405/bos/ide_controlschema/1961126346243440640/attachments/f168dadca0e948acb23d90cf8508ebaa/clickbt.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/PersonalLibrary/GetShelfData.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/PersonalLibrary/GetShelfDataFinal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/adminfuns/NewsPolishFinal.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/adminfuns/NewsPolishFinal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/homepage/ActivityContain29.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/homepage/ActivityContainFinal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/homepage/ActivityRendering16.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/homepage/ActivityRendering19.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/homepage/HomepageBookShowPLUS.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/homepage/HomepageBookShowPLUS.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -369,7 +376,7 @@
       <workItem from="1719453942189" duration="20000" />
       <workItem from="1719453975637" duration="17645000" />
       <workItem from="1719493815605" duration="6021000" />
-      <workItem from="1719537750944" duration="14253000" />
+      <workItem from="1719537750944" duration="30593000" />
     </task>
     <task id="LOCAL-00001" summary="refactor: modify the structure of the project">
       <option name="closed" value="true" />
@@ -603,7 +610,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719501671971</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="feat(homepg): add JumpCredit &amp;&amp; ActivityContain &amp;&amp; GetShelfData">
+      <option name="closed" value="true" />
+      <created>1719560446348</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1719560446348</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -649,7 +664,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="feat(rdhelper): add the function of evaluate plan" />
     <MESSAGE value="feat(bkmng): add the function of evaluate single book" />
     <MESSAGE value="feat(seatmng&amp;hmpg): add the function of generate seatapply and SearchPlugin" />
     <MESSAGE value="feat(seatmng): add the function of seatcount" />
@@ -674,7 +688,8 @@
     <MESSAGE value="feat: update some old fun &amp;&amp; add ListFilter" />
     <MESSAGE value="feat(main): add redis &amp;&amp; some imgs" />
     <MESSAGE value="feat(adminfuns): add polish fun" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(adminfuns): add polish fun" />
+    <MESSAGE value="feat(homepg): add JumpCredit &amp;&amp; ActivityContain &amp;&amp; GetShelfData" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(homepg): add JumpCredit &amp;&amp; ActivityContain &amp;&amp; GetShelfData" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
