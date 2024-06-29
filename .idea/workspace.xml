@@ -7,34 +7,35 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4436a5f8-a7fe-413a-ab09-538ca3d435d9" name="更改" comment="feat(homepg&amp;shelf&amp;extend): add shelfdoc &amp;&amp; ExtendedFunctionOpen &amp;&amp; HomepageBookShowPLUS">
-      <change afterPath="$PROJECT_DIR$/filestorage/User/DayEvaluate/347635566715273147133133852026.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202406/202406/myg6_admin_center/myg6_avtivity_pub/images/gWq93M0VGmhxRTnL6G/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202406/202406/myg6_admin_center/myg6_avtivity_pub/images/iu2r4pCStGpmjuoZ2T/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202406/202406/myg6_booksmanage/myg6_book_list/images/Rk6b33Mk6EZy5YeIKL/rjb封面.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202406/imglist/sm6xP8dytvou.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202406/imglist/sm6xP8dytvou_thumbnails_moblieImageList.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202406/imglist/vohTDMTdhnPc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202406/imglist/vohTDMTdhnPc_thumbnails_moblieImageList.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240629_0.log" afterDir="false" />
+    <list default="true" id="4436a5f8-a7fe-413a-ab09-538ca3d435d9" name="更改" comment="fix bugs">
+      <change afterPath="$PROJECT_DIR$/filestorage/User/DayEvaluate/6111466145512959393937692689048.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202406/202406/myg6_admin_center/myg6_avtivity_pub/images/OkU7A5kTEhJbtWMh0m/{CA5A7E5F-3D35-4D89-9073-69405B92A779}.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202406/202406/myg6_admin_center/myg6_avtivity_pub/images/QF9U4akIbkfOVY7HoU/免抠图片_1718284701658.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202406/202406/myg6_seat_reservation/myg6_room/images/K6hzFutGgRvBFxkqtA/room4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202406/202406/myg6_seat_reservation/myg6_room/images/U7PdpkCgtuPPL9VBub/room1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202406/202406/myg6_seat_reservation/myg6_room/images/zvYCMThND9rQeHzSvz/room3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202406/bos/ide_importresource/rc-upload-1719645478552-3/attachments/c7571289de8f4cf6a5c6f098cb35ce02/images.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202406/gai/gai_repo_info/1983576720665489408/attachments/df317c3012f8495c8bde2c9b38fe4ddf/西游记.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202406/gai/gai_repo_info/1983576720665489409/attachments/087f49956c774e6ebacd5f71ecf56262/活着.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/homepage/GetSeatinfoSuper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.6.3/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6.3/checksums/checksums.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.6.3/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6.3/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.6.3/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6.3/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.6.3/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6.3/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.6.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6.3/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.6.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6.3/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.6.3/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6.3/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/base/myg6-base-common/build/libs/myg6-base-common-1.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/base/myg6-base-common/build/libs/myg6-base-common-1.0.0.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/base/myg6-base-common/build/tmp/jar/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/base/myg6-base-common/build/tmp/jar/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/base/myg6-base-helper/build/libs/myg6-base-helper-1.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/base/myg6-base-helper/build/libs/myg6-base-helper-1.0.0.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/base/myg6-base-helper/build/tmp/jar/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/base/myg6-base-helper/build/tmp/jar/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/CreditSystem/CreditScheFinal.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/CreditSystem/Creditschedule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/PersonalLibrary/AfterBorrowBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/PersonalLibrary/Afterborrowbook.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/adminfuns/NewsPolishFinal.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/adminfuns/NewsPolish1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/homepage/ActivityContainFinal.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/homepage/ActivityContain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202406/202406/myg6_seat_reservation/myg6_room/images/9qpLOU4XwoklblrVpu/4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202406/202406/myg6_seat_reservation/myg6_room/images/A7nsB61bfK4tlB1HF2/3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202406/202406/myg6_seat_reservation/myg6_room/images/W6I1WwYNeEuw35HqOC/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/PersonalLibrary/DocGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/PersonalLibrary/DocGeneratorFinal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/extendedfun/MindMap_GPT_Final.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/extendedfun/MindMap_GPT.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -366,7 +367,7 @@
       <workItem from="1719579359380" duration="934000" />
       <workItem from="1719627089657" duration="514000" />
       <workItem from="1719627799702" duration="1168000" />
-      <workItem from="1719630418704" duration="8263000" />
+      <workItem from="1719630418704" duration="14765000" />
     </task>
     <task id="LOCAL-00001" summary="refactor: modify the structure of the project">
       <option name="closed" value="true" />
@@ -616,7 +617,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719579528507</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="fix bugs">
+      <option name="closed" value="true" />
+      <created>1719659852264</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1719659852264</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -662,7 +671,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="feat(seatmng&amp;hmpg): add the function of generate seatapply and SearchPlugin" />
     <MESSAGE value="feat(seatmng): add the function of seatcount" />
     <MESSAGE value="fix(seatmng): fix the bug of seatcount" />
     <MESSAGE value="feat: add PersonLibrary" />
@@ -687,7 +695,8 @@
     <MESSAGE value="feat(adminfuns): add polish fun" />
     <MESSAGE value="feat(homepg): add JumpCredit &amp;&amp; ActivityContain &amp;&amp; GetShelfData" />
     <MESSAGE value="feat(homepg&amp;shelf&amp;extend): add shelfdoc &amp;&amp; ExtendedFunctionOpen &amp;&amp; HomepageBookShowPLUS" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(homepg&amp;shelf&amp;extend): add shelfdoc &amp;&amp; ExtendedFunctionOpen &amp;&amp; HomepageBookShowPLUS" />
+    <MESSAGE value="fix bugs" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix bugs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
