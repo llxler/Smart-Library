@@ -104,18 +104,6 @@ public class ActivityContain extends AbstractFormPlugin {
             controlsMap = new HashMap<>();
             String texti = newsInfo.get(da).keySet().iterator().next();
 
-//            texti = "." + texti + "     ";
-//            int t = (44 - texti.length()) * 3;
-//            for(int p = 0; p < texti.length(); p++) {
-//                if(!isChinese(texti.charAt(p))) t += 2;
-//            }
-//            for(int k = 0;k < t - 1;k++)    texti += " ";
-//            texti += ".";
-//            String tt = "字字字字字字字字字字字字字字字字字字字字字字字字字字字字字字字字字字字字字字字";
-//            System.out.println("shit" + tt + "shit");
-//            System.out.println(tt.length());
-//            System.out.println("shit" + texti + "shit");
-
             SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
             String strDate = formatter.format(da);
             String urli = newsInfo.get(da).values().iterator().next();
@@ -124,7 +112,7 @@ public class ActivityContain extends AbstractFormPlugin {
 
             propsMap = new HashMap<>();
             propsMap.put("text", strDate.substring(0, 10));
-//            System.out.println("fuck" + dates[i] + i);
+
             controlsMap.put("myg6_labeltime", propsMap);
 
             propsMap = new HashMap<>();

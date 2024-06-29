@@ -29,7 +29,6 @@ public class GetSeatinfoSuper extends AbstractFormPlugin implements Plugin {
 
         for (DynamicObject dy : dys) {
             String seatnumber = dy.getString("number");
-            System.out.println("fuck " + seatnumber);
             if (!seatnumber.startsWith("S0000")) continue;
             String state = dy.getString("myg6_combofield");
             if (StringUtil.equals(state, "0")) {
@@ -41,6 +40,5 @@ public class GetSeatinfoSuper extends AbstractFormPlugin implements Plugin {
         String title = "座位预约 " + count + "/" + sum + " 座";
         Label labeltitle = this.getView().getControl("myg6_labelap51");
         labeltitle.setText(title);
-
     }
 }

@@ -33,7 +33,6 @@ public class ExtendedFunctionOpen2 extends AbstractFormPlugin implements Plugin 
         if (source != null) {
             for(int i = 1;i <= 4;i++){
                 if (StringUtils.equals(FLEXID + i, source.getKey())) {
-                    System.out.println("fuck2");
                     FormShowParameter billShowParameter = new FormShowParameter();
                     if(i == 1)
                         billShowParameter.setFormId("myg6_kgview");
@@ -41,7 +40,6 @@ public class ExtendedFunctionOpen2 extends AbstractFormPlugin implements Plugin 
                         billShowParameter.setFormId("myg6_functions");
 
                     billShowParameter.getOpenStyle().setShowType(ShowType.Modal);
-                    System.out.println("fuck3");
                     this.getView().showForm(billShowParameter);
                     break;
                 }

@@ -13,7 +13,6 @@ public class GetShelfDataFinal implements IGPTAction {
     public Map<String, String> invokeAction(String action, Map<String, String> params) {
         Map<String , String> result = new HashMap<>();
         if ("GET_USER_DATA".equalsIgnoreCase(action)) {
-            System.out.println("fuck task begin");
             // 获取DynamicObject列表
             String fields = "myg6_basedatafield,myg6_textfield,myg6_datefield,myg6_datefield1,myg6_billstatusfield";
             // Create an empty filter array (no filters)
@@ -24,7 +23,6 @@ public class GetShelfDataFinal implements IGPTAction {
             JSONArray jsonArrayTaskList = new JSONArray();
             //循环日任务表单
             for (DynamicObject single : dynamicObjectArray) {
-                System.out.println("Fuck info" + single);
                 JSONArray jsonArray = new JSONArray();
                 // 添加数据
                 DynamicObject book = single.getDynamicObject("myg6_basedatafield");
@@ -37,7 +35,6 @@ public class GetShelfDataFinal implements IGPTAction {
             }
             // 将获取到的当日任务数据和近三日任务数据放入map
             result.put("statisticsData", jsonArrayTaskList.toJSONString());
-            System.out.println("fuck result" + result);
         }
         return result;
     }
