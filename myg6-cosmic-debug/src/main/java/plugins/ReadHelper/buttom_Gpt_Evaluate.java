@@ -81,7 +81,6 @@ public class buttom_Gpt_Evaluate extends AbstractFormPlugin implements Plugin {
                 txt += idx + ". " + "图书名称:" + bookName + "阅读难度:" + diff + "实际阅读天数:" + realDays + "\n";
                 ++idx;
             }
-            System.out.println("fuck " + txt);
 
             IFrame iframe = this.getView().getControl("myg6_frame_echarts");
             IFrameMessage message = new IFrameMessage();
