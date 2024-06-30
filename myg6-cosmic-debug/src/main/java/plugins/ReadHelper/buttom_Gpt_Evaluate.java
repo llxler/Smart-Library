@@ -78,13 +78,14 @@ public class buttom_Gpt_Evaluate extends AbstractFormPlugin implements Plugin {
                 int days = single.getInt("myg6_plan_time");
                 int diff = single.getInt("myg6_diff");
                 int realDays = single.getInt("myg6_completed_time");
-                txt += idx + ". " + "图书名称:" + bookName + "阅读难度:" + diff + "实际阅读天数:" + realDays + "\n";
+                txt += idx + ". " + "图书名称:" + bookName + "阅读天数:" + days + "阅读难度:" + diff + "实际阅读天数:" + realDays + "\n";
                 ++idx;
             }
+            System.out.println("fuck info2" + txt);
 
             IFrame iframe = this.getView().getControl("myg6_frame_echarts");
             IFrameMessage message = new IFrameMessage();
-            message.setType("plan");
+            message.setType("plan:over");
             message.setContent(txt);
             message.setOrigin("*");
             iframe.postMessage(message);
