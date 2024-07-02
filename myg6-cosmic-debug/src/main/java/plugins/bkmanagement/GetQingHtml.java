@@ -68,9 +68,9 @@ public class GetQingHtml implements IGPTAction {
                     "            { name: \"计算机导论 专著\", value: 4 },\n" +
                     "            { name: \"计算机导论 专著\", value: 4 },\n" +
                     "            { name: \"计算机导论 专著\", value: 3 },\n" +
-                    "            { name: \"法律与文学:跨越边界的对话\", value: 5 },\n" +
-                    "            { name: \"法律与文学:跨越边界的对话\", value: 2 },\n" +
-                    "            { name: \"法律与文学:跨越边界的对话\", value: 2 },\n" +
+                    "            { name: \"法律与文学\", value: 5 },\n" +
+                    "            { name: \"法律与文学\", value: 2 },\n" +
+                    "            { name: \"法律与文学\", value: 2 },\n" +
                     "            { name: \"金蝶K/3\", value: 5 },\n" +
                     "            { name: \"金蝶K/3\", value: 5 },\n" +
                     "            { name: \"金蝶K/3\", value: 5 },\n" +
