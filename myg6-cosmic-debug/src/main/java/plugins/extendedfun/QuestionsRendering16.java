@@ -14,8 +14,7 @@ import java.util.*;
 /**
  * 动态表单插件
  */
-public class QuestionsRendering11 extends AbstractFormPlugin implements Plugin {
-
+public class QuestionsRendering16 extends AbstractFormPlugin implements Plugin {
     @Override
     public void registerListener(EventObject e) {
         super.registerListener(e);
@@ -85,7 +84,7 @@ public class QuestionsRendering11 extends AbstractFormPlugin implements Plugin {
         String ques = getPageCache().get("questions");
         List<String> quesList = SerializationUtils.fromJsonString(ques, List.class);
 
-        String ans = getPageCache().get("questions");
+        String ans = getPageCache().get("answers");
         List<String> ansList = SerializationUtils.fromJsonString(ans, List.class);
 
         String myans = getPageCache().get("myans");
@@ -97,19 +96,18 @@ public class QuestionsRendering11 extends AbstractFormPlugin implements Plugin {
 
         if (myans == null) {
 
-        } else if(myans.getClass().getName().equals("java.lang.String")) {
-
+        } else if (myans.startsWith("[")) {
+            //System.out.println("shit" + myans.getClass().getName());
+            myansList = SerializationUtils.fromJsonString(myans, List.class);
+        } else {
             myansarr[0] = myans;
             myansList = SerializationUtils.fromJsonString(SerializationUtils.toJsonString(myansarr), List.class);
-        } else {
-            System.out.println("shit" + myans.getClass().getName());
-            myansList = SerializationUtils.fromJsonString(myans, List.class);
         }
-
+        System.out.println("fuck" + myansList);
         String idxString = getPageCache().get("index");
         int idx = Integer.parseInt(idxString);
-        idx++;
-        if (idx == ques.length()) {
+        //System.out.println("index value" + idx);
+        if (idx == quesList.size() - 1) {
             this.getView().setVisible(false, "btnok");
             this.getView().setVisible(true, "myg6_btnok");
         } else {
@@ -117,19 +115,28 @@ public class QuestionsRendering11 extends AbstractFormPlugin implements Plugin {
             this.getView().setVisible(false, "myg6_btnok");
         }
 
+        System.out.println("--------------------");
         if (StringUtils.equals("btnok", source.getKey())) {
             // 塞旧答案
             String nowans = (String) this.getModel().getValue("myg6_largetextfield");
+
             myansList.add(nowans);
             getPageCache().put("myans", SerializationUtils.toJsonString(myansList));
+            this.getModel().setValue("myg6_largetextfield","");
             // 拿出新问题
-            String newque = quesList.get(idx - 1);
+            String newque = quesList.get(idx);
             Label questionLabel = this.getView().getControl("myg6_question");
             questionLabel.setText(newque);
             // 更新序号
-            getPageCache().put("index", String.valueOf(idx));
-        } else if (StringUtils.equals("myg6_btnok", source.getKey())) {
+            getPageCache().put("index", String.valueOf(idx + 1));
 
+        } else if (StringUtils.equals("myg6_btnok", source.getKey())) {
+            String nowans = (String) this.getModel().getValue("myg6_largetextfield");
+            myansList.add(nowans);
+            System.out.println("_________data_init_______________");
+            System.out.println(myansList);
+            System.out.println(ansList);
+            System.out.println(quesList);
         }
     }
 }

@@ -7,37 +7,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4436a5f8-a7fe-413a-ab09-538ca3d435d9" name="更改" comment="feat(homepg): show echarts into the homepg">
-      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202407/202407/myg6_booksmanage/myg6_book_list/images/1UsIPiO2VYFcyTK6F7/数学分析.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202407/202407/myg6_booksmanage/myg6_book_list/images/5VhY6wfgbk8J3jPSuE/游戏学导论.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202407/202407/myg6_booksmanage/myg6_book_list/images/6PUKbZaylFJk3AmePN/深度学习入门封面.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202407/202407/myg6_booksmanage/myg6_book_list/images/6lV0aj52VBiJi6fidA/游戏学导论.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202407/202407/myg6_booksmanage/myg6_book_list/images/6mt7AmQ4XGkFaxueo9/复变封面.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202407/202407/myg6_booksmanage/myg6_book_list/images/F1gjyHqDKV0FrVwUqM/概率论封面.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202407/202407/myg6_booksmanage/myg6_book_list/images/I8VFovlEfEwwNM7A5R/高等数学.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202407/202407/myg6_booksmanage/myg6_book_list/images/JvuSox99MubAv9azje/计算机导论.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202407/202407/myg6_booksmanage/myg6_book_list/images/Kiwt8smqyBBGnfVZl3/解析几何封面.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202407/202407/myg6_booksmanage/myg6_book_list/images/NFIH8XSNbqfyF6NfYb/解析几何封面.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202407/202407/myg6_booksmanage/myg6_book_list/images/OpRmuoDoti1FheYwGU/线性代数.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202407/202407/myg6_booksmanage/myg6_book_list/images/VI7R9ZJxKDe35QFjOO/法律与文学封面.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202407/202407/myg6_booksmanage/myg6_book_list/images/VOkL9A06N5ySBOPUKX/红楼梦封面.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202407/202407/myg6_booksmanage/myg6_book_list/images/Wz3B6ViJuHbE4DEl71/法律与文学封面.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202407/202407/myg6_booksmanage/myg6_book_list/images/hrkOrjMgkY5v7qkc9C/游戏学导论.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202407/202407/myg6_booksmanage/myg6_book_list/images/j2zH24u8PkQqGtGbhn/活着封面.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202407/202407/myg6_booksmanage/myg6_book_list/images/lk7SBq6ftiXoQGTBrE/高等代数封面.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202407/202407/myg6_booksmanage/myg6_book_list/images/seP1Ent8s77xnsEOdT/大学计算机.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202407/202407/myg6_booksmanage/myg6_book_list/images/tm2XQ9k1k48C5WxFYj/线性代数.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202407/202407/myg6_booksmanage/myg6_book_list/images/w6iyZfAhZPZePsdPgl/高等代数封面.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202407/bos/ide_importresource/rc-upload-1719919432404-3/attachments/4ba6823513704ff59b8b3b0b1374a367/images.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202407/myg6_booksmanage/myg6_book_list/0/images/6JK5pPOY/平凡的世界.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202407/myg6_booksmanage/myg6_book_list/0/images/RAGVsBFM/三体.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202407/myg6_booksmanage/myg6_book_list/0/images/jkeqvY6B/活着.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202407/myg6_booksmanage/myg6_book_list/0/images/sivtyWdr/白鹿原.png" afterDir="false" />
+    <list default="true" id="4436a5f8-a7fe-413a-ab09-538ca3d435d9" name="更改" comment="update">
       <change afterPath="$PROJECT_DIR$/logs/cosmic_out.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240702_0.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240702_1.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/extendedfun/QAbot3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/extendedfun/QuestionsRendering9.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.6.3/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6.3/checksums/checksums.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.6.3/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6.3/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.6.3/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6.3/executionHistory/executionHistory.bin" afterDir="false" />
@@ -51,11 +22,7 @@
       <change beforePath="$PROJECT_DIR$/base/myg6-base-common/build/tmp/jar/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/base/myg6-base-common/build/tmp/jar/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/base/myg6-base-helper/build/libs/myg6-base-helper-1.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/base/myg6-base-helper/build/libs/myg6-base-helper-1.0.0.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/base/myg6-base-helper/build/tmp/jar/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/base/myg6-base-helper/build/tmp/jar/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202405/202405/myg6_booksmanage/myg6_book_list/images/ymuhJKgs2LYFdU1Bmv/大计机.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202406/202406/myg6_booksmanage/myg6_book_list/images/ZNA1WE8Md0Nw7AYF4L/深度学习封面.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202406/202406/myg6_booksmanage/myg6_book_list/images/y0CQGvKlaAyTYCW1CO/复变.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/CreditSystem/LookDishonesty.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/CreditSystem/Lookdisonesty1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/bkmanagement/GetQingHtml.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/bkmanagement/GetQingHtml.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/extendedfun/QuestionsRendering11.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/extendedfun/QuestionsRendering15.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -400,7 +367,7 @@
       <workItem from="1719832992825" duration="2502000" />
       <workItem from="1719836082855" duration="4839000" />
       <workItem from="1719847612253" duration="1589000" />
-      <workItem from="1719884372767" duration="26050000" />
+      <workItem from="1719884372767" duration="27952000" />
     </task>
     <task id="LOCAL-00001" summary="refactor: modify the structure of the project">
       <option name="closed" value="true" />
@@ -746,7 +713,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719891628952</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="update">
+      <option name="closed" value="true" />
+      <created>1719931208569</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1719931208569</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -792,7 +767,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="fix(seatmng): fix the function of Alert" />
     <MESSAGE value="feat(extendfuns): add the module of KgView!" />
     <MESSAGE value="feat(extendfuns): add the module of bookforum" />
     <MESSAGE value="feat(base): change the ip of enviroment" />
@@ -817,7 +791,8 @@
     <MESSAGE value="fix(planEchart): fix the String type" />
     <MESSAGE value="feat(extendfuns): add FaceSearch &amp;&amp; PlanEchart" />
     <MESSAGE value="feat(homepg): show echarts into the homepg" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(homepg): show echarts into the homepg" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
