@@ -17,7 +17,7 @@ import com.alibaba.fastjson.JSONObject;
 /**
  * 动态表单插件
  */
-public class PlanEchart2 extends AbstractFormPlugin implements Plugin {
+public class PlanEchart extends AbstractFormPlugin implements Plugin {
     @Override
     public void beforeBindData(EventObject e) {
         super.beforeBindData(e);
@@ -51,7 +51,6 @@ public class PlanEchart2 extends AbstractFormPlugin implements Plugin {
                 txt += idx + ". " + "图书名称:" + bookName + " 阅读天数:" + days + "\n";
                 ++idx;
             }
-            System.out.println("fuck" + txt);
 
             // 解析日期
             String[] lines = txt.split("\n");

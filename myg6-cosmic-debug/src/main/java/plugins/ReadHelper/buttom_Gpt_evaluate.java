@@ -1,5 +1,6 @@
 package plugins.ReadHelper;
 
+import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import kd.bos.dataentity.entity.DynamicObjectCollection;
@@ -22,7 +23,7 @@ import java.util.Map;
 /**
  * 动态表单插件
  */
-public class buttom_Gpt_Evaluate extends AbstractFormPlugin implements Plugin {
+public class buttom_Gpt_evaluate extends AbstractFormPlugin implements Plugin {
     @Override
     public void registerListener(EventObject e) {
         // 注册点击事件
@@ -76,17 +77,38 @@ public class buttom_Gpt_Evaluate extends AbstractFormPlugin implements Plugin {
             for (DynamicObject single : rows) {
                 String bookName = single.getString("myg6_bookname");
                 int days = single.getInt("myg6_plan_time");
-                int diff = single.getInt("myg6_diff");
                 int realDays = single.getInt("myg6_completed_time");
-                txt += idx + ". " + "图书名称:" + bookName + "阅读天数:" + days + "阅读难度:" + diff + "实际阅读天数:" + realDays + "\n";
+                txt += idx + ". " + "图书名称:" + bookName + " 阅读天数:" + days + " 实际阅读天数:" + realDays + "\n";
                 ++idx;
             }
-            System.out.println("fuck info2" + txt);
+
+            JSONArray booksArray = new JSONArray();
+            // 解析每本书的信息
+            String[] lines = txt.split("\n");
+            for (String line : lines) {
+                String[] parts = line.split("图书名称:|阅读天数:|实际阅读天数:");
+                String bookName = parts[1].trim();
+                int plannedReadingDays = Integer.parseInt(parts[2].trim());
+                int actualReadingDays = Integer.parseInt(parts[3].trim());
+
+                // 创建 JSON 对象
+                JSONObject bookObject = new JSONObject();
+                bookObject.put("书名", bookName);
+                bookObject.put("计划天数", plannedReadingDays);
+                bookObject.put("实际天数", actualReadingDays);
+
+                // 添加到 JSON 数组
+                booksArray.add(bookObject);
+            }
+
+            // 转换为 JSON 字符串
+            String jsonString = JSON.toJSONString(booksArray, true);
+            System.out.println("info json" + jsonString);
 
             IFrame iframe = this.getView().getControl("myg6_frame_echarts");
             IFrameMessage message = new IFrameMessage();
             message.setType("plan:over");
-            message.setContent(txt);
+            message.setContent(jsonString);
             message.setOrigin("*");
             iframe.postMessage(message);
         }
