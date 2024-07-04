@@ -197,7 +197,6 @@ public class HomepageBookShow extends AbstractFormPlugin implements ListboxClick
             this.getView().setVisible(false, "myg6_new");
             this.getView().setVisible(true, "myg6_small");
         }
-
     }
     // bookName -> label, Url -> model, 借阅次数 -> 次数
     private void setHot() {

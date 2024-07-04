@@ -40,8 +40,6 @@ public class GetSeatJsonString implements IGPTAction {
                 sb1.append(c);
             }
 
-            System.out.println("fuck all info" + resultJsonObject);
-
             // 提炼出json里面的自习室dys
             String roomid = resultJsonObject.getString("roomid");
             QFilter qFilter = new QFilter("name", QCP.equals, roomid);
@@ -67,10 +65,6 @@ public class GetSeatJsonString implements IGPTAction {
             // Assign the seconds back to the variables
             beginnum = String.valueOf(beginSeconds);
             endnum = String.valueOf(endSeconds);
-
-            System.out.println("fuck room" + dys_room);
-            System.out.println("fuck seat" + dys_seat);
-
 
             // 设置对应属性
             dynamicObject.set("number", sb1.toString());
