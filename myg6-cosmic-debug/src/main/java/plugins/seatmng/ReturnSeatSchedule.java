@@ -1,5 +1,6 @@
 package plugins.seatmng;
 
+import com.alibaba.druid.util.StringUtils;
 import kd.bos.context.RequestContext;
 import kd.bos.dataentity.entity.DynamicObject;
 import kd.bos.dataentity.entity.LocaleString;
@@ -7,7 +8,6 @@ import kd.bos.exception.KDException;
 import kd.bos.orm.query.QFilter;
 import kd.bos.schedule.executor.AbstractTask;
 import kd.bos.servicehelper.BusinessDataServiceHelper;
-import kd.bos.servicehelper.operation.DeleteServiceHelper;
 import kd.bos.servicehelper.operation.SaveServiceHelper;
 import kd.bos.servicehelper.user.UserServiceHelper;
 import kd.bos.servicehelper.workflow.MessageCenterServiceHelper;
@@ -36,7 +36,16 @@ public class ReturnSeatSchedule extends AbstractTask {
         for (DynamicObject single : dys) {
             System.out.println("auto task info");
             String billNo = single.getString("number");
-            if (billNo.startsWith("A00") && !billNo.equals("A000037")) {
+            if (billNo == null) continue;
+            if (billNo.startsWith("A0000") && !billNo.equals("A000037")) {
+                System.out.println("now fuck" + billNo + single);
+                // 获取该座位名称
+                DynamicObject seat = (DynamicObject) single.get("myg6_basedatafield_seat");
+                String seatState = seat.getString("myg6_combofield");
+
+                // 如果已经是空闲状态了, 则跳过
+                if (StringUtils.equals(seatState, "0")) continue;
+
                 // 获取该座位的结束时间
                 String edTime = single.getString("myg6_timefield_end");
                 System.out.println("edTime info" + edTime);
@@ -57,23 +66,21 @@ public class ReturnSeatSchedule extends AbstractTask {
 
                 if (endyeah.isAfter(nowyeah)) continue;
 
-                // 获取该座位名称
-                DynamicObject seat = (DynamicObject) single.get("myg6_basedatafield_seat");
-                String seatState = seat.getString("myg6_combofield");
-                
-                // 如果已经是空闲状态了, 则跳过
-                if (seatState == "0") continue;
-
                 String seatNumber = seat.getString("number");
                 System.out.println("seatName info" + seatNumber);
 
                 // 添加信息, 并修改座位的状态为可用
                 info += seatNumber + "\n";
                 seat.set("myg6_combofield", 0);
+
+                // 对应的自习室座位+1
+                DynamicObject room = (DynamicObject) single.get("myg6_basedatafield");
+                if (room == null) continue;
+                int seatNum = room.getInt("myg6_integerfield1");
+                room.set("myg6_integerfield1", seatNum + 1);
+
+                SaveServiceHelper.update(room);
                 SaveServiceHelper.update(seat);
-
-                // TODO: 删除申请单
-
             } else {
                 System.out.println("跳过了这些");
                 System.out.println(single.getString("myg6_basedatafield"));

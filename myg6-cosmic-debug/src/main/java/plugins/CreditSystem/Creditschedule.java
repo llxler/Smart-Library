@@ -98,7 +98,7 @@ public class Creditschedule extends AbstractTask implements Plugin {
         // 发送站内消息
         MessageInfo messageInfo = new MessageInfo();
         LocaleString title = new LocaleString();
-        title.setLocaleValue_zh_CN("座位逾期提示");
+        title.setLocaleValue_zh_CN("图书逾期提示");
         messageInfo.setMessageTitle(title);
         LocaleString content = new LocaleString();
         content.setLocaleValue_zh_CN(info);
