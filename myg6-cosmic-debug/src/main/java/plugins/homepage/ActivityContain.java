@@ -34,9 +34,7 @@ public class ActivityContain extends AbstractFormPlugin {
         if ("myg6_messagecarouselconta".equals(key)) {
             int index = ((Integer) evt.getParamsMap().get("rowKey")).intValue();
             String data = getPageCache().get("data");
-            if (StringUtils.isEmpty(data))
-                return;
-
+            if (StringUtils.isEmpty(data)) return;
             List<Map<String, Object>> msgList = SerializationUtils.fromJsonString(data, List.class);
             Map<String, Object> dataMap = msgList.get(index);
             Map<String, Object> propMap = (Map<String, Object>) dataMap.get("myg6_labeltext");
@@ -47,15 +45,12 @@ public class ActivityContain extends AbstractFormPlugin {
             billShowParameter.getOpenStyle().setShowType(ShowType.Modal);
 
             billShowParameter.setCustomParam("openTitle", propMap.get("text"));
-            System.out.println("woshisb" + propMap.get("text"));
             //弹出表单和本页面绑定
             this.getView().showForm(billShowParameter);
-
-
         }
     }
 
-    private static final String MY_IP = "10.21.204.111";
+    private static final String MY_IP = "127.0.0.1";
     @Override
     public void beforeBindData(EventObject e) {
         // TODO Auto-generated method stub
@@ -88,12 +83,6 @@ public class ActivityContain extends AbstractFormPlugin {
             newsDate = newsDate.subList(0, 3);
         }
         Collections.reverse(newsDate);
-        // 图片控件url数组
-        //String[] urls = new String[] {"isv/myg6/globalimgs/images/书香筑梦图片.png?v=1.0","isv/myg6/globalimgs/images/书香筑梦图片.png?v=1.0","isv/myg6/globalimgs/images/书香筑梦图片.png?v=1.0","isv/myg6/globalimgs/images/书香筑梦图片.png?v=1.0","isv/myg6/globalimgs/images/书香筑梦图片.png?v=1.0","isv/myg6/globalimgs/images/书香筑梦图片.png?v=1.0"};
-        // 标签控件显示内容数组
-        //String[] texts = new String[] {"字字字字字字字字字字字字字字字字字字字字字字字字字字字字字字字字字字字字字字字", "点击我！！！！！！---2", "点击我！！！！！！---3","点击我！！！！！！---4", "点击我！！！！！！---5", "点击我！！！！！！---6"};
-        //String[] dates = new String[] {"2020-01-01", "2020-01-02", "2020-01-03","2020-01-01", "2020-01-02", "2020-01-03"};
-        // 放内容map
         Map<String, Object> propsMap = null;
         // 控件map，key为控件类型
         Map<String, Object> controlsMap = null;

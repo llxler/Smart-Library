@@ -67,8 +67,6 @@ public class QAbot extends AbstractFormPlugin implements Plugin {
                 // 设置值
                 String getInfo = jsonObjectData.getString("llmValue");
 
-                System.out.println("fuck info" + getInfo);
-
                 FormShowParameter billShowParameter = new FormShowParameter();
                 billShowParameter.setFormId("myg6_questions_render");
                 billShowParameter.setCaption("请开始答题~");

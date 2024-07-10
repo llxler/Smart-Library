@@ -90,9 +90,6 @@ public class BookAnal extends AbstractFormPlugin implements Plugin {
             // Convert the JSONObject to a JSON string
             String jsonString = JSON.toJSONString(jsonObject, true);
 
-            // Print the JSON string
-            System.out.println("fuck json" + jsonString);
-
             IFrame iframe = this.getView().getControl("myg6_frame_echarts");
             IFrameMessage message = new IFrameMessage();
 

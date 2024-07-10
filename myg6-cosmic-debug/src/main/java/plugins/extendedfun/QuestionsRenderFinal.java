@@ -224,7 +224,6 @@ public class QuestionsRenderFinal extends AbstractFormPlugin implements Plugin {
             // 去掉固定标识符部分
             finalGet = finalGet.replace("```json\n", "").replace("```", "").trim();
             JSONArray jsonArray = JSONArray.parseArray(finalGet);
-            System.out.println("fuck fuck fuck" + jsonArray);
             for (int i = 0; i < quesList.size(); i++) {
                 JSONObject jsonObject = jsonArray.getJSONObject(i);
                 String question = quesList.get(i);
@@ -254,8 +253,6 @@ public class QuestionsRenderFinal extends AbstractFormPlugin implements Plugin {
                 }
             }
             qaJson1.append("]");
-
-            System.out.println("fuck final JSON: " + qaJson1);
 
             // Pass to next page
             FormShowParameter billShowParameter = new FormShowParameter();

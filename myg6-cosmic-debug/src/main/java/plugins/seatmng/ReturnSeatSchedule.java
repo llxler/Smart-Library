@@ -38,7 +38,6 @@ public class ReturnSeatSchedule extends AbstractTask {
             String billNo = single.getString("number");
             if (billNo == null) continue;
             if (billNo.startsWith("A0000") && !billNo.equals("A000037")) {
-                System.out.println("now fuck" + billNo + single);
                 // 获取该座位名称
                 DynamicObject seat = (DynamicObject) single.get("myg6_basedatafield_seat");
                 String seatState = seat.getString("myg6_combofield");

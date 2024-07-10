@@ -7,13 +7,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4436a5f8-a7fe-413a-ab09-538ca3d435d9" name="更改" comment="fix echarts">
-      <change afterPath="$PROJECT_DIR$/filestorage/User/DayEvaluate/3727386271872832128870324663935.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202407/imglist/LjDM6vULa48e.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202407/imglist/V1IgS4TA3k5E.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/cosmic_out.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240705_0.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240706_0.log" afterDir="false" />
+    <list default="true" id="4436a5f8-a7fe-413a-ab09-538ca3d435d9" name="更改" comment="fix some bugs">
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240709_0.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.6.3/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6.3/checksums/checksums.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.6.3/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6.3/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.6.3/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6.3/executionHistory/executionHistory.lock" afterDir="false" />
@@ -27,8 +22,19 @@
       <change beforePath="$PROJECT_DIR$/base/myg6-base-common/build/tmp/jar/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/base/myg6-base-common/build/tmp/jar/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/base/myg6-base-helper/build/libs/myg6-base-helper-1.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/base/myg6-base-helper/build/libs/myg6-base-helper-1.0.0.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/base/myg6-base-helper/build/tmp/jar/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/base/myg6-base-helper/build/tmp/jar/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/CreditSystem/Creditschedule.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/CreditSystem/Creditschedule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/seatmng/ChangeStateWhenApply.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/seatmng/ChangeStateApply.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cosmic.properties" beforeDir="false" afterPath="$PROJECT_DIR$/cosmic.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/build/classes/java/main/kd/cosmic/debug/tools/CosmicLauncher.class" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/build/classes/java/main/kd/cosmic/debug/tools/CosmicLauncher.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/build/classes/java/main/myg6/cosmic/debug/DebugApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/build/classes/java/main/myg6/cosmic/debug/DebugApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/build/libs/myg6-cosmic-debug-1.0.0-sources.jar" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/build/libs/myg6-cosmic-debug-1.0.0-sources.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/build/libs/myg6-cosmic-debug-1.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/build/libs/myg6-cosmic-debug-1.0.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/build/tmp/jar/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/build/tmp/jar/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/kd/cosmic/debug/tools/CosmicLauncher.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/kd/cosmic/debug/tools/CosmicLauncher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/myg6/cosmic/debug/DebugApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/myg6/cosmic/debug/DebugApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/bkmanagement/BookAnal.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/bkmanagement/BookAnal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/extendedfun/QAbot.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/extendedfun/QAbot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/extendedfun/QuestionsRenderFinal.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/extendedfun/QuestionsRenderFinal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/homepage/ActivityContain.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/homepage/ActivityContain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/homepage/ActivityRendering19.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/homepage/ActivityRendering.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/seatmng/ReturnSeatSchedule.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/seatmng/ReturnSeatSchedule.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -387,7 +393,23 @@
       <workItem from="1720180926889" duration="2987000" />
       <workItem from="1720228696249" duration="7586000" />
       <workItem from="1720271007859" duration="832000" />
-      <workItem from="1720319738679" duration="2120000" />
+      <workItem from="1720319738679" duration="2158000" />
+      <workItem from="1720333772402" duration="1277000" />
+      <workItem from="1720337140052" duration="2168000" />
+      <workItem from="1720351229377" duration="1057000" />
+      <workItem from="1720356262479" duration="1256000" />
+      <workItem from="1720403604823" duration="643000" />
+      <workItem from="1720407551553" duration="1517000" />
+      <workItem from="1720420458926" duration="1125000" />
+      <workItem from="1720431582602" duration="1521000" />
+      <workItem from="1720489513324" duration="320000" />
+      <workItem from="1720526768375" duration="518000" />
+      <workItem from="1720527370715" duration="1377000" />
+      <workItem from="1720529567816" duration="390000" />
+      <workItem from="1720571892358" duration="94000" />
+      <workItem from="1720578664795" duration="1531000" />
+      <workItem from="1720595528521" duration="15000" />
+      <workItem from="1720595815146" duration="636000" />
     </task>
     <task id="LOCAL-00001" summary="refactor: modify the structure of the project">
       <option name="closed" value="true" />
@@ -773,7 +795,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720103783474</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="fix some bugs">
+      <option name="closed" value="true" />
+      <created>1720321886931</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1720321886931</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -819,7 +849,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="fix(extendedfun): fix the function of generate txt" />
     <MESSAGE value="fix(credit): fix the function of credit schedulu" />
     <MESSAGE value="feat: add BaiduShiBieApi &amp;&amp; HomepageBookShow" />
     <MESSAGE value="feat(homepage): add HomepageBookShowPLUS" />
@@ -844,7 +873,8 @@
     <MESSAGE value="version: 1.0!!!" />
     <MESSAGE value="fix(extendfun): update FaceRec" />
     <MESSAGE value="fix echarts" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix echarts" />
+    <MESSAGE value="fix some bugs" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix some bugs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
