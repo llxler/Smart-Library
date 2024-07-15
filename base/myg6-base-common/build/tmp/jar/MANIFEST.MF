@@ -2,15 +2,15 @@ Manifest-Version: 1.0
 Jar-Id: 
 Project-Name: myg6-base-common
 Build-Tool: Gradle 7.6.3
-Build-Date: 2024-07-13 18:31:20
+Build-Date: 2024-07-15 22:10:30
 Built-By: Kingdee Cosmic Developer Tools
-Build-Num: 20240713183120558
+Build-Num: 20240715221030742
 App-Name: 
 Git-Branch: main
 Cloud-Name: 
 Group-Name: myg6.cosmic
 Bundle-Version: 1.0.0
-Git-Commit-Hash: b439079236692c49448a9ac8803d6ee98cbc5427
+Git-Commit-Hash: 94b1e3e62a7bfc905d2b034aae61227ef2215253
 Build-Image: 
 Build-Jdk: 1.8.0_401
 

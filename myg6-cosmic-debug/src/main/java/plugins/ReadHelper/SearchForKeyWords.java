@@ -12,7 +12,7 @@ import java.util.EventObject;
 /**
  * 动态表单插件
  */
-public class SearchForKeyWord6 extends AbstractFormPlugin implements Plugin {
+public class SearchForKeyWords extends AbstractFormPlugin implements Plugin {
 
     private static final String cmdin = "python D:\\UseForRuanjianbei\\keyword_search\\main.py ";
     @Override
