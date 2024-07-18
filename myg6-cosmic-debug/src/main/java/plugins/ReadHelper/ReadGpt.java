@@ -6,6 +6,8 @@ import kd.bos.cache.CacheFactory;
 import kd.bos.cache.DistributeSessionlessCache;
 import kd.bos.dataentity.entity.DynamicObject;
 import kd.bos.form.control.Button;
+import kd.bos.form.control.Label;
+import kd.bos.form.control.events.BeforeClickEvent;
 import kd.bos.form.plugin.AbstractFormPlugin;
 import kd.bos.orm.query.QCP;
 import kd.bos.orm.query.QFilter;
@@ -15,6 +17,7 @@ import kd.bos.form.control.Html;
 import kd.sdk.plugin.Plugin;
 
 import java.util.EventObject;
+import java.util.Map;
 
 /**
  * 动态表单插件
@@ -80,8 +83,8 @@ public class ReadGpt extends AbstractFormPlugin implements Plugin {
     }
 
     @Override
-    public void click(EventObject evt) {
-        super.click(evt);
+    public void beforeClick(BeforeClickEvent evt) {
+        super.beforeClick(evt);
         Object source = evt.getSource();
 
         // 取出一些前置必要信息
@@ -100,6 +103,9 @@ public class ReadGpt extends AbstractFormPlugin implements Plugin {
 
             // 若是渲染界面按钮
             if (StringUtils.equals("myg6_startread", key)) {
+                // 赋值label
+                Label yema = this.getView().getControl("myg6_labelap");
+                yema.setText("1");
                 // 处理字符串给缓存
                 solve();
                 // 将当前pageId 标记为第0面
@@ -117,6 +123,9 @@ public class ReadGpt extends AbstractFormPlugin implements Plugin {
                     return;
                 }
                 cache.put("pageId", nxtPg);
+                // 赋值label
+                Label yema = this.getView().getControl("myg6_labelap");
+                yema.setText(String.valueOf(pgInt + 1));
                 render(pgInt);
             } else if (StringUtils.equals("myg6_backward", key)) {
                 String pg = cache.get("pageId");
@@ -126,6 +135,9 @@ public class ReadGpt extends AbstractFormPlugin implements Plugin {
                     return;
                 }
                 cache.put("pageId", String.valueOf(pgInt));
+                // 赋值label
+                Label yema = this.getView().getControl("myg6_labelap");
+                yema.setText(String.valueOf(pgInt + 1));
                 render(pgInt);
             }
 
@@ -232,7 +244,7 @@ public class ReadGpt extends AbstractFormPlugin implements Plugin {
         // 去掉字符串中的回车符
         s = s.replace("\n", "").replace("\r", "");
         int all = 0, i = 0, idx = 0; // all为总页数，i为字符开始下标，idx为当前填入的txt缓存号
-        int chunk = 310; // 310为上限
+        int chunk = 330; // 330为上限
         while (i < s.length()) {
             int ed = i + chunk;
             if (ed >= s.length()) {

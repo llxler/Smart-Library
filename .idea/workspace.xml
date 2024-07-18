@@ -7,8 +7,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4436a5f8-a7fe-413a-ab09-538ca3d435d9" name="更改" comment="feat(readhelper): add Reading keywordsearch">
-      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240714_0.log" afterDir="false" />
+    <list default="true" id="4436a5f8-a7fe-413a-ab09-538ca3d435d9" name="更改" comment="feat(readhelper): fix Reading keywordsearch">
+      <change afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/ReadHelper/BookAnalHelpMid.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/ReadHelper/BookAnalHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/ReadHelper/DownLoadMd.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/ReadHelper/KeyWordMid.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.6.3/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6.3/checksums/checksums.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.6.3/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6.3/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.6.3/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6.3/executionHistory/executionHistory.lock" afterDir="false" />
@@ -22,8 +25,11 @@
       <change beforePath="$PROJECT_DIR$/base/myg6-base-common/build/tmp/jar/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/base/myg6-base-common/build/tmp/jar/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/base/myg6-base-helper/build/libs/myg6-base-helper-1.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/base/myg6-base-helper/build/libs/myg6-base-helper-1.0.0.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/base/myg6-base-helper/build/tmp/jar/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/base/myg6-base-helper/build/tmp/jar/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/ReadHelper/NoteMenu5.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/ReadHelper/NoteMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/ReadHelper/SearchForKeyWord6.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/ReadHelper/SearchForKeyWords.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/build/libs/myg6-cosmic-debug-1.0.0-sources.jar" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/build/libs/myg6-cosmic-debug-1.0.0-sources.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/build/libs/myg6-cosmic-debug-1.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/build/libs/myg6-cosmic-debug-1.0.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/build/tmp/jar/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/build/tmp/jar/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/ReadHelper/ReadGpt.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/ReadHelper/ReadGpt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/ReadHelper/SearchForKeyWords.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/ReadHelper/SearchForKeyWord.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -252,8 +258,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.DebugApplication" />
         <item itemvalue="Gradle.cosmic [build]" />
+        <item itemvalue="Application.DebugApplication" />
         <item itemvalue="Gradle.cosmic [jar]" />
         <item itemvalue="Gradle.cosmic:myg6-cosmic-debug [deployJar]" />
         <item itemvalue="Gradle.cosmic:myg6-cosmic-debug [buildJar]" />
@@ -415,15 +421,13 @@
       <workItem from="1720949813196" duration="66000" />
       <workItem from="1720954089571" duration="112000" />
       <workItem from="1721009058834" duration="84000" />
-      <workItem from="1721052617893" duration="319000" />
-    </task>
-    <task id="LOCAL-00004" summary="feat(rdhelper): add the function of generater plan">
-      <option name="closed" value="true" />
-      <created>1716642787862</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1716642787862</updated>
+      <workItem from="1721052617893" duration="360000" />
+      <workItem from="1721096884269" duration="4914000" />
+      <workItem from="1721111857294" duration="296000" />
+      <workItem from="1721132303159" duration="5640000" />
+      <workItem from="1721181085283" duration="2872000" />
+      <workItem from="1721203200486" duration="827000" />
+      <workItem from="1721215441396" duration="3927000" />
     </task>
     <task id="LOCAL-00005" summary="feat(rdhelper): add the function of evaluate plan">
       <option name="closed" value="true" />
@@ -809,7 +813,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720878092430</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="feat(readhelper): fix Reading keywordsearch">
+      <option name="closed" value="true" />
+      <created>1721052962048</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1721052962048</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -855,7 +867,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="feat: update some old fun &amp;&amp; add ListFilter" />
     <MESSAGE value="feat(main): add redis &amp;&amp; some imgs" />
     <MESSAGE value="feat(adminfuns): add polish fun" />
     <MESSAGE value="feat(homepg): add JumpCredit &amp;&amp; ActivityContain &amp;&amp; GetShelfData" />
@@ -880,7 +891,8 @@
     <MESSAGE value="version 2.0: change to local" />
     <MESSAGE value="feat(readhelper): add Reading GPT interaction" />
     <MESSAGE value="feat(readhelper): add Reading keywordsearch" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(readhelper): add Reading keywordsearch" />
+    <MESSAGE value="feat(readhelper): fix Reading keywordsearch" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(readhelper): fix Reading keywordsearch" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
