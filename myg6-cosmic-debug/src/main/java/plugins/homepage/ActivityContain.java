@@ -50,7 +50,7 @@ public class ActivityContain extends AbstractFormPlugin {
         }
     }
 
-    private static final String MY_IP = "127.0.0.1";
+    private static final String MY_IP = "10.21.204.111";
     @Override
     public void beforeBindData(EventObject e) {
         // TODO Auto-generated method stub
@@ -109,7 +109,7 @@ public class ActivityContain extends AbstractFormPlugin {
             controlsMap.put("myg6_imageap", propsMap);
 
             data.add(controlsMap);
-            j ++;
+            j++;
         }
         mcc.setData(data);
         getPageCache().put("data", SerializationUtils.toJsonString(data));
