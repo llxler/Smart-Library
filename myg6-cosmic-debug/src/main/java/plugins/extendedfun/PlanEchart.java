@@ -14,6 +14,8 @@ import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 
+import static myg6.cosmic.debug.DebugApplication.MY_IP;
+
 /**
  * 动态表单插件
  */
@@ -22,7 +24,7 @@ public class PlanEchart extends AbstractFormPlugin implements Plugin {
     public void beforeBindData(EventObject e) {
         super.beforeBindData(e);
         IFrame iframe = this.getControl("myg6_frame_echarts");
-        iframe.setSrc("http://localhost:12348/");
+        iframe.setSrc("http://"+ MY_IP +":12348/");
     }
 
     @Override

@@ -11,6 +11,8 @@ import java.util.EventObject;
 import java.util.HashMap;
 import java.util.Map;
 
+import static myg6.cosmic.debug.DebugApplication.MY_IP;
+
 /**
  * 动态表单插件
  */
@@ -19,7 +21,7 @@ public class MindMapGenerator extends AbstractFormPlugin implements Plugin {
     public void afterCreateNewData(EventObject e) {
         super.afterCreateNewData(e);
         IFrame iframe = this.getControl("myg6_MindMap");
-        iframe.setSrc("http://127.0.0.1:7000/");
+        iframe.setSrc("http://"+ MY_IP +":7000/");
     }
     @Override
     public void registerListener(EventObject e) {

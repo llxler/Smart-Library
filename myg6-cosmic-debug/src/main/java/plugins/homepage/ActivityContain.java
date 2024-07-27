@@ -14,6 +14,7 @@ import kd.bos.form.control.events.BeforeClickEvent;
 import kd.bos.form.plugin.AbstractFormPlugin;
 import kd.bos.orm.query.QFilter;
 import kd.bos.servicehelper.BusinessDataServiceHelper;
+import static myg6.cosmic.debug.DebugApplication.MY_IP;
 
 public class ActivityContain extends AbstractFormPlugin {
 
@@ -49,8 +50,6 @@ public class ActivityContain extends AbstractFormPlugin {
             this.getView().showForm(billShowParameter);
         }
     }
-
-    private static final String MY_IP = "10.21.204.111";
     @Override
     public void beforeBindData(EventObject e) {
         // TODO Auto-generated method stub

@@ -31,6 +31,9 @@ public class NoteMenu1 extends AbstractFormPlugin implements ListboxClickListene
         this.getView().setVisible(false, "myg6_note");
         this.getView().setVisible(false, "myg6_translate");
         this.getView().setVisible(false, "myg6_kgview");
+        this.getView().setVisible(false, "myg6_remake");
+        this.getView().setVisible(false, "myg6_integerfield");
+
 
     }
     @Override
@@ -57,21 +60,37 @@ public class NoteMenu1 extends AbstractFormPlugin implements ListboxClickListene
             this.getView().setVisible(false, "myg6_note");
             this.getView().setVisible(false, "myg6_translate");
             this.getView().setVisible(false, "myg6_kgview");
+            this.getView().setVisible(false, "myg6_remake");
+            this.getView().setVisible(false, "myg6_integerfield");
+            this.getView().setVisible(true, "myg6_dlnote");
+            this.getView().setVisible(true, "myg6_notehelper");
         } else if(StringUtils.equals(cur, "2")) {
             this.getView().setVisible(false, "myg6_md");
             this.getView().setVisible(true, "myg6_note");
             this.getView().setVisible(false, "myg6_translate");
             this.getView().setVisible(false, "myg6_kgview");
+            this.getView().setVisible(false, "myg6_remake");
+            this.getView().setVisible(false, "myg6_integerfield");
+            this.getView().setVisible(true, "myg6_dlnote");
+            this.getView().setVisible(true, "myg6_notehelper");
         } else if(StringUtils.equals(cur, "3")) {
             this.getView().setVisible(false, "myg6_md");
             this.getView().setVisible(false, "myg6_note");
             this.getView().setVisible(true, "myg6_translate");
             this.getView().setVisible(false, "myg6_kgview");
+            this.getView().setVisible(false, "myg6_remake");
+            this.getView().setVisible(false, "myg6_integerfield");
+            this.getView().setVisible(true, "myg6_dlnote");
+            this.getView().setVisible(true, "myg6_notehelper");
         } else if(StringUtils.equals(cur, "4")) {
             this.getView().setVisible(false, "myg6_md");
             this.getView().setVisible(false, "myg6_note");
             this.getView().setVisible(false, "myg6_translate");
             this.getView().setVisible(true, "myg6_kgview");
+            this.getView().setVisible(true, "myg6_remake");
+            this.getView().setVisible(true, "myg6_integerfield");
+            this.getView().setVisible(false, "myg6_dlnote");
+            this.getView().setVisible(false, "myg6_notehelper");
         }
     }
 }

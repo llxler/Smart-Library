@@ -7,6 +7,7 @@ import kd.bos.orm.query.QFilter;
 import kd.bos.servicehelper.BusinessDataServiceHelper;
 import kd.sdk.plugin.Plugin;
 import kd.bos.form.control.Image;
+import static myg6.cosmic.debug.DebugApplication.MY_IP;
 
 import java.util.*;
 
@@ -29,7 +30,6 @@ public class RecBookRandomly extends AbstractFormPlugin implements Plugin {
         }
         render(bookId);
     }
-    private static final String MY_IP = "10.21.204.111";
     public void render(List<Integer> bookId) {
         String pic = "myg6_imageap", lb = "myg6_labelap";
         // 通过bookId查询对应的书籍信息

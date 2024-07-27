@@ -18,6 +18,7 @@ import java.util.EventObject;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import static myg6.cosmic.debug.DebugApplication.MY_IP;
 
 /**
  * 动态表单插件
@@ -99,8 +100,6 @@ public class NextRecbookss extends AbstractFormPlugin implements Plugin {
         }
         return bookId;
     }
-
-    private static final String MY_IP = "10.21.204.111";
 
     public void render(List<Integer> bookId) {
         String pic = "myg6_imageap", lb = "myg6_labelap";

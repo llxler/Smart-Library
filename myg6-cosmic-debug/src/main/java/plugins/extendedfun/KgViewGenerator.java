@@ -6,6 +6,8 @@ import kd.sdk.plugin.Plugin;
 
 import java.util.EventObject;
 
+import static myg6.cosmic.debug.DebugApplication.MY_IP;
+
 /**
  * 动态表单插件
  */
@@ -14,6 +16,6 @@ public class KgViewGenerator extends AbstractFormPlugin implements Plugin {
     public void afterCreateNewData(EventObject e) {
         super.afterCreateNewData(e);
         IFrame iframe = this.getControl("myg6_frame_kgview");
-        iframe.setSrc("http://127.0.0.1:12346/");
+        iframe.setSrc("http://"+ MY_IP +":12346/");
     }
 }

@@ -13,6 +13,8 @@ import kd.sdk.plugin.Plugin;
 
 import java.util.EventObject;
 
+import static myg6.cosmic.debug.DebugApplication.MY_IP;
+
 /**
  * 动态表单插件
  */
@@ -21,7 +23,7 @@ public class Lookdisonesty extends AbstractFormPlugin implements Plugin {
     public void afterBindData(EventObject e) {
         super.afterBindData(e);
         IFrame iframe = this.getControl("myg6_frame_echarts");
-        iframe.setSrc("http://localhost:12348/");
+        iframe.setSrc("http://"+ MY_IP +":12348/");
         this.getView().addClientCallBack("10", 200);
     }
     @Override

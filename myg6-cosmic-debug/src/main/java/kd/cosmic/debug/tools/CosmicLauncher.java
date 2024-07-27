@@ -14,12 +14,11 @@ import java.net.InetAddress;
 import java.net.ServerSocket;
 import java.net.UnknownHostException;
 import java.util.Properties;
-
 import org.apache.commons.io.IOUtils;
 import org.apache.commons.lang3.StringUtils;
-
 import kd.bos.config.client.util.ConfigUtils;
 import kd.bos.service.bootstrap.Booter;
+import static myg6.cosmic.debug.DebugApplication.MY_IP;
 
 /**
  * cosmic服务启动器，含默认配置，如需更改请在DebugApplication中设置。
@@ -27,7 +26,6 @@ import kd.bos.service.bootstrap.Booter;
  */
 public final class CosmicLauncher {
     //自己添加部分
-    private static final String MY_IP = "10.21.204.111";
     /**
      * 苍穹安装目录的环境变量名称（即苍穹依赖包和静态资源目录的上级目录）
      */

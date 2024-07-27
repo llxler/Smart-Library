@@ -7,10 +7,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4436a5f8-a7fe-413a-ab09-538ca3d435d9" name="更改" comment="feat(homepg): add recommend books function">
-      <change afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/ReadHelper/KgViewIframe6.java" afterDir="false" />
+    <list default="true" id="4436a5f8-a7fe-413a-ab09-538ca3d435d9" name="更改" comment="feat(rdhealper): add tupu">
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240727_0.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/ReadHelper/KgViewIframe12.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.6.3/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6.3/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.6.3/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6.3/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.6.3/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6.3/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.6.3/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6.3/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.6.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6.3/fileHashes/fileHashes.bin" afterDir="false" />
@@ -23,8 +24,24 @@
       <change beforePath="$PROJECT_DIR$/base/myg6-base-common/build/tmp/jar/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/base/myg6-base-common/build/tmp/jar/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/base/myg6-base-helper/build/libs/myg6-base-helper-1.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/base/myg6-base-helper/build/libs/myg6-base-helper-1.0.0.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/base/myg6-base-helper/build/tmp/jar/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/base/myg6-base-helper/build/tmp/jar/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/kd/cosmic/debug/tools/CosmicLauncher.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/kd/cosmic/debug/tools/CosmicLauncher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/myg6/cosmic/debug/DebugApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/myg6/cosmic/debug/DebugApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/CreditSystem/Lookdisonesty.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/CreditSystem/Lookdisonesty.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/ReadHelper/KeyWordMid.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/ReadHelper/KeyWordMid.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/ReadHelper/NoteMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/ReadHelper/NoteMenu1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/ReadHelper/KgViewIframe6.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/ReadHelper/NoteMenu1.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/ReadHelper/NoteMenu1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/ReadHelper/ReadGpt.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/ReadHelper/ReadGpt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/ReadHelper/SearchForKeyWord.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/ReadHelper/SearchForKeyWord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/extendedfun/BookEchartFinal.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/extendedfun/BookEchartFinal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/extendedfun/ForumIFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/extendedfun/ForumIFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/extendedfun/KgViewGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/extendedfun/KgViewGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/extendedfun/MindMapGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/extendedfun/MindMapGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/extendedfun/PlanEchart.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/extendedfun/PlanEchart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/extendedfun/QAanal.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/extendedfun/QAanal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/homepage/ActivityContain.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/homepage/ActivityContain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/homepage/NextRecbookss.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/homepage/NextRecbookss.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/homepage/RecBookRandomly.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/homepage/RecBookRandomly.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/homepage/ShowEchartHomepg.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/homepage/ShowEchartHomepg.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -437,15 +454,10 @@
       <workItem from="1721962330580" duration="348000" />
       <workItem from="1721967885680" duration="2588000" />
       <workItem from="1721971917332" duration="51000" />
-      <workItem from="1721990110572" duration="10129000" />
-    </task>
-    <task id="LOCAL-00007" summary="feat(seatmng&amp;hmpg): add the function of generate seatapply and SearchPlugin">
-      <option name="closed" value="true" />
-      <created>1717400555462</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1717400555462</updated>
+      <workItem from="1721990110572" duration="10281000" />
+      <workItem from="1722045105417" duration="14986000" />
+      <workItem from="1722070115297" duration="2784000" />
+      <workItem from="1722078160960" duration="2281000" />
     </task>
     <task id="LOCAL-00008" summary="feat(seatmng): add the function of seatcount">
       <option name="closed" value="true" />
@@ -831,7 +843,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721919453972</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="feat(rdhealper): add tupu">
+      <option name="closed" value="true" />
+      <created>1722001532804</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1722001532805</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -877,7 +897,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="feat(homepg): add JumpCredit &amp;&amp; ActivityContain &amp;&amp; GetShelfData" />
     <MESSAGE value="feat(homepg&amp;shelf&amp;extend): add shelfdoc &amp;&amp; ExtendedFunctionOpen &amp;&amp; HomepageBookShowPLUS" />
     <MESSAGE value="fix bugs" />
     <MESSAGE value="fix: delete some debug outputs" />
@@ -902,7 +921,8 @@
     <MESSAGE value="feat(readhelper): fix Reading keywordsearch" />
     <MESSAGE value="feat(readhelper): add BookAnalHelper &amp;&amp; SearchForKeyWord &amp;&amp; DownLoadMd" />
     <MESSAGE value="feat(homepg): add recommend books function" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(homepg): add recommend books function" />
+    <MESSAGE value="feat(rdhealper): add tupu" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(rdhealper): add tupu" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

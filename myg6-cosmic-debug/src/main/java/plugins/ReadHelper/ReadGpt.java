@@ -60,6 +60,7 @@ public class ReadGpt extends AbstractFormPlugin implements Plugin {
 
     @Override
     public void registerListener(EventObject e) {
+        //todo:异步，页码
         super.registerListener(e);
         // 添加按钮监听
         Button button1 = this.getView().getControl("myg6_startread");

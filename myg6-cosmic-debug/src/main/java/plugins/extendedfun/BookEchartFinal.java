@@ -13,6 +13,8 @@ import java.util.EventObject;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import static myg6.cosmic.debug.DebugApplication.MY_IP;
+
 /**
  * 动态表单插件
  */
@@ -21,6 +23,6 @@ public class BookEchartFinal extends AbstractFormPlugin implements Plugin {
     public void afterBindData(EventObject e) {
         super.afterBindData(e);
         IFrame iframe = this.getControl("myg6_frame_echarts");
-        iframe.setSrc("http://localhost:12348/");
+        iframe.setSrc("http://"+ MY_IP +":12348/");
     }
 }
