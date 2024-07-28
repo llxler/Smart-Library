@@ -43,6 +43,10 @@ public class ReadHelper_Gpt_Button extends AbstractFormPlugin implements Plugin 
 
                 JSONObject jsonResultObject = new JSONObject();
                 DynamicObject book = (DynamicObject) this.getModel().getValue("myg6_bookname");
+                if (book == null) {
+                    this.getView().showMessage("请选择书籍");
+                    return;
+                }
                 String bookName = book.getString("name");
 
                 jsonResultObject.put("bookName", bookName);

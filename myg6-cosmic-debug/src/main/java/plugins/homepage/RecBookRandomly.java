@@ -1,5 +1,7 @@
 package plugins.homepage;
 
+import kd.bos.cache.CacheFactory;
+import kd.bos.cache.DistributeSessionlessCache;
 import kd.bos.dataentity.entity.DynamicObject;
 import kd.bos.form.control.Label;
 import kd.bos.form.plugin.AbstractFormPlugin;
@@ -17,18 +19,21 @@ import java.util.*;
 public class RecBookRandomly extends AbstractFormPlugin implements Plugin {
     @Override
     public void afterBindData(EventObject e) {
+        List<Integer> RecBookId = new ArrayList<>();
         super.afterBindData(e);
         // 生成随机数五个不同的数字放入列表bookId中
-        List<Integer> bookId = new ArrayList<>();
-        for (int i = 0; i < 5; i++) {
+        DistributeSessionlessCache cache = CacheFactory.getCommonCacheFactory().getDistributeSessionlessCache("customRegion");
+        for (int i = 1; i <= 5; i++) {
             int random = (int) (Math.random() * 15);
-            if (!bookId.contains(random)) {
-                bookId.add(random);
+            if (!RecBookId.contains(random)) {
+                RecBookId.add(random);
             } else {
                 i--;
+                continue;
             }
+            cache.put("recbook" + i, String.valueOf(random));
         }
-        render(bookId);
+        render(RecBookId);
     }
     public void render(List<Integer> bookId) {
         String pic = "myg6_imageap", lb = "myg6_labelap";

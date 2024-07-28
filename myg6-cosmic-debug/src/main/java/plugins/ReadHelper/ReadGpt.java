@@ -65,12 +65,11 @@ public class ReadGpt extends AbstractFormPlugin implements Plugin {
         // 添加按钮监听
         Button button1 = this.getView().getControl("myg6_startread");
         Button button2 = this.getView().getControl("myg6_conclude");
-        Button button3 = this.getView().getControl("myg6_keyword");
-        Button button4 = this.getView().getControl("myg6_showai1");
-        Button button5 = this.getView().getControl("myg6_showai2");
-        Button button6 = this.getView().getControl("myg6_showai3");
-        Button button7 = this.getView().getControl("myg6_forward");
-        Button button8 = this.getView().getControl("myg6_backward");
+        Button button3 = this.getView().getControl("myg6_showai1");
+        Button button4 = this.getView().getControl("myg6_showai2");
+        Button button5 = this.getView().getControl("myg6_showai3");
+        Button button6 = this.getView().getControl("myg6_forward");
+        Button button7 = this.getView().getControl("myg6_backward");
 
         // 监听
         button1.addClickListener(this);
@@ -80,7 +79,6 @@ public class ReadGpt extends AbstractFormPlugin implements Plugin {
         button5.addClickListener(this);
         button6.addClickListener(this);
         button7.addClickListener(this);
-        button8.addClickListener(this);
     }
 
     @Override
@@ -93,6 +91,10 @@ public class ReadGpt extends AbstractFormPlugin implements Plugin {
         // Object pkValue = Long.parseLong("1992276822133310464");
         // 获取图书名字
         DynamicObject book = (DynamicObject) this.getModel().getValue("myg6_bookname");
+        if (book == null) {
+            this.getView().showMessage("请先选择图书");
+            return;
+        }
         bookName = book.getString("name");
         // 获取缓存
         DistributeSessionlessCache cache = CacheFactory.getCommonCacheFactory().getDistributeSessionlessCache("customRegion");

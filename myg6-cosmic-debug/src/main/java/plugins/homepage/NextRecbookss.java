@@ -1,6 +1,8 @@
 package plugins.homepage;
 
 import com.alibaba.druid.util.StringUtils;
+import kd.bos.cache.CacheFactory;
+import kd.bos.cache.DistributeSessionlessCache;
 import kd.bos.dataentity.entity.DynamicObject;
 import kd.bos.form.control.Button;
 import kd.bos.form.control.Image;
@@ -18,7 +20,9 @@ import java.util.EventObject;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
 import static myg6.cosmic.debug.DebugApplication.MY_IP;
+
 
 /**
  * 动态表单插件
@@ -89,16 +93,18 @@ public class NextRecbookss extends AbstractFormPlugin implements Plugin {
 
 
     private static List<Integer> extractBookIds(String output) {
-        List<Integer> bookId = new ArrayList<>();
+        List<Integer> RecBookId = new ArrayList<>();
         Pattern pattern = Pattern.compile("Recommended books for User 1: \\[(.*?)\\]");
         Matcher matcher = pattern.matcher(output);
         if (matcher.find()) {
             String[] ids = matcher.group(1).replace("'", "").split(", ");
+            int i = 1;
             for (String id : ids) {
-                bookId.add(Integer.parseInt(id));
+                RecBookId.add(Integer.parseInt(id));
+                ++i;
             }
         }
-        return bookId;
+        return RecBookId;
     }
 
     public void render(List<Integer> bookId) {
@@ -112,6 +118,7 @@ public class NextRecbookss extends AbstractFormPlugin implements Plugin {
         DynamicObject[] dys = BusinessDataServiceHelper.load("myg6_book_list", fields, filters);
 
         int i = 0;
+        DistributeSessionlessCache cache = CacheFactory.getCommonCacheFactory().getDistributeSessionlessCache("customRegion");
         for (int v : bookId) {
             ++i;
             if (i == 6) break;
@@ -120,6 +127,7 @@ public class NextRecbookss extends AbstractFormPlugin implements Plugin {
             if (v >= dys.length) {
                 continue;
             }
+            cache.put("recbook" + i, String.valueOf(v));
             DynamicObject single = dys[v];
             String bookName = single.getString("name");
             String url = single.getString("myg6_picturefield");

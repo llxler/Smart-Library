@@ -39,6 +39,10 @@ public class BookAnalHelper extends AbstractFormPlugin implements Plugin {
             if (StringUtils.equals("myg6_notehelper", key)) {
                 // 获取缓存
                 DynamicObject book = (DynamicObject) this.getModel().getValue("myg6_bookname");
+                if (book == null) {
+                    this.getView().showMessage("请先选择书籍");
+                    return;
+                }
                 String bookName = book.getString("name");
                 // 获取缓存
                 DistributeSessionlessCache cache = CacheFactory.getCommonCacheFactory().getDistributeSessionlessCache("customRegion");

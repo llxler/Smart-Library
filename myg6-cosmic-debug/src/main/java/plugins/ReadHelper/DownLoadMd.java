@@ -33,6 +33,10 @@ public class DownLoadMd extends AbstractFormPlugin implements Plugin {
             if (StringUtils.equals("myg6_dlnote", key)) {
                 Markdown mk = this.getView().getControl("myg6_note");
                 String md = mk.getText();
+                if (md == null) {
+                    this.getView().showMessage("笔记为空，无法下载");
+                    return;
+                }
                 // 另存为本地文件 D:\我的读书笔记.md
                 String path = "D:\\Desktop\\我的读书笔记.md";
                 try (BufferedWriter writer = new BufferedWriter(new FileWriter(path))) {
