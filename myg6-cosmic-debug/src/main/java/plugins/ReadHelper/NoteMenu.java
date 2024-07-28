@@ -16,7 +16,7 @@ import java.util.List;
 /**
  * 动态表单插件
  */
-public class NoteMenu1 extends AbstractFormPlugin implements ListboxClickListener {
+public class NoteMenu extends AbstractFormPlugin implements ListboxClickListener {
     public void registerListener(EventObject event) {
         // 注册监听
         super.registerListener(event);

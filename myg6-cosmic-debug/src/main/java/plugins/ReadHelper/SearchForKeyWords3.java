@@ -23,7 +23,7 @@ import java.util.EventObject;
 /**
  * 动态表单插件
  */
-public class SearchForKeyWord6 extends AbstractFormPlugin implements Plugin {
+public class SearchForKeyWords3 extends AbstractFormPlugin implements Plugin {
 
     private static final String cmdin = "d://Code//Anaconda//python.exe D:\\UseForRuanjianbei\\keyword_search\\main.py ";
     @Override
@@ -84,7 +84,7 @@ public class SearchForKeyWord6 extends AbstractFormPlugin implements Plugin {
                     htmlBuilder.append(".image-row img { max-height: 100px; max-width: 100px; object-fit: cover; }\n");
                     htmlBuilder.append(".icon-row { display: flex; align-items: center; }\n");
                     htmlBuilder.append(".icon { width: 16px; height: 16px; margin-right: 5px; }\n");
-                    htmlBuilder.append(".link { font-size: 12px; color: #666; }\n");
+                    htmlBuilder.append(".link { font-size: 12px; color: #666;max-width:485px; word-wrap: break-word; overflow-wrap: break-word; }\n");
                     htmlBuilder.append("</style>\n");
                     htmlBuilder.append("</head>\n");
                     htmlBuilder.append("<body>\n");
@@ -151,7 +151,7 @@ public class SearchForKeyWord6 extends AbstractFormPlugin implements Plugin {
                     // 获取缓存
                     DistributeSessionlessCache cache = CacheFactory.getCommonCacheFactory().getDistributeSessionlessCache("customRegion");
                     cache.put("keyword", keyword);
-                    cache.put("htmlurl",System.getProperty("domain.contextUrl") + "/isv/gptQing/" + directoryName + "/" + sb + ".html?" + "gaiIframeSize={\"height\":600,\"width\":650}");
+                    cache.put("htmlurl",System.getProperty("domain.contextUrl") + "/isv/gptQing/" + directoryName + "/" + sb + ".html?" + "gaiIframeSize={\"height\":500,\"width\":540}");
                     // gpt 呼出
                     // --------传入的json配置--------
                     // process-24071613FA0518

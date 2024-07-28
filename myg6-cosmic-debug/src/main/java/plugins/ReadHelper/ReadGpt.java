@@ -5,8 +5,8 @@ import com.alibaba.fastjson.JSONObject;
 import kd.bos.cache.CacheFactory;
 import kd.bos.cache.DistributeSessionlessCache;
 import kd.bos.dataentity.entity.DynamicObject;
+import kd.bos.entity.datamodel.events.PropertyChangedArgs;
 import kd.bos.form.control.Button;
-import kd.bos.form.control.Label;
 import kd.bos.form.control.events.BeforeClickEvent;
 import kd.bos.form.plugin.AbstractFormPlugin;
 import kd.bos.orm.query.QCP;
@@ -17,7 +17,6 @@ import kd.bos.form.control.Html;
 import kd.sdk.plugin.Plugin;
 
 import java.util.EventObject;
-import java.util.Map;
 
 /**
  * 动态表单插件
@@ -106,13 +105,12 @@ public class ReadGpt extends AbstractFormPlugin implements Plugin {
 
             // 若是渲染界面按钮
             if (StringUtils.equals("myg6_startread", key)) {
-                // 赋值label
-                Label yema = this.getView().getControl("myg6_labelap");
-                yema.setText("1");
-                // 处理字符串给缓存
-                solve();
-                // 将当前pageId 标记为第0面
+                // 赋值页码
                 cache.put("pageId", "0");
+                solve();
+                this.getModel().setValue("myg6_labelap", 1);
+                // 处理字符串给缓存
+                // 将当前pageId 标记为第0面
                 render(0);
             }
 
@@ -127,8 +125,8 @@ public class ReadGpt extends AbstractFormPlugin implements Plugin {
                 }
                 cache.put("pageId", nxtPg);
                 // 赋值label
-                Label yema = this.getView().getControl("myg6_labelap");
-                yema.setText(String.valueOf(pgInt + 1));
+
+                this.getModel().setValue("myg6_labelap", pgInt + 1);
                 render(pgInt);
             } else if (StringUtils.equals("myg6_backward", key)) {
                 String pg = cache.get("pageId");
@@ -139,8 +137,7 @@ public class ReadGpt extends AbstractFormPlugin implements Plugin {
                 }
                 cache.put("pageId", String.valueOf(pgInt));
                 // 赋值label
-                Label yema = this.getView().getControl("myg6_labelap");
-                yema.setText(String.valueOf(pgInt + 1));
+                this.getModel().setValue("myg6_labelap", pgInt + 1);
                 render(pgInt);
             }
 
@@ -269,4 +266,49 @@ public class ReadGpt extends AbstractFormPlugin implements Plugin {
         // 放入总页数
         cache.put("allpage", String.valueOf(all));
     }
+    @Override
+    public void propertyChanged(PropertyChangedArgs e) {
+        String fieldKey = e.getProperty().getName();
+        if (StringUtils.equals("myg6_labelap", fieldKey)) {
+
+            int page = (int) this.getModel().getValue("myg6_labelap");
+            System.out.println("fuckme" + page);
+
+            DistributeSessionlessCache cache = CacheFactory.getCommonCacheFactory().getDistributeSessionlessCache("customRegion");
+            int codepage = page - 1;
+            int cachepage = Integer.parseInt(cache.get("pageId"));
+            if(cachepage == codepage)   return;
+
+            if(codepage < 0 || codepage >= Integer.parseInt(cache.get("allpage"))){
+                this.getView().showMessage("请输入正确的页码(" + 1 + '~' + (Integer.parseInt(cache.get("allpage"))) + ")");
+                this.getModel().setValue("myg6_labelap", cachepage + 1);
+            }
+            else {
+                for (int i = 1; i <= 3; ++i) {
+                    // 获取当前页的文字内容
+                    String txtid = "txt" + (i + codepage * 3);
+                    String txtContent = cache.get(txtid);
+
+                    if (txtContent == null) {
+                        // 填入html信息
+                        String htmlId = "myg6_txt" + i;
+                        Html html = this.getView().getControl(htmlId);
+                        html.setConent("");
+                        break;
+                    }
+
+                    // 组装成html代码
+                    String htmlCode = htmlCode1 + txtContent + htmlCode2;
+
+                    // 填入html信息
+                    String htmlId = "myg6_txt" + i;
+                    Html html = this.getView().getControl(htmlId);
+                    html.setConent(htmlCode);
+                }
+                cache.put("pageId", String.valueOf(codepage));
+            }
+
+        }
+    }
+
 }

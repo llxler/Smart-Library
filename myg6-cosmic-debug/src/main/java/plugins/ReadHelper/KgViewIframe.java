@@ -28,7 +28,7 @@ import static myg6.cosmic.debug.DebugApplication.MY_IP;
 /**
  * 动态表单插件
  */
-public class KgViewIframe12 extends AbstractFormPlugin implements Plugin {
+public class KgViewIframe extends AbstractFormPlugin implements Plugin {
     @Override
     public void afterBindData(EventObject e) {
         super.afterBindData(e);
