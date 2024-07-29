@@ -1,23 +1,24 @@
-package plugins.extendedfun;
+package plugins.adminfuns;
 
 import kd.bos.form.control.events.ItemClickEvent;
 import kd.bos.form.plugin.AbstractFormPlugin;
 import kd.sdk.plugin.Plugin;
+
+import java.io.IOException;
+import java.net.URL;
+import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.nio.charset.Charset;
-import java.io.IOException;
+import java.nio.file.StandardCopyOption;
 import java.util.EventObject;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import java.net.URL;
-import java.nio.file.StandardCopyOption;
 
-/**
- * 动态表单插件
- */
-public class GetInfoFromGoalTxt extends AbstractFormPlugin implements Plugin {
+// 命令行代码: java -Dimg_url="d:\rjbimage.jpg" -jar d:\UseForRuanjianbei\ImageRec\Final.jar
+public class BaiduShiBie extends AbstractFormPlugin implements Plugin {
+    private static final String cmdin = "java -Dimg_url=\"d:\\rjbimage.jpg\" -jar d:\\UseForRuanjianbei\\ImageRec\\Final.jar";
+
     @Override
     public void registerListener(EventObject e) {
         // 注册点击事件
@@ -25,9 +26,26 @@ public class GetInfoFromGoalTxt extends AbstractFormPlugin implements Plugin {
         this.addItemClickListeners("tbmain");
     }
 
+    @Override
     public void itemClick(ItemClickEvent e) {
         super.itemClick(e);
-        if (e.getItemKey().equalsIgnoreCase("myg6_baritemap")) {
+        if (e.getItemKey().equalsIgnoreCase("myg6_baritemap1")) {
+            // 在命令行里面执行命令 cmdin
+            try {
+                Runtime.getRuntime().exec(cmdin);
+            } catch (Exception exce) {
+                exce.printStackTrace();
+            }
+            // 发送执行成功
+            this.getView().showMessage("百度识别执行结束!");
+
+            // 开始填入信息
+            // 在这里等待一段时间，等待百度识别完成
+            try {
+                Thread.sleep(5000);
+            } catch (InterruptedException exce) {
+                exce.printStackTrace();
+            }
             // 打开电脑中的文件D:\isbndata.txt将文件里面的内容赋值给String s
             String filePath = "D:\\isbndata.txt";
             String title = "";
@@ -87,10 +105,13 @@ public class GetInfoFromGoalTxt extends AbstractFormPlugin implements Plugin {
                     Files.copy(imageUrl.openStream(), destinationPath, StandardCopyOption.REPLACE_EXISTING);
 
                     System.out.println("Image saved to D:\\" + fileName);
+
+                    this.getModel().setValue("myg6_picturefield", "D:\\" + fileName);
                 } catch (IOException ex) {
                     ex.printStackTrace();
                 }
             }
+            // 填入over
         }
     }
 }

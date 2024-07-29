@@ -13,7 +13,7 @@ import kd.bos.servicehelper.BusinessDataServiceHelper;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
-public class NewsTimeLine1 extends AbstractFormPlugin {
+public class NewsTimeLine extends AbstractFormPlugin {
     private final static String KEY_TIMELINE = "myg6_timelineap";
     //    private final static String KEY_DATE_FIELD = "kdec_datefield";
     private List<Date> newsTitle = new ArrayList<>();

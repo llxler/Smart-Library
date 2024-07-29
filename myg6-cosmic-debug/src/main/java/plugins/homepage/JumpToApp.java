@@ -40,30 +40,40 @@ public class JumpToApp extends AbstractFormPlugin implements Plugin {
         if (StringUtils.equals("myg6_image_notes", source.getKey())) {
             FormShowParameter formShowParameter = new FormShowParameter();
             formShowParameter.setFormId("myg6_read_notes");
-            formShowParameter.getOpenStyle().setShowType(ShowType.MainNewTabPage);
+            formShowParameter.getOpenStyle().setShowType(ShowType.NewTabPage);
+            formShowParameter.setAppId("myg6_mylibrary");
+            formShowParameter.getOpenStyle().setTargetKey("tabap");
             this.getView().showForm(formShowParameter);
         } else if(StringUtils.equals("myg6_image_books", source.getKey())){
             ListShowParameter billShowParameter = new ListShowParameter();
             billShowParameter.setFormId("bos_list");
             billShowParameter.setBillFormId("myg6_book_list");
-            billShowParameter.getOpenStyle().setShowType(ShowType.Modal);
+            billShowParameter.getOpenStyle().setShowType(ShowType.NewTabPage);
+            billShowParameter.setAppId("myg6_mylibrary");
+            billShowParameter.getOpenStyle().setTargetKey("tabap");
             this.getView().showForm(billShowParameter);
         } else if(StringUtils.equals("myg6_image_seats", source.getKey())){
             ListShowParameter billShowParameter = new ListShowParameter();
             billShowParameter.setFormId("bos_list");
             billShowParameter.setBillFormId("myg6_room");
-            billShowParameter.getOpenStyle().setShowType(ShowType.Modal);
+            billShowParameter.getOpenStyle().setShowType(ShowType.NewTabPage);
+            billShowParameter.setAppId("myg6_mylibrary");
+            billShowParameter.getOpenStyle().setTargetKey("tabap");
             this.getView().showForm(billShowParameter);
         } else if(StringUtils.equals("myg6_image_shelf", source.getKey())){
             ListShowParameter billShowParameter = new ListShowParameter();
             billShowParameter.setFormId("bos_list");
             billShowParameter.setBillFormId("myg6_my_bookshelf");
-            billShowParameter.getOpenStyle().setShowType(ShowType.Modal);
+            billShowParameter.getOpenStyle().setShowType(ShowType.NewTabPage);
+            billShowParameter.setAppId("myg6_mylibrary");
+            billShowParameter.getOpenStyle().setTargetKey("tabap");
             this.getView().showForm(billShowParameter);
         } else if (StringUtils.equals("myg6_image_credit", source.getKey())) {
             BillShowParameter billShowParameter = new BillShowParameter();
             billShowParameter.setFormId("myg6_credibility_table");
-            billShowParameter.getOpenStyle().setShowType(ShowType.Modal);
+            billShowParameter.getOpenStyle().setShowType(ShowType.NewTabPage);
+            billShowParameter.setAppId("myg6_mylibrary");
+            billShowParameter.getOpenStyle().setTargetKey("tabap");
             billShowParameter.setStatus(OperationStatus.VIEW);
             RequestContext rc = RequestContext.get();
             String nowUser = rc.getUserName();
@@ -75,12 +85,16 @@ public class JumpToApp extends AbstractFormPlugin implements Plugin {
         } else if (StringUtils.equals("myg6_forum", source.getKey())) {
             FormShowParameter formShowParameter = new FormShowParameter();
             formShowParameter.setFormId("myg6_forum");
-            formShowParameter.getOpenStyle().setShowType(ShowType.Modal);
+            formShowParameter.getOpenStyle().setShowType(ShowType.NewTabPage);
+            formShowParameter.setAppId("myg6_mylibrary");
+            formShowParameter.getOpenStyle().setTargetKey("tabap");
             this.getView().showForm(formShowParameter);
         } else if (StringUtils.equals("myg6_image_exfun", source.getKey())) {
             FormShowParameter formShowParameter = new FormShowParameter();
             formShowParameter.setFormId("myg6_funs");
-            formShowParameter.getOpenStyle().setShowType(ShowType.Modal);
+            formShowParameter.getOpenStyle().setShowType(ShowType.NewTabPage);
+            formShowParameter.setAppId("myg6_mylibrary");
+            formShowParameter.getOpenStyle().setTargetKey("tabap");
             this.getView().showForm(formShowParameter);
         }
     }
