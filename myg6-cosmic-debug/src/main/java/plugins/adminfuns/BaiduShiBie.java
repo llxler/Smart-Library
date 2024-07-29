@@ -46,6 +46,7 @@ public class BaiduShiBie extends AbstractFormPlugin implements Plugin {
             } catch (InterruptedException exce) {
                 exce.printStackTrace();
             }
+
             // 打开电脑中的文件D:\isbndata.txt将文件里面的内容赋值给String s
             String filePath = "D:\\isbndata.txt";
             String title = "";

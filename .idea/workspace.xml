@@ -7,9 +7,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4436a5f8-a7fe-413a-ab09-538ca3d435d9" name="更改" comment="fix keywords">
-      <change afterPath="$PROJECT_DIR$/logs/cosmic_out.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240728_0.log" afterDir="false" />
+    <list default="true" id="4436a5f8-a7fe-413a-ab09-538ca3d435d9" name="更改" comment="fix JumpToApp">
+      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202407/202407/myg6_booksmanage/myg6_book_list/images/yYtgty3MFDckQFksdG/冰与火之歌.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/adminfuns/FaceSearch9.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.6.3/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6.3/checksums/checksums.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.6.3/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6.3/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.6.3/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6.3/executionHistory/executionHistory.lock" afterDir="false" />
@@ -23,10 +23,9 @@
       <change beforePath="$PROJECT_DIR$/base/myg6-base-common/build/tmp/jar/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/base/myg6-base-common/build/tmp/jar/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/base/myg6-base-helper/build/libs/myg6-base-helper-1.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/base/myg6-base-helper/build/libs/myg6-base-helper-1.0.0.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/base/myg6-base-helper/build/tmp/jar/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/base/myg6-base-helper/build/tmp/jar/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/extendedfun/BaiduShiBie.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/adminfuns/BaiduShiBie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/extendedfun/GetInfoFromGoalTxt.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/homepage/JumpToApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/homepage/JumpToApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/homepage/NewsTimeLine1.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/homepage/NewsTimeLine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/ReadHelper/ReadGpt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/adminfuns/BaiduShiBie.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/adminfuns/BaiduShiBie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/adminfuns/FaceSearchtool.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -449,15 +448,11 @@
       <workItem from="1722166427529" duration="5578000" />
       <workItem from="1722178050513" duration="519000" />
       <workItem from="1722180206133" duration="1424000" />
-      <workItem from="1722218099285" duration="5127000" />
-    </task>
-    <task id="LOCAL-00011" summary="feat(PLib): add the function of return book">
-      <option name="closed" value="true" />
-      <created>1717659865100</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1717659865100</updated>
+      <workItem from="1722218099285" duration="19431000" />
+      <workItem from="1722253984816" duration="1095000" />
+      <workItem from="1722255176044" duration="1041000" />
+      <workItem from="1722257404410" duration="2330000" />
+      <workItem from="1722259747313" duration="1040000" />
     </task>
     <task id="LOCAL-00012" summary="feat(seatmng): add the function of &quot;yihaozixishi&quot;">
       <option name="closed" value="true" />
@@ -843,7 +838,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722175300264</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="fix JumpToApp">
+      <option name="closed" value="true" />
+      <created>1722223432976</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1722223432976</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -889,7 +892,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="feat(extendfuns): add EchartsFrame" />
     <MESSAGE value="feat(extendfuns): add EchartsFrame into the gpt" />
     <MESSAGE value="fix(extendfuns): fix EchartsFrame into the vue" />
     <MESSAGE value="feat(rdhelper): add EchartsFrame into the front" />
@@ -914,7 +916,8 @@
     <MESSAGE value="fix tupu &amp;&amp; change MY_IP to public" />
     <MESSAGE value="fix bugs" />
     <MESSAGE value="fix keywords" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix keywords" />
+    <MESSAGE value="fix JumpToApp" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix JumpToApp" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
