@@ -58,6 +58,9 @@ public class RecBookRandomly extends AbstractFormPlugin implements Plugin {
             String nowLb = lb + i + i + i;
             DynamicObject single = dys[v];
             String bookName = single.getString("name");
+            if (bookName.length() >= 9) {
+                bookName = bookName.substring(0, 8) + "...";
+            }
             String url = single.getString("myg6_picturefield");
             // 设置标签
             Label labeltitle = this.getView().getControl(nowLb);

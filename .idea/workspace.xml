@@ -7,15 +7,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4436a5f8-a7fe-413a-ab09-538ca3d435d9" name="更改" comment="fix GptRead">
-      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202407/202407/myg6_admin_center/myg6_student_info/images/4f7dByV4WEscq7awuo/陌生人.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202407/202407/myg6_admin_center/myg6_student_info/images/HVe67ASKxxg25L7RzR/陌生人.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202407/202407/myg6_admin_center/myg6_student_info/images/VJNL26qkzjOa4gz4Ue/陌生人.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/cosmic_out.log" afterDir="false" />
+    <list default="true" id="4436a5f8-a7fe-413a-ab09-538ca3d435d9" name="更改" comment="fix GptRead &amp;&amp; RecBookRandomly">
+      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202407/202407/myg6_booksmanage/myg6_book_list/images/CU474b6CnBezglxssw/cppprimer.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202407/202407/myg6_booksmanage/myg6_book_list/images/F6FL3WKVqrcyNP8TCl/小王子.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202407/202407/myg6_booksmanage/myg6_book_list/images/QJ964KlSjngCCpuWeD/呐喊.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202407/202407/myg6_booksmanage/myg6_book_list/images/ZEjocYpNhYbFVb1KSJ/邓小平时代.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202407/202407/myg6_booksmanage/myg6_book_list/images/c46QAcLmqpElpNWtoQ/马克思主义.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202407/202407/myg6_booksmanage/myg6_book_list/images/fUIPI2IDhyDeAn3vcV/白夜行.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202407/202407/myg6_booksmanage/myg6_book_list/images/iP14NBQlw9nXJXxvX6/房思琪.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202407/202407/myg6_booksmanage/myg6_book_list/images/szNGFhOuCXOgUuZ9Ig/明朝那些事.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240730_0.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/adminfuns/CV_Batch.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.6.3/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6.3/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.6.3/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6.3/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.6.3/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6.3/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.6.3/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6.3/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.6.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6.3/fileHashes/fileHashes.bin" afterDir="false" />
@@ -28,9 +30,7 @@
       <change beforePath="$PROJECT_DIR$/base/myg6-base-common/build/tmp/jar/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/base/myg6-base-common/build/tmp/jar/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/base/myg6-base-helper/build/libs/myg6-base-helper-1.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/base/myg6-base-helper/build/libs/myg6-base-helper-1.0.0.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/base/myg6-base-helper/build/tmp/jar/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/base/myg6-base-helper/build/tmp/jar/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/ReadHelper/GptRead.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/ReadHelper/GptRead.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/adminfuns/BaiduShiBie.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/adminfuns/BaiduShiBie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/adminfuns/FaceSearch9.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/adminfuns/FaceSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/homepage/NextRecbookss.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/homepage/NextRecbooks.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/homepage/RecBookRandomly.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/homepage/RecBookRandomly.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -461,15 +461,9 @@
       <workItem from="1722259747313" duration="1185000" />
       <workItem from="1722306394627" duration="4014000" />
       <workItem from="1722312826104" duration="987000" />
-      <workItem from="1722315012895" duration="335000" />
-    </task>
-    <task id="LOCAL-00014" summary="feat(seatmng): add the function of ChangeStateWhenApply">
-      <option name="closed" value="true" />
-      <created>1718072591478</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1718072591478</updated>
+      <workItem from="1722315012895" duration="397000" />
+      <workItem from="1722324927427" duration="872000" />
+      <workItem from="1722333558477" duration="4131000" />
     </task>
     <task id="LOCAL-00015" summary="feat(seatmng): add the function of Alert">
       <option name="closed" value="true" />
@@ -855,7 +849,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722260924869</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="fix GptRead &amp;&amp; RecBookRandomly">
+      <option name="closed" value="true" />
+      <created>1722315402285</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1722315402286</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -901,7 +903,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="feat(rdhelper): add EchartsFrame into the front" />
     <MESSAGE value="fix(homepg): change the style of the bookshow" />
     <MESSAGE value="fix(bookmng): fix the gptQing" />
     <MESSAGE value="fix(planEchart): fix the String type" />
@@ -926,7 +927,8 @@
     <MESSAGE value="fix JumpToApp" />
     <MESSAGE value="add FaceRec &amp;&amp; Translator" />
     <MESSAGE value="fix GptRead" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix GptRead" />
+    <MESSAGE value="fix GptRead &amp;&amp; RecBookRandomly" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix GptRead &amp;&amp; RecBookRandomly" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
