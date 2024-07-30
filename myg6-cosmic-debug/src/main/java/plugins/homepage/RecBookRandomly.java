@@ -21,10 +21,16 @@ public class RecBookRandomly extends AbstractFormPlugin implements Plugin {
     public void afterBindData(EventObject e) {
         List<Integer> RecBookId = new ArrayList<>();
         super.afterBindData(e);
+        //获取DynamicObject列表
+        String fields = "name,myg6_picturefield";
+        // Create an empty filter array (no filters)
+        QFilter[] filters = new QFilter[0];
+        // Load the data
+        DynamicObject[] dys = BusinessDataServiceHelper.load("myg6_book_list", fields, filters);
         // 生成随机数五个不同的数字放入列表bookId中
         DistributeSessionlessCache cache = CacheFactory.getCommonCacheFactory().getDistributeSessionlessCache("customRegion");
         for (int i = 1; i <= 5; i++) {
-            int random = (int) (Math.random() * 15);
+            int random = (int) (Math.random() * dys.length); // 0-14
             if (!RecBookId.contains(random)) {
                 RecBookId.add(random);
             } else {

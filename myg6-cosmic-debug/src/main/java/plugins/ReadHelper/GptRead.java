@@ -33,18 +33,9 @@ public class GptRead extends AbstractFormPlugin implements Plugin {
             "        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n" +
             "        <title>图书阅读页面</title>\n" +
             "        <style>\n" +
-            "            body {\n" +
+            "            .content {\n" +
             "                font-family: Arial, sans-serif;\n" +
             "                margin: 0;\n" +
-            "                padding: 20px;\n" +
-            "                background-color: #f5f5f5;\n" +
-            "            }\n" +
-            "\n" +
-            "            h1 {\n" +
-            "                font-size: 24px;\n" +
-            "                margin-bottom: 10px;\n" +
-            "            }\n" +
-            "            .content {\n" +
             "                padding: 30px;\n" +
             "                font-size: 18px;\n" +
             "                line-height: 1.6;\n" +
@@ -250,14 +241,14 @@ public class GptRead extends AbstractFormPlugin implements Plugin {
         // 去掉字符串中的回车符
         s = s.replace("\n", "").replace("\r", "");
         int all = 0, i = 0, idx = 0; // all为总页数，i为字符开始下标，idx为当前填入的txt缓存号
-        int chunk = 330; // 330为上限
+        int chunk = 350; // 330为上限
         int cnt = 0;
         for(int pp = 0;pp < 200;pp++) {
             if((s.charAt(pp) >= 'a' && s.charAt(pp) <= 'z') || s.charAt(pp) >= 'A' && s.charAt(pp) <= 'Z') {
                 cnt++;
             }
         }
-        if(cnt >= 100)  chunk = 700;
+        if(cnt >= 100)  chunk = 720;
         while (i < s.length()) {
             int ed = i + chunk;
             if (ed >= s.length()) {

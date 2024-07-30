@@ -42,7 +42,7 @@ public class BaiduShiBie extends AbstractFormPlugin implements Plugin {
             // 开始填入信息
             // 在这里等待一段时间，等待百度识别完成
             try {
-                Thread.sleep(5000);
+                Thread.sleep(4000);
             } catch (InterruptedException exce) {
                 exce.printStackTrace();
             }
