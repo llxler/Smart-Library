@@ -243,7 +243,7 @@ public class GptRead extends AbstractFormPlugin implements Plugin {
         int all = 0, i = 0, idx = 0; // all为总页数，i为字符开始下标，idx为当前填入的txt缓存号
         int chunk = 350; // 330为上限
         int cnt = 0;
-        for(int pp = 0;pp < 200;pp++) {
+        for (int pp = 0;pp < 200;pp++) {
             if((s.charAt(pp) >= 'a' && s.charAt(pp) <= 'z') || s.charAt(pp) >= 'A' && s.charAt(pp) <= 'Z') {
                 cnt++;
             }

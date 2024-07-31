@@ -7,15 +7,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4436a5f8-a7fe-413a-ab09-538ca3d435d9" name="更改" comment="fix NextRecbooks">
-      <change afterPath="$PROJECT_DIR$/logs/cosmic_out.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240731_0.log" afterDir="false" />
+    <list default="true" id="4436a5f8-a7fe-413a-ab09-538ca3d435d9" name="更改" comment="fix BookAnalHelper">
       <change beforePath="$PROJECT_DIR$/.gradle/7.6.3/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6.3/checksums/checksums.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.6.3/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6.3/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.6.3/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6.3/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.6.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6.3/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.6.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6.3/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.6.3/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6.3/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -23,17 +20,8 @@
       <change beforePath="$PROJECT_DIR$/base/myg6-base-common/build/tmp/jar/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/base/myg6-base-common/build/tmp/jar/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/base/myg6-base-helper/build/libs/myg6-base-helper-1.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/base/myg6-base-helper/build/libs/myg6-base-helper-1.0.0.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/base/myg6-base-helper/build/tmp/jar/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/base/myg6-base-helper/build/tmp/jar/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/PersonalLibrary/Evaluate_Date.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/PersonalLibrary/Evaluate_Date.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/ReadHelper/BookAnalHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/ReadHelper/BookAnalHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/ReadHelper/GptRead.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/ReadHelper/GptRead.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/ReadHelper/KgViewIframe.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/ReadHelper/KgViewIframe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/ReadHelper/ReadHelper_Gpt_Button.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/ReadHelper/ReadHelper_Gpt_Button.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/ReadHelper/buttom_Gpt_evaluate.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/ReadHelper/buttom_Gpt_evaluate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/adminfuns/NewsPolish1.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/adminfuns/NewsPolish1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/bkmanagement/BookAnal.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/bkmanagement/BookAnal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/extendedfun/MindMap_GPT.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/extendedfun/MindMap_GPT.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/extendedfun/QAbot.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/extendedfun/QAbot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/extendedfun/QuestionsRenderFinal.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/extendedfun/QuestionsRenderFinal.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,7 +127,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "Errors",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -469,15 +457,11 @@
       <workItem from="1722346733751" duration="83000" />
       <workItem from="1722393182861" duration="9471000" />
       <workItem from="1722404126645" duration="136000" />
-      <workItem from="1722404274694" duration="384000" />
-    </task>
-    <task id="LOCAL-00016" summary="fix(seatmng): add the function of Alert">
-      <option name="closed" value="true" />
-      <created>1718114802731</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1718114802731</updated>
+      <workItem from="1722404274694" duration="1279000" />
+      <workItem from="1722413338640" duration="1251000" />
+      <workItem from="1722425447709" duration="579000" />
+      <workItem from="1722426038301" duration="31000" />
+      <workItem from="1722426080896" duration="2179000" />
     </task>
     <task id="LOCAL-00017" summary="fix(seatmng): add the function of Alert &amp; showForm">
       <option name="closed" value="true" />
@@ -863,7 +847,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722346803297</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="add kimi">
+      <option name="closed" value="true" />
+      <created>1722404954587</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1722404954588</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -909,8 +901,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="fix(bookmng): fix the gptQing" />
-    <MESSAGE value="fix(planEchart): fix the String type" />
     <MESSAGE value="feat(extendfuns): add FaceSearch &amp;&amp; PlanEchart" />
     <MESSAGE value="feat(homepg): show echarts into the homepg" />
     <MESSAGE value="update" />
@@ -934,7 +924,9 @@
     <MESSAGE value="fix GptRead" />
     <MESSAGE value="fix GptRead &amp;&amp; RecBookRandomly" />
     <MESSAGE value="fix NextRecbooks" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix NextRecbooks" />
+    <MESSAGE value="add kimi" />
+    <MESSAGE value="fix BookAnalHelper" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix BookAnalHelper" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

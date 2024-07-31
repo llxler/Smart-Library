@@ -36,7 +36,7 @@ public class BookAnalHelper extends AbstractFormPlugin implements Plugin {
             Button button = (Button) source;
             String key = button.getKey();
             String pageId = this.getView().getMainView().getPageId();
-            String pkValue = getProcessFid("process-24071781856E77");
+            Object pkValue = getProcessFid("process-24071781856E77");
             if (StringUtils.equals("myg6_notehelper", key)) {
                 // 获取缓存
                 DynamicObject book = (DynamicObject) this.getModel().getValue("myg6_bookname");
@@ -47,32 +47,21 @@ public class BookAnalHelper extends AbstractFormPlugin implements Plugin {
                 String bookName = book.getString("name");
                 // 获取缓存
                 DistributeSessionlessCache cache = CacheFactory.getCommonCacheFactory().getDistributeSessionlessCache("customRegion");
-                // gpt 呼出
-                // --------传入的json配置--------
-                JSONObject need = new JSONObject();
-                need.put("showIcon", true);
-                need.put("switchSide", true);
-                need.put("lockSide", false);
-                need.put("selectedProcessId", pkValue);
-                need.put("startProcessId", pkValue);
-                JSONObject startParams = new JSONObject();
-                startParams.put("txtResult", "我是无用的");
-                need.put("startParams", startParams);
-                // --------传入的json配置--------
                 // 呼出gpt
                 cache.put("bookAnal", bookName);
                 // DispatchServiceHelper.invokeBizService("ai", "gai", "GaiService", "sideBarInit", pageId, need.toJSONString());
-                DispatchServiceHelper.invokeBizService("ai", "gai", "GaiService", "startProcessInSideBar", pkValue, pageId, new HashMap<>(), "开始交互");
+                DispatchServiceHelper.invokeBizService("ai", "gai", "GaiService","selectProcessInSideBar",pkValue, pageId,"您好，我是您的交互助手，我将帮助您完成笔记的整理\n");
+                DispatchServiceHelper.invokeBizService("ai", "gai", "GaiService","startProcessInSideBar",pkValue, pageId, new HashMap(), "开始交互");
             }
         }
     }
 
-    public String getProcessFid(String billNo) {
+    public Object getProcessFid(String billNo) {
         DynamicObject dynamicObject = BusinessDataServiceHelper.loadSingle("gai_process",
                 "number," +
                         "id",
                 (new QFilter("number", QCP.equals, billNo)).toArray());
         long idd = dynamicObject.getLong("id");
-        return String.valueOf(idd);
+        return Long.parseLong(String.valueOf(idd));
     }
 }
