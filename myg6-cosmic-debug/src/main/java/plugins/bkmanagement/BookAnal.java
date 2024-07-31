@@ -49,7 +49,7 @@ public class BookAnal extends AbstractFormPlugin implements Plugin {
             Object[] params = new Object[]{
                     //GPT提示编码
                     getPromptFid("prompt-240530DBBA674F"),
-                    "",
+                    "开始评价该图书",
                     variableMap
             };
 

@@ -41,7 +41,7 @@ public class Evaluate_Date extends AbstractFormPlugin implements Plugin {
             Object[] params = new Object[]{
                     //GPT提示编码
                     getPromptFid("prompt-2406050AC4DA89"),
-                    "",
+                    "开始评价图书阅读任务完成情况",
                     variableMap
             };
             Map<String, Object> result = DispatchServiceHelper.invokeBizService("ai", "gai", "GaiPromptService", "syncCall", params);

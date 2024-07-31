@@ -58,7 +58,7 @@ public class buttom_Gpt_evaluate extends AbstractFormPlugin implements Plugin {
             Object[] params = new Object[]{
                     //GPT提示编码
                     getPromptFid("prompt-2405264A15D752"),
-                    "",
+                    "开始评价任务完成情况",
                     variableMap
             };
             Map<String, Object> result = DispatchServiceHelper.invokeBizService("ai", "gai", "GaiPromptService", "syncCall", params);

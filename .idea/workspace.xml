@@ -7,16 +7,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4436a5f8-a7fe-413a-ab09-538ca3d435d9" name="更改" comment="fix GptRead &amp;&amp; RecBookRandomly">
-      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202407/202407/myg6_booksmanage/myg6_book_list/images/CU474b6CnBezglxssw/cppprimer.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202407/202407/myg6_booksmanage/myg6_book_list/images/F6FL3WKVqrcyNP8TCl/小王子.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202407/202407/myg6_booksmanage/myg6_book_list/images/QJ964KlSjngCCpuWeD/呐喊.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202407/202407/myg6_booksmanage/myg6_book_list/images/ZEjocYpNhYbFVb1KSJ/邓小平时代.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202407/202407/myg6_booksmanage/myg6_book_list/images/c46QAcLmqpElpNWtoQ/马克思主义.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202407/202407/myg6_booksmanage/myg6_book_list/images/fUIPI2IDhyDeAn3vcV/白夜行.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202407/202407/myg6_booksmanage/myg6_book_list/images/iP14NBQlw9nXJXxvX6/房思琪.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202407/202407/myg6_booksmanage/myg6_book_list/images/szNGFhOuCXOgUuZ9Ig/明朝那些事.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240730_0.log" afterDir="false" />
+    <list default="true" id="4436a5f8-a7fe-413a-ab09-538ca3d435d9" name="更改" comment="fix NextRecbooks">
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240731_0.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.6.3/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6.3/checksums/checksums.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.6.3/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6.3/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.6.3/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6.3/executionHistory/executionHistory.lock" afterDir="false" />
@@ -30,8 +23,17 @@
       <change beforePath="$PROJECT_DIR$/base/myg6-base-common/build/tmp/jar/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/base/myg6-base-common/build/tmp/jar/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/base/myg6-base-helper/build/libs/myg6-base-helper-1.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/base/myg6-base-helper/build/libs/myg6-base-helper-1.0.0.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/base/myg6-base-helper/build/tmp/jar/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/base/myg6-base-helper/build/tmp/jar/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/homepage/NextRecbookss.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/homepage/NextRecbooks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/homepage/RecBookRandomly.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/homepage/RecBookRandomly.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/PersonalLibrary/Evaluate_Date.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/PersonalLibrary/Evaluate_Date.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/ReadHelper/BookAnalHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/ReadHelper/BookAnalHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/ReadHelper/GptRead.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/ReadHelper/GptRead.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/ReadHelper/KgViewIframe.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/ReadHelper/KgViewIframe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/ReadHelper/ReadHelper_Gpt_Button.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/ReadHelper/ReadHelper_Gpt_Button.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/ReadHelper/buttom_Gpt_evaluate.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/ReadHelper/buttom_Gpt_evaluate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/adminfuns/NewsPolish1.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/adminfuns/NewsPolish1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/bkmanagement/BookAnal.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/bkmanagement/BookAnal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/extendedfun/MindMap_GPT.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/extendedfun/MindMap_GPT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/extendedfun/QAbot.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/extendedfun/QAbot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/extendedfun/QuestionsRenderFinal.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/extendedfun/QuestionsRenderFinal.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,33 +121,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/UseForRuanjianbei/BookForum&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "D:/UseForRuanjianbei/BookForum",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "Errors",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ]
   }
-}</component>
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -464,14 +466,10 @@
       <workItem from="1722315012895" duration="397000" />
       <workItem from="1722324927427" duration="872000" />
       <workItem from="1722333558477" duration="4131000" />
-    </task>
-    <task id="LOCAL-00015" summary="feat(seatmng): add the function of Alert">
-      <option name="closed" value="true" />
-      <created>1718114651995</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1718114651995</updated>
+      <workItem from="1722346733751" duration="83000" />
+      <workItem from="1722393182861" duration="9471000" />
+      <workItem from="1722404126645" duration="136000" />
+      <workItem from="1722404274694" duration="384000" />
     </task>
     <task id="LOCAL-00016" summary="fix(seatmng): add the function of Alert">
       <option name="closed" value="true" />
@@ -857,7 +855,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722315402286</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="fix NextRecbooks">
+      <option name="closed" value="true" />
+      <created>1722346803297</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1722346803297</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -903,7 +909,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="fix(homepg): change the style of the bookshow" />
     <MESSAGE value="fix(bookmng): fix the gptQing" />
     <MESSAGE value="fix(planEchart): fix the String type" />
     <MESSAGE value="feat(extendfuns): add FaceSearch &amp;&amp; PlanEchart" />
@@ -928,7 +933,8 @@
     <MESSAGE value="add FaceRec &amp;&amp; Translator" />
     <MESSAGE value="fix GptRead" />
     <MESSAGE value="fix GptRead &amp;&amp; RecBookRandomly" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix GptRead &amp;&amp; RecBookRandomly" />
+    <MESSAGE value="fix NextRecbooks" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix NextRecbooks" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

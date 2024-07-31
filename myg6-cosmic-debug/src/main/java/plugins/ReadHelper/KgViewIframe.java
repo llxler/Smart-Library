@@ -114,7 +114,7 @@ public class KgViewIframe extends AbstractFormPlugin implements Plugin {
             Object[] params = new Object[]{
                     //GPT提示编码
                     getPromptFid("prompt-24072668AAE0F1"),
-                    "",
+                    "开始生成关系图谱",
                     variableMap
             };
             Map<String, Object> result = DispatchServiceHelper.invokeBizService("ai", "gai", "GaiPromptService", "syncCall", params);

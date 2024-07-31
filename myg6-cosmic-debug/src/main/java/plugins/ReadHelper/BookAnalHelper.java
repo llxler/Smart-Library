@@ -15,6 +15,7 @@ import kd.sdk.plugin.Plugin;
 import org.apache.commons.lang3.StringUtils;
 
 import java.util.EventObject;
+import java.util.HashMap;
 
 /**
  * 动态表单插件
@@ -60,7 +61,8 @@ public class BookAnalHelper extends AbstractFormPlugin implements Plugin {
                 // --------传入的json配置--------
                 // 呼出gpt
                 cache.put("bookAnal", bookName);
-                DispatchServiceHelper.invokeBizService("ai", "gai", "GaiService", "sideBarInit", pageId, need.toJSONString());
+                // DispatchServiceHelper.invokeBizService("ai", "gai", "GaiService", "sideBarInit", pageId, need.toJSONString());
+                DispatchServiceHelper.invokeBizService("ai", "gai", "GaiService", "startProcessInSideBar", pkValue, pageId, new HashMap<>(), "开始交互");
             }
         }
     }

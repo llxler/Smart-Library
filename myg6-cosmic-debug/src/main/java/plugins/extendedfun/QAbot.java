@@ -58,7 +58,7 @@ public class QAbot extends AbstractFormPlugin implements Plugin {
                 Object[] params = new Object[] {
                         //GPT提示编码
                         getPromptFid("prompt-24062984974936"),
-                        "",
+                        "开始出题",
                         variableMap
                 };
                 Map<String, Object> result = DispatchServiceHelper.invokeBizService("ai", "gai", "GaiPromptService", "syncCall", params);

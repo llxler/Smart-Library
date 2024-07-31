@@ -208,7 +208,7 @@ public class QuestionsRenderFinal extends AbstractFormPlugin implements Plugin {
             Object[] params = new Object[] {
                     //GPT提示编码
                     getPromptFid("prompt-240703B474C02A"),
-                    "",
+                    "开始根据学生的每个问题的回答来进行打分",
                     variableMap
             };
             Map<String, Object> result = DispatchServiceHelper.invokeBizService("ai", "gai", "GaiPromptService", "syncCall", params);

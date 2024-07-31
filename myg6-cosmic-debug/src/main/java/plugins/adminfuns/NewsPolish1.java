@@ -43,7 +43,7 @@ public class NewsPolish1 extends AbstractFormPlugin implements Plugin {
                 Object[] params = new Object[]{
                         //GPT提示编码
                         getPromptFid("prompt-24062763DAA2B4"),
-                        "",
+                        "开始润色新闻填写内容",
                         variableMap
                 };
                 Map<String, Object> result = DispatchServiceHelper.invokeBizService("ai", "gai", "GaiPromptService", "syncCall", params);

@@ -48,7 +48,7 @@ public class MindMap_GPT extends AbstractFormPlugin implements Plugin {
                 Object[] params = new Object[]{
                         //GPT提示编码
                         getPromptFid("prompt-2406105F429646"),
-                        "",
+                        "开始生成图书内容的框架",
                         variableMap
                 };
                 Map<String, Object> result = DispatchServiceHelper.invokeBizService("ai", "gai", "GaiPromptService", "syncCall", params);

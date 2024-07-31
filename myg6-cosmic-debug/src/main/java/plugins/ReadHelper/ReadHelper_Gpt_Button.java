@@ -52,11 +52,11 @@ public class ReadHelper_Gpt_Button extends AbstractFormPlugin implements Plugin 
                 jsonResultObject.put("bookName", bookName);
                 Map<String, String> variableMap = new HashMap<>();
                 variableMap.put("bookInfo", jsonResultObject.toJSONString());
-
+                variableMap.put("userInput", "生成框架");
                 Object[] params = new Object[]{
                         //GPT提示编码
                         getPromptFid("prompt-2407138C01A31C"),
-                        "",
+                        "生成框架",
                         variableMap
                 };
                 Map<String, Object> result = DispatchServiceHelper.invokeBizService("ai", "gai", "GaiPromptService", "syncCall", params);
