@@ -309,7 +309,7 @@ public class GptRead extends AbstractFormPlugin implements Plugin {
                     Object[] params = new Object[]{
                             // GPT提示编码
                             getPromptFid("prompt-240729B96EA89C"),
-                            "开始翻译",
+                            txtContent,
                             variableMap
                     };
                     try {

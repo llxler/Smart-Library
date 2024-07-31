@@ -47,9 +47,8 @@ public class BookAnalHelper extends AbstractFormPlugin implements Plugin {
                 String bookName = book.getString("name");
                 // 获取缓存
                 DistributeSessionlessCache cache = CacheFactory.getCommonCacheFactory().getDistributeSessionlessCache("customRegion");
-                // 呼出gpt
                 cache.put("bookAnal", bookName);
-                // DispatchServiceHelper.invokeBizService("ai", "gai", "GaiService", "sideBarInit", pageId, need.toJSONString());
+                // 呼出gpt
                 DispatchServiceHelper.invokeBizService("ai", "gai", "GaiService","selectProcessInSideBar",pkValue, pageId,"您好，我是您的交互助手，我将帮助您完成笔记的整理\n");
                 DispatchServiceHelper.invokeBizService("ai", "gai", "GaiService","startProcessInSideBar",pkValue, pageId, new HashMap(), "开始交互");
             }

@@ -11,6 +11,7 @@ import kd.bos.form.plugin.AbstractFormPlugin;
 import kd.bos.orm.query.QFilter;
 import kd.bos.servicehelper.BusinessDataServiceHelper;
 import kd.sdk.plugin.Plugin;
+import kd.bos.form.control.Vector;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -36,7 +37,9 @@ public class NextRecbooks extends AbstractFormPlugin implements Plugin {
     public void registerListener(EventObject e) {
         super.registerListener(e);
         Label button = this.getView().getControl("myg6_labelap9");
+        Vector vectorIcon = this.getView().getControl("myg6_vectorap2");
         button.addClickListener(this);
+        vectorIcon.addClickListener(this);
     }
 
     @Override
@@ -46,7 +49,7 @@ public class NextRecbooks extends AbstractFormPlugin implements Plugin {
         if (source instanceof Button) {
             Button button = (Button) source;
             String key = button.getKey();
-            if (StringUtils.equals("myg6_labelap9", key)) {
+            if (StringUtils.equals("myg6_labelap9", key) || StringUtils.equals("myg6_vectorap2", key)) {
                 try {
                     // 使用 ProcessBuilder
                     ProcessBuilder processBuilder = new ProcessBuilder(CMD, SCRIPT_PATH);
