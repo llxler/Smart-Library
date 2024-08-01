@@ -26,6 +26,8 @@ import java.util.concurrent.Future;
  * 动态表单插件
  */
 public class GptRead extends AbstractFormPlugin implements Plugin {
+
+    private int chunk;
     private final String htmlCode1 = "<!DOCTYPE html>\n" +
             "    <html lang=\"en\">\n" +
             "    <head>\n" +
@@ -54,7 +56,6 @@ public class GptRead extends AbstractFormPlugin implements Plugin {
     private static ThreadPool pool = ThreadPools.newCachedThreadPool("CustomThreadPool", 3, 5);
     @Override
     public void registerListener(EventObject e) {
-        //todo:异步，页码
         super.registerListener(e);
         // 添加按钮监听
         Button button1 = this.getView().getControl("myg6_startread");
@@ -120,7 +121,6 @@ public class GptRead extends AbstractFormPlugin implements Plugin {
                 }
                 cache.put("pageId", nxtPg);
                 // 赋值label
-
                 this.getModel().setValue("myg6_labelap", pgInt + 1);
                 render(pgInt);
                 settrans();
@@ -224,9 +224,7 @@ public class GptRead extends AbstractFormPlugin implements Plugin {
             String htmlId = "myg6_txt" + i;
             Html html = this.getView().getControl(htmlId);
             html.setConent(htmlCode);
-
         }
-
     }
 
     private void solve() {
@@ -241,14 +239,15 @@ public class GptRead extends AbstractFormPlugin implements Plugin {
         // 去掉字符串中的回车符
         s = s.replace("\n", "").replace("\r", "");
         int all = 0, i = 0, idx = 0; // all为总页数，i为字符开始下标，idx为当前填入的txt缓存号
-        int chunk = 350; // 330为上限
+        chunk = 350; // 中文chunk
         int cnt = 0;
         for (int pp = 0;pp < 200;pp++) {
             if((s.charAt(pp) >= 'a' && s.charAt(pp) <= 'z') || s.charAt(pp) >= 'A' && s.charAt(pp) <= 'Z') {
                 cnt++;
             }
         }
-        if(cnt >= 100)  chunk = 720;
+        if (cnt >= 100)  chunk = 720; // 英文chunk
+        cache.put("chunkkk", "" + chunk);
         while (i < s.length()) {
             int ed = i + chunk;
             if (ed >= s.length()) {
@@ -271,16 +270,14 @@ public class GptRead extends AbstractFormPlugin implements Plugin {
             }
         }
         all = (all + 2) / 3;
-
         // 放入总页数
-        if(cache.get("allpage") != null)
-            if(Integer.parseInt(cache.get("allpage")) != all) {
-                for(int j = 0;j < all;j ++) {
-                    cache.put("trans" + j, new byte[0]);
-                }
-            }
+//        if(cache.get("allpage") != null)
+//            if(Integer.parseInt(cache.get("allpage")) != all) {
+//                for(int j = 0;j < all;j ++) {
+//                    cache.put("trans" + j, "");
+//                }
+//            }
         cache.put("allpage", String.valueOf(all));
-
     }
 
 
@@ -343,9 +340,10 @@ public class GptRead extends AbstractFormPlugin implements Plugin {
         Boolean trans = (Boolean) this.getModel().getValue("myg6_trans_switch");
         DistributeSessionlessCache cache = CacheFactory.getCommonCacheFactory().getDistributeSessionlessCache("customRegion");
         String codepage = cache.get("pageId");
-        if(trans) {
-            if(cache.get("trans" + (1 + Integer.parseInt(codepage) * 3)) == null) {
-                System.out.println("motherfucker" + "trans" + (Integer.parseInt(codepage) * 3));
+        String chunkkk = cache.get("chunkkk");
+        int chunkk = Integer.parseInt(chunkkk);
+        if (trans && chunkk == 720) {
+            if (cache.get("trans" + (1 + Integer.parseInt(codepage) * 3)) == null) {
                 dotrans();
             }
             for (int i = 1; i <= 3; ++i) {
@@ -370,8 +368,7 @@ public class GptRead extends AbstractFormPlugin implements Plugin {
                 Html html = this.getView().getControl(htmlId);
                 html.setConent(htmlCode);
             }
-        }
-        else {
+        } else {
             for (int i = 1; i <= 3; ++i) {
                 // 填入html信息
                 String htmlId = "myg6_trans" + i;
@@ -426,8 +423,7 @@ public class GptRead extends AbstractFormPlugin implements Plugin {
                 cache.put("pageId", String.valueOf(codepage));
             }
             settrans();
-        }
-        else if(StringUtils.equals("myg6_trans_switch", fieldKey)) {
+        } else if (StringUtils.equals("myg6_trans_switch", fieldKey)) {
             // 翻译
             settrans();
         }

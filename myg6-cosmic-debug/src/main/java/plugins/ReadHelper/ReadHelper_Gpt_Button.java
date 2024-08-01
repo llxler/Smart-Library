@@ -5,6 +5,7 @@ import com.alibaba.fastjson.JSONObject;
 import kd.bos.dataentity.entity.DynamicObject;
 import kd.bos.ext.form.control.Markdown;
 import kd.bos.form.control.Button;
+import kd.bos.form.events.ClientCallBackEvent;
 import kd.bos.form.plugin.AbstractFormPlugin;
 import kd.bos.orm.query.QCP;
 import kd.bos.orm.query.QFilter;
@@ -40,34 +41,42 @@ public class ReadHelper_Gpt_Button extends AbstractFormPlugin implements Plugin 
             // 若是渲染界面按钮
             if (StringUtils.equals("myg6_startread", key)) {
                 // ----------- begin -----------
+                this.getView().addClientCallBack("readhelper", 0);
 
-                JSONObject jsonResultObject = new JSONObject();
-                DynamicObject book = (DynamicObject) this.getModel().getValue("myg6_bookname");
-                if (book == null) {
-                    this.getView().showMessage("请选择书籍");
-                    return;
-                }
-                String bookName = book.getString("name");
-
-                jsonResultObject.put("bookName", bookName);
-                Map<String, String> variableMap = new HashMap<>();
-                variableMap.put("bookInfo", jsonResultObject.toJSONString());
-                variableMap.put("userInput", "生成框架");
-                Object[] params = new Object[]{
-                        //GPT提示编码
-                        getPromptFid("prompt-2407138C01A31C"),
-                        "生成框架",
-                        variableMap
-                };
-                Map<String, Object> result = DispatchServiceHelper.invokeBizService("ai", "gai", "GaiPromptService", "syncCall", params);
-                JSONObject jsonObjectResult = new JSONObject(result);
-                JSONObject jsonObjectData = jsonObjectResult.getJSONObject("data");
-                // 设置值
-                this.getModel().setValue("myg6_txt", jsonObjectData.getString("llmValue"));
-                Markdown mk = this.getView().getControl("myg6_md");
-                mk.setText(jsonObjectData.getString("llmValue"));
-                // ----------- over -----------
             }
+        }
+    }
+
+    @Override
+    public void clientCallBack(ClientCallBackEvent e) {
+        if ("readhelper".equals(e.getName())) {
+            JSONObject jsonResultObject = new JSONObject();
+            DynamicObject book = (DynamicObject) this.getModel().getValue("myg6_bookname");
+            if (book == null) {
+                this.getView().showMessage("请选择书籍");
+                return;
+            }
+            String bookName = book.getString("name");
+
+
+            jsonResultObject.put("bookName", bookName);
+            Map<String, String> variableMap = new HashMap<>();
+            variableMap.put("bookInfo", jsonResultObject.toJSONString());
+            variableMap.put("userInput", "生成框架");
+            Object[] params = new Object[]{
+                    //GPT提示编码
+                    getPromptFid("prompt-2407138C01A31C"),
+                    "生成框架",
+                    variableMap
+            };
+            Map<String, Object> result = DispatchServiceHelper.invokeBizService("ai", "gai", "GaiPromptService", "syncCall", params);
+            JSONObject jsonObjectResult = new JSONObject(result);
+            JSONObject jsonObjectData = jsonObjectResult.getJSONObject("data");
+            // 设置值
+            this.getModel().setValue("myg6_txt", jsonObjectData.getString("llmValue"));
+            Markdown mk = this.getView().getControl("myg6_md");
+            mk.setText(jsonObjectData.getString("llmValue"));
+            // ----------- over -----------
         }
     }
 

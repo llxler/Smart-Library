@@ -1,0 +1,7 @@
+<root>
+    <region name="myg6_Intelligent_lib">
+        <queue name="erkai_queue" appid="myg6_extended_funs">
+            <consumer class="plugins.MQ.DemoConsumer"></consumer>
+        </queue>
+    </region>
+</root>

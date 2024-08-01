@@ -7,11 +7,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import kd.bos.bill.BillOperationStatus;
-import kd.bos.bill.BillShowParameter;
-import kd.bos.bill.OperationStatus;
+import com.alibaba.fastjson.JSONObject;
 import kd.bos.dataentity.entity.DynamicObject;
-import kd.bos.dataentity.entity.DynamicObjectCollection;
 import kd.bos.dataentity.serialization.SerializationUtils;
 import kd.bos.dataentity.utils.StringUtils;
 import kd.bos.form.ShowType;
@@ -21,10 +18,11 @@ import kd.bos.form.control.events.SearchEnterListener;
 import kd.bos.form.plugin.AbstractFormPlugin;
 import kd.bos.list.ListFilterParameter;
 import kd.bos.list.ListShowParameter;
-import kd.bos.orm.ORM;
 import kd.bos.orm.query.QCP;
 import kd.bos.orm.query.QFilter;
 import kd.bos.servicehelper.BusinessDataServiceHelper;
+import kd.bos.servicehelper.DispatchServiceHelper;
+
 public class SearchPlugin extends AbstractFormPlugin implements SearchEnterListener {
 
     // 搜索控件标识
@@ -98,28 +96,47 @@ public class SearchPlugin extends AbstractFormPlugin implements SearchEnterListe
 
     /**
      * 实现搜索
-     *
      * @param searchText 搜索文本
      */
 
     private void doSearch(String searchText) {
-        // 从模糊查询结果中，匹配搜索文本：找到后，打开对应的币别详情界面
-        ListShowParameter lsp = new ListShowParameter();
-        lsp.setFormId("bos_list");
-        lsp.setBillFormId("myg6_book_list");
-        lsp.getOpenStyle().setShowType(ShowType.Modal);
-        ListFilterParameter listFilterParameter = new ListFilterParameter();
-        QFilter qFilter = new QFilter("name", QCP.like, "%" + searchText + "%");
-        listFilterParameter.setFilter(qFilter);
-        lsp.setListFilterParameter(listFilterParameter);
-//                    BillShowParameter param = new BillShowParameter();
-//                    param.setPkId(arr[1]);
-//                    param.setFormId(arr[0]);
-//                    param.getOpenStyle().setShowType(ShowType.Modal);
-//                    param.setBillStatus(BillOperationStatus.VIEW);
-//                    param.setStatus(OperationStatus.VIEW);
-        this.getView().showForm(lsp);
+        Boolean AI = (Boolean) this.getModel().getValue("myg6_smartsearch");
+        if (AI) {
+            // 呼出gpt对话框
+            String pageId = this.getView().getMainView().getPageId();
+            Object pkValue = getProcessFid("process-24080158231F7B");
+            JSONObject needJson = new JSONObject();
+            // 从数据库中获取书籍列表
+            String bookList = "";
+            String fields = "name";
+            QFilter[] filters = new QFilter[0];
+            DynamicObject[] dys = BusinessDataServiceHelper.load("myg6_book_list", fields, filters);
+            for (DynamicObject dy : dys) {
+                bookList += dy.getString("name") + ",";
+            }
+            needJson.put("bookList", bookList);
+            needJson.put("userNeed", searchText);
+            DispatchServiceHelper.invokeBizService("ai", "gai", "GaiService","selectProcessInSideBar",pkValue, pageId, "-----------------------正在搜索-----------------------\n");
+            DispatchServiceHelper.invokeBizService("ai", "gai", "GaiService","startProcessInSideBar", pkValue, pageId, new HashMap(), needJson.toJSONString());
+        } else {
+            ListShowParameter lsp = new ListShowParameter();
+            lsp.setFormId("bos_list");
+            lsp.setBillFormId("myg6_book_list");
+            lsp.getOpenStyle().setShowType(ShowType.Modal);
+            ListFilterParameter listFilterParameter = new ListFilterParameter();
+            QFilter qFilter = new QFilter("name", QCP.like, "%" + searchText + "%");
+            listFilterParameter.setFilter(qFilter);
+            lsp.setListFilterParameter(listFilterParameter);
+            this.getView().showForm(lsp);
+        }
+    }
 
-
+    public Object getProcessFid(String billNo) {
+        DynamicObject dynamicObject = BusinessDataServiceHelper.loadSingle("gai_process",
+                "number," +
+                        "id",
+                (new QFilter("number", QCP.equals, billNo)).toArray());
+        long idd = dynamicObject.getLong("id");
+        return Long.parseLong(String.valueOf(idd));
     }
 }

@@ -30,7 +30,7 @@ public class RecBookRandomly extends AbstractFormPlugin implements Plugin {
         // 生成随机数五个不同的数字放入列表bookId中
         DistributeSessionlessCache cache = CacheFactory.getCommonCacheFactory().getDistributeSessionlessCache("customRegion");
         for (int i = 1; i <= 5; i++) {
-            int random = (int) (Math.random() * dys.length); // 0-14
+            int random = (int) (Math.random() * dys.length);
             if (!RecBookId.contains(random)) {
                 RecBookId.add(random);
             } else {

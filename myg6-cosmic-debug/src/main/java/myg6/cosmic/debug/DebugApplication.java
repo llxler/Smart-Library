@@ -49,6 +49,15 @@ public class DebugApplication {
         //打开redis设置
         cosmic.setRedisConfig(REDIS_IP);
 
+        // MQ
+//        System.setProperty("dubbo.registry.register", "true");
+//        System.setProperty("mq.consumer.register", "true");
+//        // 定义一个唯一的标识别和其他人重复
+//        System.setProperty("mq.debug.queue.tag", "myg6");
+//        System.setProperty("lightweightdeploy","false");
+//        // 队列发送方、消费方均需要该配置项，包括具体的配置文件，生产环境可配在服务节点的启动参数中
+//        System.setProperty("mqConfigFiles.config","erkai/consummqconfig.xml");
+
         cosmic.start();
     }
 }

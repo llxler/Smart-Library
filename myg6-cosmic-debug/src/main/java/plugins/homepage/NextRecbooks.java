@@ -101,10 +101,20 @@ public class NextRecbooks extends AbstractFormPlugin implements Plugin {
         Matcher matcher = pattern.matcher(output);
         if (matcher.find()) {
             String[] ids = matcher.group(1).replace("'", "").split(", ");
-            int i = 1;
+            int i = 0;
             for (String id : ids) {
-                RecBookId.add(Integer.parseInt(id) - 1);
                 ++i;
+                if (i == 6) break;
+                RecBookId.add(Integer.parseInt(id) - 1);
+            }
+            while (i < 5) {
+                String fields = "name,myg6_picturefield";
+                QFilter[] filters = new QFilter[0];
+                DynamicObject[] dys = BusinessDataServiceHelper.load("myg6_book_list", fields, filters);
+                int random = (int) (Math.random() * dys.length);
+                if (!RecBookId.contains(random)) {
+                    RecBookId.add(random);
+                }
             }
         }
         return RecBookId;

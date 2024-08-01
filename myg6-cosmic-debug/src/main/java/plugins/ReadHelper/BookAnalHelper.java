@@ -49,7 +49,7 @@ public class BookAnalHelper extends AbstractFormPlugin implements Plugin {
                 DistributeSessionlessCache cache = CacheFactory.getCommonCacheFactory().getDistributeSessionlessCache("customRegion");
                 cache.put("bookAnal", bookName);
                 // 呼出gpt
-                DispatchServiceHelper.invokeBizService("ai", "gai", "GaiService","selectProcessInSideBar",pkValue, pageId,"您好，我是您的交互助手，我将帮助您完成笔记的整理\n");
+                DispatchServiceHelper.invokeBizService("ai", "gai", "GaiService","selectProcessInSideBar",pkValue, pageId, "您好，我是您的交互助手，我将帮助您完成笔记的整理\n");
                 DispatchServiceHelper.invokeBizService("ai", "gai", "GaiService","startProcessInSideBar",pkValue, pageId, new HashMap(), "开始交互");
             }
         }
