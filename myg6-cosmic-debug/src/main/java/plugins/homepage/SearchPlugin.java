@@ -8,9 +8,12 @@ import java.util.List;
 import java.util.Map;
 
 import com.alibaba.fastjson.JSONObject;
+import kd.bos.cache.CacheFactory;
+import kd.bos.cache.DistributeSessionlessCache;
 import kd.bos.dataentity.entity.DynamicObject;
 import kd.bos.dataentity.serialization.SerializationUtils;
 import kd.bos.dataentity.utils.StringUtils;
+import kd.bos.form.FormShowParameter;
 import kd.bos.form.ShowType;
 import kd.bos.form.control.Search;
 import kd.bos.form.control.events.SearchEnterEvent;
@@ -93,12 +96,10 @@ public class SearchPlugin extends AbstractFormPlugin implements SearchEnterListe
             this.doSearch(searchText);
         }
     }
-
     /**
      * 实现搜索
      * @param searchText 搜索文本
      */
-
     private void doSearch(String searchText) {
         Boolean AI = (Boolean) this.getModel().getValue("myg6_smartsearch");
         if (AI) {
@@ -116,8 +117,25 @@ public class SearchPlugin extends AbstractFormPlugin implements SearchEnterListe
             }
             needJson.put("bookList", bookList);
             needJson.put("userNeed", searchText);
-            DispatchServiceHelper.invokeBizService("ai", "gai", "GaiService","selectProcessInSideBar",pkValue, pageId, "-----------------------正在搜索-----------------------\n");
+            DistributeSessionlessCache cache = CacheFactory.getCommonCacheFactory().getDistributeSessionlessCache("customRegion");
+            cache.put("openFlag", "false");
+            DispatchServiceHelper.invokeBizService("ai", "gai", "GaiService","selectProcessInSideBar",pkValue, pageId, "----------------------正在搜索----------------------\n");
             DispatchServiceHelper.invokeBizService("ai", "gai", "GaiService","startProcessInSideBar", pkValue, pageId, new HashMap(), needJson.toJSONString());
+            for (int i = 1; i <= 10; ++i) {
+                try {
+                    Thread.sleep(1000);
+                } catch (InterruptedException e) {
+                    throw new RuntimeException(e);
+                }
+                String openFlag = cache.get("openFlag");
+                if (openFlag != null && openFlag.equals("true")) {
+                    FormShowParameter formShowParameter = new FormShowParameter();
+                    formShowParameter.setFormId("myg6_minishelf");
+                    formShowParameter.getOpenStyle().setShowType(ShowType.Modal);
+                    this.getView().showForm(formShowParameter);
+                    break;
+                }
+            }
         } else {
             ListShowParameter lsp = new ListShowParameter();
             lsp.setFormId("bos_list");
