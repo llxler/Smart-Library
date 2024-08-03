@@ -17,7 +17,7 @@ import java.util.Map;
 /**
  * 动态表单插件
  */
-public class NewsPolish1 extends AbstractFormPlugin implements Plugin {
+public class NewsPolish extends AbstractFormPlugin implements Plugin {
         @Override
         public void registerListener(EventObject e) {
             // 注册点击事件

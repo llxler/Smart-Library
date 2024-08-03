@@ -11,21 +11,24 @@ import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.EventObject;
+import java.util.List;
 
 import static myg6.cosmic.debug.DebugApplication.MY_IP;
 
 /**
  * 动态表单插件
  */
-public class FaceReturnBook extends AbstractFormPlugin implements Plugin {
+public class CVReturnBook extends AbstractFormPlugin implements Plugin {
     @Override
     public void registerListener(EventObject e) {
         super.registerListener(e);
-        //添加按钮监听
+        // 添加按钮监听
         Button button = this.getView().getControl("myg6_returnbook");
         button.addClickListener(this);
     }
+
     @Override
     public void click(EventObject evt) {
         super.click(evt);
@@ -79,11 +82,33 @@ public class FaceReturnBook extends AbstractFormPlugin implements Plugin {
                     JSONObject jsonResponse = JSONObject.parseObject(response.toString());
                     JSONObject data = jsonResponse.getJSONObject("data");
                     String bookName = data.getString("title");
+
+                    // 更新txt内容
+                    String updatedTxt = updateBookStatus(txt, bookName);
+                    System.out.println("updatedTxt: " + updatedTxt);
+
                     this.getView().showMessage("识别成功，当前您还的书籍是 " + bookName);
+                    this.getModel().setValue("myg6_textareafield", updatedTxt);
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
             }
         }
+    }
+
+    private String updateBookStatus(String txt, String bookName) {
+        if (txt == null) {
+            return "";
+        }
+        String[] lines = txt.split("\n");
+        List<String> updatedLines = new ArrayList<>();
+        for (String line : lines) {
+            if (line.contains(bookName)) {
+                updatedLines.add("--------------该本图书已经归还--------------\n");
+            } else {
+                updatedLines.add(line);
+            }
+        }
+        return String.join("\n", updatedLines);
     }
 }
