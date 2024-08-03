@@ -217,7 +217,7 @@ public class FaceSearch extends AbstractFormPlugin implements Plugin {
             infoSeat = "该同学未订阅座位";
         }
         // 显示识别结果
-        this.getView().showMessage("识别结果:\n" + getInfo + "\n---------------------------------\n" + "欢迎" + name + "同学来到华科智能图书馆!!!\n");
+        this.getView().showMessage("识别结果:\n" + getInfo + "---------------" + "欢迎" + name + "同学来到华科智能图书馆!!!\n");
         this.getModel().setValue("myg6_textareafield", infoBook + "\n" + infoSeat);
 
         // 得出学生照片

@@ -39,7 +39,7 @@ public class CV_Batch extends AbstractListPlugin implements Plugin {
                     "  \"groupName\": \"kingdee\",\n" +
                     "  \"itemName\": \"redundant\",\n" +
                     "  \"opeCode\": %d\n" +
-                    "}", 0); // 0是添加图书
+                    "}", 0); // 0表示识别书籍
 
         try {
             // 创建URL对象

@@ -126,7 +126,7 @@ public class MiniShelfRender extends AbstractFormPlugin implements Plugin {
         DynamicObject[] dys = BusinessDataServiceHelper.load("myg6_book_list", fields, filters);
         int index = 0;
         for (String v : bookArray) {
-            index ++;
+            index++;
             for(DynamicObject single : dys) {
                 if(single.getString("name").replaceAll("\\s+", "").equals(v.replaceAll("\\s+", ""))) {
 
@@ -138,7 +138,6 @@ public class MiniShelfRender extends AbstractFormPlugin implements Plugin {
                     break;
                 }
             }
-
         }
 
     }

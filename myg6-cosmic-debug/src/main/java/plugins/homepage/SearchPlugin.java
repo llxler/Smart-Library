@@ -69,14 +69,7 @@ public class SearchPlugin extends AbstractFormPlugin implements SearchEnterListe
         QFilter[] filter = new QFilter[]{filter1};
         // Load the data
         DynamicObject[] collection = BusinessDataServiceHelper.load("myg6_book_list", fields, filter);
-
-//        ORM orm = ORM.create();
         Map<String, String> searchList = new HashMap<String, String>();
-        // 模糊搜索币别
-//        QFilter filter1 = new QFilter("number", QCP.like, "%" + searchText + "%");
-//        QFilter filter2 = new QFilter("name", QCP.like, "%" + searchText + "%");
-//        QFilter filters = filter1.or(filter2);
-//        DynamicObjectCollection collection = orm.query("bd_currency", new QFilter[] { filters });
         for (DynamicObject obj : collection) {
             searchList.put("myg6_book_list" + " " + obj.get("number").toString(), "" + obj.get("name"));
         }
@@ -84,10 +77,6 @@ public class SearchPlugin extends AbstractFormPlugin implements SearchEnterListe
         getPageCache().put("searchList", SerializationUtils.toJsonString(searchList));
         return new ArrayList<>(searchList.values());
     }
-
-    /**
-     * 用户录入搜索字符完毕，回车时触发：准确定位
-     */
     @Override
     public void search(SearchEnterEvent evt) {
         Search search = (Search) evt.getSource();
