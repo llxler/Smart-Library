@@ -111,7 +111,13 @@ public class FaceSearch extends AbstractFormPlugin implements Plugin {
                 // 打印该人的信息
                  render(userId);
             } else if (type == 1) { // 人脸注册
-                this.getView().showMessage("恭喜，注册成功！");
+                this.getView().showMessage("恭喜注册成功！欢迎新同学来到华科智能图书馆!!!\n");
+                this.getModel().setValue("myg6_textareafield", "欢迎新同学来到华科智能图书馆!!!\n您可以去借阅感兴趣的书籍。\n记得去学生中心上传照片！！！");
+                // 得出学生照片
+                QFilter qFilterr = new QFilter("myg6_student_name", QCP.equals, "陌生人");
+                DynamicObject faceInfo = BusinessDataServiceHelper.loadSingle("myg6_student_info", new QFilter[]{qFilterr});
+                String imgurl = faceInfo.getString("myg6_student_photo");
+                this.getModel().setValue("myg6_picturefield", imgurl);
             }
         } catch (Exception e) {
             e.printStackTrace();
