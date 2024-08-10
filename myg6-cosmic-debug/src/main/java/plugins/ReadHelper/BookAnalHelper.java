@@ -40,13 +40,18 @@ public class BookAnalHelper extends AbstractFormPlugin implements Plugin {
             if (StringUtils.equals("myg6_notehelper", key)) {
                 // 获取缓存
                 DynamicObject book = (DynamicObject) this.getModel().getValue("myg6_bookname");
-                if (book == null) {
-                    this.getView().showMessage("请先选择书籍");
-                    return;
-                }
-                String bookName = book.getString("name");
-                // 获取缓存
+                Boolean ispdftxt = (Boolean) this.getModel().getValue("myg6_isupload");
+                String bookName;
+
                 DistributeSessionlessCache cache = CacheFactory.getCommonCacheFactory().getDistributeSessionlessCache("customRegion");
+                if (book == null && !ispdftxt) {
+                    this.getView().showMessage("请选择书籍");
+                    return;
+                } else if (ispdftxt) {
+                    bookName = cache.get("fileName");
+                } else {
+                    bookName = book.getString("name");
+                }
                 cache.put("bookAnal", bookName);
                 // 呼出gpt
                 DispatchServiceHelper.invokeBizService("ai", "gai", "GaiService","selectProcessInSideBar",pkValue, pageId, "您好，我是您的交互助手，我将帮助您完成笔记的整理\n");

@@ -1,6 +1,8 @@
 package plugins.ReadHelper;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.TypeReference;
+import kd.bos.cache.CacheFactory;
+import kd.bos.cache.DistributeSessionlessCache;
 import kd.bos.dataentity.entity.DynamicObject;
 import kd.bos.entity.IFrameMessage;
 import kd.bos.form.control.Button;
@@ -82,16 +84,33 @@ public class KgViewIframe extends AbstractFormPlugin implements Plugin {
         System.out.println("matuo" + roleName);
         String bookName;
         DynamicObject book = (DynamicObject) this.getModel().getValue("myg6_bookname");
-        bookName = book.getString("name");
+
+        Boolean ispdftxt = (Boolean) this.getModel().getValue("myg6_isupload");
+
+        DistributeSessionlessCache cache = CacheFactory.getCommonCacheFactory().getDistributeSessionlessCache("customRegion");
+        if (book == null && !ispdftxt) {
+            this.getView().showMessage("请选择书籍");
+            return;
+        } else if (ispdftxt) {
+            bookName = cache.get("fileName");
+        } else {
+            bookName = book.getString("name");
+        }
+
         Integer count = (Integer) this.getModel().getValue("myg6_integerfield");
         System.out.println("goushi" + count);
         System.out.println("goushu" + bookName);
         QFilter qFilter = new QFilter("myg6_bookname", QCP.equals, bookName);
         DynamicObject bookData = BusinessDataServiceHelper.loadSingle("myg6_txts", new QFilter[]{qFilter});
 
-        // 取出图谱内容，判断数据有没有现成的
-        String s = bookData.getString("myg6_tupu_tag");
-        System.out.println("shit" + s);
+        String s;
+        if (ispdftxt) {
+            s = "";
+        } else {
+            // 取出图谱内容，判断数据有没有现成的
+            s = bookData.getString("myg6_tupu_tag");
+        }
+
         List<Map<String, String>> storedDataList = JSON.parseObject(s, new TypeReference<List<Map<String, String>>>(){});
         boolean isDuplicate = false;
         if(!s.isEmpty())
@@ -138,6 +157,19 @@ public class KgViewIframe extends AbstractFormPlugin implements Plugin {
             matchingDataList = JSON.parseObject(jsonString, new com.alibaba.fastjson.TypeReference<List<Map<String, String>>>() {
             });
             System.out.println("生成了多少：" + matchingDataList.size());
+
+            if (ispdftxt) {
+                String data = JSON.toJSONString(matchingDataList);
+                IFrame iframe = this.getControl("myg6_kgview");
+                IFrameMessage message = new IFrameMessage();
+                message.setType(type);
+                message.setOrigin("*");
+                message.setContent(data);
+
+                iframe.postMessage(message);
+                return;
+            }
+
             //更新储存的图谱内容\
             String updatedJsonString = "";
             if(!s.isEmpty()) {
@@ -173,8 +205,6 @@ public class KgViewIframe extends AbstractFormPlugin implements Plugin {
 
         iframe.postMessage(message);
     }
-
-
 
     public long getPromptFid(String billNo) {
         DynamicObject dynamicObject = BusinessDataServiceHelper.loadSingle("gai_prompt",

@@ -5,6 +5,8 @@ import kd.bos.cache.CacheFactory;
 import kd.bos.cache.DistributeSessionlessCache;
 import kd.bos.dataentity.entity.DynamicObject;
 import kd.bos.entity.datamodel.events.PropertyChangedArgs;
+import kd.bos.form.FormShowParameter;
+import kd.bos.form.ShowType;
 import kd.bos.form.control.Button;
 import kd.bos.form.control.events.BeforeClickEvent;
 import kd.bos.form.plugin.AbstractFormPlugin;
@@ -16,7 +18,12 @@ import kd.bos.form.control.Html;
 import kd.bos.threads.ThreadPool;
 import kd.bos.threads.ThreadPools;
 import kd.sdk.plugin.Plugin;
+import kd.bos.form.control.Vector;
 
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.*;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Future;
@@ -65,6 +72,7 @@ public class GptRead extends AbstractFormPlugin implements Plugin {
         Button button5 = this.getView().getControl("myg6_showai3");
         Button button6 = this.getView().getControl("myg6_forward");
         Button button7 = this.getView().getControl("myg6_backward");
+        Vector vector = this.getView().getControl("myg6_upload");
 
         // 监听
         button1.addClickListener(this);
@@ -74,30 +82,59 @@ public class GptRead extends AbstractFormPlugin implements Plugin {
         button5.addClickListener(this);
         button6.addClickListener(this);
         button7.addClickListener(this);
+        vector.addClickListener(this);
+    }
+
+    @Override
+    public void afterBindData(EventObject e) {
+        this.getView().setVisible(true, "myg6_bookname");
+        this.getView().setVisible(false, "myg6_upload");
+        this.getView().setVisible(false, "myg6_bookname_upload");
     }
 
     @Override
     public void beforeClick(BeforeClickEvent evt) {
         super.beforeClick(evt);
-        Object source = evt.getSource();
+        DistributeSessionlessCache cache = CacheFactory.getCommonCacheFactory().getDistributeSessionlessCache("customRegion");
 
+        Object source = evt.getSource();
         // 取出一些前置必要信息
         String pageId = this.getView().getMainView().getPageId();
         // Object pkValue = Long.parseLong("1992276822133310464");
         // 获取图书名字
         DynamicObject book = (DynamicObject) this.getModel().getValue("myg6_bookname");
-        if (book == null) {
+
+        // 获取按钮
+        Boolean ispdftxt = (Boolean) this.getModel().getValue("myg6_isupload");
+
+        if (book == null && !ispdftxt) {
             this.getView().showMessage("请先选择图书");
             return;
+        } else if (ispdftxt) {
+            bookName = cache.get("fileName");
+            if (bookName == null) {
+                this.getView().showMessage("请先上传文件");
+                return;
+            }
+        } else {
+            bookName = book.getString("name");
         }
-        bookName = book.getString("name");
-        // 获取缓存
-        DistributeSessionlessCache cache = CacheFactory.getCommonCacheFactory().getDistributeSessionlessCache("customRegion");
 
         // 开始书写按钮的业务逻辑
         if (source instanceof Button) {
             Button button = (Button) source;
             String key = button.getKey();
+
+            // 若是上传按钮
+            if (StringUtils.equals("myg6_upload", key)) {
+                // 上传文件
+                FormShowParameter billShowParameter = new FormShowParameter();
+                billShowParameter.setFormId("myg6_file_upload");
+                billShowParameter.setCaption("请上传文件");
+                billShowParameter.getOpenStyle().setShowType(ShowType.Modal);
+                //弹出表单和本页面绑定
+                this.getView().showForm(billShowParameter);
+            }
 
             // 若是渲染界面按钮
             if (StringUtils.equals("myg6_startread", key)) {
@@ -230,11 +267,29 @@ public class GptRead extends AbstractFormPlugin implements Plugin {
     private void solve() {
         // 获取缓存
         DistributeSessionlessCache cache = CacheFactory.getCommonCacheFactory().getDistributeSessionlessCache("customRegion");
-
-        QFilter qFilter = new QFilter("myg6_bookname", QCP.equals, bookName);
-        DynamicObject booktxt = BusinessDataServiceHelper.loadSingle("myg6_txts", new QFilter[]{qFilter});
-
-        String s = booktxt.getString("myg6_largetextfield_tag");
+        // 获取按钮
+        Boolean ispdftxt = (Boolean) this.getModel().getValue("myg6_isupload");
+        String s;
+        if (ispdftxt) {
+            // 从D:\UseForRuanjianbei\pdf2txt\output.txt读取到 s
+            try (BufferedReader reader = new BufferedReader(new FileReader("D:\\UseForRuanjianbei\\pdf2txt\\output.txt"))) {
+                StringBuilder sb = new StringBuilder();
+                String line;
+                while ((line = reader.readLine()) != null) {
+                    sb.append(line).append("\n");
+                }
+                s = sb.toString();
+            } catch (IOException e) {
+                e.printStackTrace();
+                s = "pdf/txt读取失败";
+            }
+            String mother = cache.get("fileName");
+            this.getModel().setValue("myg6_bookname_upload", mother);
+        } else {
+            QFilter qFilter = new QFilter("myg6_bookname", QCP.equals, bookName);
+            DynamicObject booktxt = BusinessDataServiceHelper.loadSingle("myg6_txts", new QFilter[]{qFilter});
+            s = booktxt.getString("myg6_largetextfield_tag");
+        }
 
         // 去掉字符串中的回车符
         s = s.replace("\n", "").replace("\r", "");
@@ -426,6 +481,17 @@ public class GptRead extends AbstractFormPlugin implements Plugin {
         } else if (StringUtils.equals("myg6_trans_switch", fieldKey)) {
             // 翻译
             settrans();
+        } else if (StringUtils.equals("myg6_isupload", fieldKey)) {
+            Boolean ispdftxt = (Boolean) this.getModel().getValue("myg6_isupload");
+            if (ispdftxt) {
+                this.getView().setVisible(false, "myg6_bookname");
+                this.getView().setVisible(true, "myg6_upload");
+                this.getView().setVisible(true, "myg6_bookname_upload");
+            } else {
+                this.getView().setVisible(true, "myg6_bookname");
+                this.getView().setVisible(false, "myg6_upload");
+                this.getView().setVisible(false, "myg6_bookname_upload");
+            }
         }
     }
     public long getPromptFid(String billNo) {

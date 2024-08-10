@@ -2,6 +2,8 @@ package plugins.ReadHelper;
 
 import com.alibaba.druid.util.StringUtils;
 import com.alibaba.fastjson.JSONObject;
+import kd.bos.cache.CacheFactory;
+import kd.bos.cache.DistributeSessionlessCache;
 import kd.bos.dataentity.entity.DynamicObject;
 import kd.bos.ext.form.control.Markdown;
 import kd.bos.form.control.Button;
@@ -52,12 +54,18 @@ public class ReadHelper_Gpt_Button extends AbstractFormPlugin implements Plugin 
         if ("readhelper".equals(e.getName())) {
             JSONObject jsonResultObject = new JSONObject();
             DynamicObject book = (DynamicObject) this.getModel().getValue("myg6_bookname");
-            if (book == null) {
+            Boolean ispdftxt = (Boolean) this.getModel().getValue("myg6_isupload");
+            String bookName;
+
+            DistributeSessionlessCache cache = CacheFactory.getCommonCacheFactory().getDistributeSessionlessCache("customRegion");
+            if (book == null && !ispdftxt) {
                 this.getView().showMessage("请选择书籍");
                 return;
+            } else if (ispdftxt) {
+                bookName = cache.get("fileName");
+            } else {
+                bookName = book.getString("name");
             }
-            String bookName = book.getString("name");
-
 
             jsonResultObject.put("bookName", bookName);
             Map<String, String> variableMap = new HashMap<>();
