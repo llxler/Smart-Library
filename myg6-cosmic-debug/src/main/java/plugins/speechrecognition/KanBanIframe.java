@@ -15,6 +15,6 @@ public class KanBanIframe extends AbstractFormPlugin implements Plugin {
     public void afterBindData(EventObject e) {
         super.afterBindData(e);
         IFrame iframe = this.getControl("myg6_kanbanniang");
-        iframe.setSrc("http://"+ "localhost" +":12355/live.html");
+        iframe.setSrc("http://"+ MY_IP +":12355/live.html");
     }
 }
