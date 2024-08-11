@@ -80,6 +80,10 @@ public final class CosmicLauncher {
         set("appSplit", "false");
         set("tenant.code.type", "config");
 
+        set("dubbo.registry.register", "true");
+        set("lightweightdeploy","false");
+        set("mqConfigFiles.config","erkai.consummqconfig.xml");
+
         localHostName = getLocalHostName();
         setClusterNumber("cosmic");
         setTenantNumber("ierp");
@@ -102,11 +106,11 @@ public final class CosmicLauncher {
 //	        setEnableLightWeightDeploy(true);
             setDubboHostConfig(MY_IP, 28888, 30880);
 //	        set("login.type", "STANDALONE");
-            setMqConsumerRegister(false, null);
+            setMqConsumerRegister(true, "lxl");
         } else {
             //当需要连接项目开发环境（即非轻量级环境）时，应以MC服务器上面的配置优先
 //			setEnableLightWeightDeploy(false);
-            setMqConsumerRegister(true, localHostName);
+            setMqConsumerRegister(true, "lxl");
         }
 
         setStartWithQing(true);

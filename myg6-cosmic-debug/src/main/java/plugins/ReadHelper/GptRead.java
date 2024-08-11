@@ -112,10 +112,6 @@ public class GptRead extends AbstractFormPlugin implements Plugin {
             return;
         } else if (ispdftxt) {
             bookName = cache.get("fileName");
-            if (bookName == null) {
-                this.getView().showMessage("请先上传文件");
-                return;
-            }
         } else {
             bookName = book.getString("name");
         }

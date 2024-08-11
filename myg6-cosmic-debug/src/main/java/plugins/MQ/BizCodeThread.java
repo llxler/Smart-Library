@@ -19,7 +19,7 @@ public class BizCodeThread implements Runnable {
     @Override
     public void run() {
         if (isUseMQ) {
-            MessagePublisher mp = MQFactory.get().createSimplePublisher("kded_tc", "erkai_queue");
+            MessagePublisher mp = MQFactory.get().createSimplePublisher("myg6_Intelligent_lib", "erkai_queue");
             try {
                 mp.publish("hello");
             } finally{
