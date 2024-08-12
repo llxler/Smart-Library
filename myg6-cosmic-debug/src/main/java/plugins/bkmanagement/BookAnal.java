@@ -223,9 +223,9 @@ public class BookAnal extends AbstractFormPlugin implements Plugin {
     }
 
     @Override
-    public void customEvent(CustomEventArgs e) {
+        public void customEvent(CustomEventArgs e) {
         String args = e.getEventArgs();//数据
-        if (args.startsWith("{\"pageId\"")) return;
+        if (args.startsWith("{\"pageId\"") || args.startsWith("{\"tabName\"")) return;
         //提取人物名称
         Map<String, Object> jsonMap = JSON.parseObject(args);
         Map<String, Object> contentMap = (Map<String, Object>) jsonMap.get("content");

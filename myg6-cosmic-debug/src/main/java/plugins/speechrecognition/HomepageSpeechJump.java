@@ -42,9 +42,9 @@ public class HomepageSpeechJump extends AbstractFormPlugin implements Plugin {
         String pageId = this.getView().getMainView().getPageId();
         // 根据图书类型进行操作
         if (type == 0) { // 介绍图书馆概况
-            Object pkValue = getProcessFid("process-2405212738F418");
+            Object pkValue = getProcessFid("process-240812507985CD");
             DispatchServiceHelper.invokeBizService("ai", "gai", "GaiService", "selectProcessInSideBar", pkValue, pageId, "您好，欢迎来到我们的华科智慧图书馆");
-            DispatchServiceHelper.invokeBizService("ai", "gai", "GaiService", "startProcessInSideBar", pkValue, pageId, new HashMap(), "介绍一下华科图书馆的历史情况，以及图书库里面的相关图书");
+            DispatchServiceHelper.invokeBizService("ai", "gai", "GaiService", "startProcessInSideBar", pkValue, pageId, new HashMap(), output);
         } else if (type == 1) { // 打开图书库
             ListShowParameter billShowParameter = new ListShowParameter();
             billShowParameter.setFormId("bos_list");
@@ -172,6 +172,10 @@ public class HomepageSpeechJump extends AbstractFormPlugin implements Plugin {
                     break;
                 }
             }
+        } else { // 图书馆的历史
+            Object pkValue = getProcessFid("process-240812507985CD");
+            DispatchServiceHelper.invokeBizService("ai", "gai", "GaiService", "selectProcessInSideBar", pkValue, pageId, "您好，欢迎来到我们的华科智慧图书馆");
+            DispatchServiceHelper.invokeBizService("ai", "gai", "GaiService", "startProcessInSideBar", pkValue, pageId, new HashMap(), output);
         }
     }
 
@@ -196,7 +200,7 @@ public class HomepageSpeechJump extends AbstractFormPlugin implements Plugin {
         String key = e.getKey();//自定义控件标识
         String args = e.getEventArgs();//数据
         String ename = e.getEventName();//事件名称:这里默认是invokeCustomEvent
-        if (args.startsWith("{\"pageId\"")) return;
+        if (args.startsWith("{\"pageId\"") || args.startsWith("{\"tabName\"")) return;
 
         Map<String, Object> jsonMap = JSON.parseObject(args);
         Map<String, Object> contentMap = (Map<String, Object>) jsonMap.get("content");

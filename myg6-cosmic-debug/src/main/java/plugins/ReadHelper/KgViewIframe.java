@@ -80,6 +80,9 @@ public class KgViewIframe extends AbstractFormPlugin implements Plugin {
         //提取人物名称
         Map<String, Object> jsonMap = JSON.parseObject(args);
         Map<String, Object> contentMap = (Map<String, Object>) jsonMap.get("content");
+
+        if (args.startsWith("{\"pageId\"") || args.startsWith("{\"tabName\"")) return;
+
         System.out.println("fuck " + contentMap.get("type"));
         if(!StringUtils.equals((String) contentMap.get("type"), "firstnode") && !StringUtils.equals((String) contentMap.get("type"), "expand")) return;
         String roleName = (String) contentMap.get("msg");
