@@ -98,6 +98,7 @@ public class GptRead extends AbstractFormPlugin implements Plugin {
         DistributeSessionlessCache cache = CacheFactory.getCommonCacheFactory().getDistributeSessionlessCache("customRegion");
 
         Object source = evt.getSource();
+
         // 取出一些前置必要信息
         String pageId = this.getView().getMainView().getPageId();
         // Object pkValue = Long.parseLong("1992276822133310464");

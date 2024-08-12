@@ -7,8 +7,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4436a5f8-a7fe-413a-ab09-538ca3d435d9" name="更改" comment="fix pdf-downloader &amp;&amp; add KanBanIframe">
-      <change afterPath="$PROJECT_DIR$/logs/cosmic_out.log" afterDir="false" />
+    <list default="true" id="4436a5f8-a7fe-413a-ab09-538ca3d435d9" name="更改" comment="change the ip of KanBanIframe">
+      <change afterPath="$PROJECT_DIR$/filestorage/User/DayEvaluate/1616134321572164837084496392821.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/filestorage/User/DayEvaluate/365602372203218229165632507294.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/filestorage/User/DayEvaluate/6812100561565911299184473261499.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/filestorage/User/DayEvaluate/8006845338185749485094201595241.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240811_0.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.6.3/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6.3/checksums/checksums.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.6.3/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6.3/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
@@ -24,12 +27,13 @@
       <change beforePath="$PROJECT_DIR$/base/myg6-base-common/build/tmp/jar/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/base/myg6-base-common/build/tmp/jar/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/base/myg6-base-helper/build/libs/myg6-base-helper-1.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/base/myg6-base-helper/build/libs/myg6-base-helper-1.0.0.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/base/myg6-base-helper/build/tmp/jar/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/base/myg6-base-helper/build/tmp/jar/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/build/classes/java/main/kd/cosmic/debug/tools/CosmicLauncher.class" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/build/classes/java/main/kd/cosmic/debug/tools/CosmicLauncher.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/kd/cosmic/debug/tools/CosmicLauncher.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/kd/cosmic/debug/tools/CosmicLauncher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/MQ/BizCodeThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/MQ/BizCodeThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/MQ/DemoConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/MQ/DemoConsumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/MQ/MulThreadsEdit.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/MQ/MulThreadsEdit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/build/classes/java/main/myg6/cosmic/debug/DebugApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/build/classes/java/main/myg6/cosmic/debug/DebugApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/PersonalLibrary/DocGeneratorFinal.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/PersonalLibrary/DocGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/ReadHelper/GptRead.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/ReadHelper/GptRead.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/ReadHelper/KgViewIframe.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/ReadHelper/KgViewIframe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/bkmanagement/BookAnal.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/bkmanagement/BookAnal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/extendedfun/BookEchartFinal.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/extendedfun/BookEchartFinal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/speechrecognition/HomepageSpeechJump.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/speechrecognition/HomepageSpeechJump.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -485,23 +489,12 @@
       <workItem from="1723287345179" duration="4738000" />
       <workItem from="1723294684820" duration="74000" />
       <workItem from="1723294929959" duration="127000" />
-      <workItem from="1723347810901" duration="5767000" />
-    </task>
-    <task id="LOCAL-00026" summary="feat(homepage): add HomepageBookShowPLUS">
-      <option name="closed" value="true" />
-      <created>1719324306580</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1719324306580</updated>
-    </task>
-    <task id="LOCAL-00027" summary="feat: update some old fun &amp;&amp; add ListFilter">
-      <option name="closed" value="true" />
-      <created>1719411533539</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1719411533539</updated>
+      <workItem from="1723347810901" duration="5885000" />
+      <workItem from="1723354203122" duration="834000" />
+      <workItem from="1723362022959" duration="118000" />
+      <workItem from="1723378961534" duration="1267000" />
+      <workItem from="1723381705616" duration="481000" />
+      <workItem from="1723436183518" duration="8177000" />
     </task>
     <task id="LOCAL-00028" summary="feat(main): add redis &amp;&amp; some imgs">
       <option name="closed" value="true" />
@@ -879,7 +872,23 @@
       <option name="project" value="LOCAL" />
       <updated>1723294749225</updated>
     </task>
-    <option name="localTasksCounter" value="75" />
+    <task id="LOCAL-00075" summary="fix mq">
+      <option name="closed" value="true" />
+      <created>1723353873375</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1723353873375</updated>
+    </task>
+    <task id="LOCAL-00076" summary="change the ip of KanBanIframe">
+      <option name="closed" value="true" />
+      <created>1723362130298</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1723362130298</updated>
+    </task>
+    <option name="localTasksCounter" value="77" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -925,8 +934,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="version 2.0: change to local" />
-    <MESSAGE value="feat(readhelper): add Reading GPT interaction" />
     <MESSAGE value="feat(readhelper): add Reading keywordsearch" />
     <MESSAGE value="feat(readhelper): fix Reading keywordsearch" />
     <MESSAGE value="feat(readhelper): add BookAnalHelper &amp;&amp; SearchForKeyWord &amp;&amp; DownLoadMd" />
@@ -950,7 +957,9 @@
     <MESSAGE value="feat speech-recognition" />
     <MESSAGE value="feat pdf-downloader" />
     <MESSAGE value="fix pdf-downloader &amp;&amp; add KanBanIframe" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix pdf-downloader &amp;&amp; add KanBanIframe" />
+    <MESSAGE value="fix mq" />
+    <MESSAGE value="change the ip of KanBanIframe" />
+    <option name="LAST_COMMIT_MESSAGE" value="change the ip of KanBanIframe" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

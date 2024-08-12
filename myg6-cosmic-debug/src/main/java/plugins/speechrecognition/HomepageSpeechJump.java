@@ -1,5 +1,6 @@
 package plugins.speechrecognition;
 
+import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import kd.bos.bill.BillShowParameter;
 import kd.bos.bill.OperationStatus;
@@ -17,6 +18,7 @@ import kd.bos.orm.query.QFilter;
 import kd.bos.servicehelper.BusinessDataServiceHelper;
 import kd.bos.servicehelper.DispatchServiceHelper;
 import kd.sdk.plugin.Plugin;
+import org.apache.commons.lang3.StringUtils;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -194,6 +196,12 @@ public class HomepageSpeechJump extends AbstractFormPlugin implements Plugin {
         String key = e.getKey();//自定义控件标识
         String args = e.getEventArgs();//数据
         String ename = e.getEventName();//事件名称:这里默认是invokeCustomEvent
+        if (args.startsWith("{\"pageId\"")) return;
+
+        Map<String, Object> jsonMap = JSON.parseObject(args);
+        Map<String, Object> contentMap = (Map<String, Object>) jsonMap.get("content");
+        System.out.println("fuckspeech" + args);
+        if(StringUtils.equals((String) contentMap.get("type"), "firstnode") || StringUtils.equals((String) contentMap.get("type"), "expand")) return;
 
         //获取DynamicObject列表
         String fields = "name,myg6_picturefield";

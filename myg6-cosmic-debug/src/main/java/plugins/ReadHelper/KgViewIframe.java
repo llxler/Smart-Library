@@ -1,6 +1,7 @@
 package plugins.ReadHelper;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.TypeReference;
+import dm.jdbc.util.StringUtil;
 import kd.bos.cache.CacheFactory;
 import kd.bos.cache.DistributeSessionlessCache;
 import kd.bos.dataentity.entity.DynamicObject;
@@ -79,7 +80,10 @@ public class KgViewIframe extends AbstractFormPlugin implements Plugin {
         //提取人物名称
         Map<String, Object> jsonMap = JSON.parseObject(args);
         Map<String, Object> contentMap = (Map<String, Object>) jsonMap.get("content");
+        System.out.println("fuck " + contentMap.get("type"));
+        if(!StringUtils.equals((String) contentMap.get("type"), "firstnode") && !StringUtils.equals((String) contentMap.get("type"), "expand")) return;
         String roleName = (String) contentMap.get("msg");
+
         String type = (String) contentMap.get("type");
         System.out.println("matuo" + roleName);
         String bookName;

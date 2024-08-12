@@ -24,5 +24,7 @@ public class BookEchartFinal extends AbstractFormPlugin implements Plugin {
         super.afterBindData(e);
         IFrame iframe = this.getControl("myg6_frame_echarts");
         iframe.setSrc("http://"+ MY_IP +":12348/");
+        IFrame iframekg = this.getControl("myg6_frame_kg");
+        iframekg.setSrc("http://"+ MY_IP +":12356/");
     }
 }
