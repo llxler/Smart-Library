@@ -21,7 +21,7 @@ public class RecBookRandomly extends AbstractFormPlugin implements Plugin {
     public void afterBindData(EventObject e) {
         List<Integer> RecBookId = new ArrayList<>();
         super.afterBindData(e);
-        //获取DynamicObject列表
+        // 获取DynamicObject列表
         String fields = "name,myg6_picturefield";
         // Create an empty filter array (no filters)
         QFilter[] filters = new QFilter[0];

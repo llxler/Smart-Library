@@ -7,14 +7,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4436a5f8-a7fe-413a-ab09-538ca3d435d9" name="更改" comment="change the ip of KanBanIframe">
-      <change afterPath="$PROJECT_DIR$/filestorage/User/DayEvaluate/1616134321572164837084496392821.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filestorage/User/DayEvaluate/365602372203218229165632507294.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filestorage/User/DayEvaluate/6812100561565911299184473261499.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filestorage/User/DayEvaluate/8006845338185749485094201595241.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240811_0.log" afterDir="false" />
+    <list default="true" id="4436a5f8-a7fe-413a-ab09-538ca3d435d9" name="更改" comment="feat LibraryQA">
+      <change afterPath="$PROJECT_DIR$/filestorage/User/DayEvaluate/6408728318524265632242333539615.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240812_0.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240813_0.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.6.3/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6.3/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.6.3/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6.3/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.6.3/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6.3/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.6.3/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6.3/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.6.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6.3/fileHashes/fileHashes.bin" afterDir="false" />
@@ -27,13 +24,11 @@
       <change beforePath="$PROJECT_DIR$/base/myg6-base-common/build/tmp/jar/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/base/myg6-base-common/build/tmp/jar/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/base/myg6-base-helper/build/libs/myg6-base-helper-1.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/base/myg6-base-helper/build/libs/myg6-base-helper-1.0.0.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/base/myg6-base-helper/build/tmp/jar/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/base/myg6-base-helper/build/tmp/jar/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/build/classes/java/main/myg6/cosmic/debug/DebugApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/build/classes/java/main/myg6/cosmic/debug/DebugApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/PersonalLibrary/DocGeneratorFinal.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/PersonalLibrary/DocGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/ReadHelper/GptRead.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/ReadHelper/GptRead.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/ReadHelper/KgViewIframe.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/ReadHelper/KgViewIframe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/adminfuns/FaceSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/adminfuns/FaceSearch.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/bkmanagement/BookAnal.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/bkmanagement/BookAnal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/extendedfun/BookEchartFinal.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/extendedfun/BookEchartFinal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/speechrecognition/HomepageSpeechJump.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/speechrecognition/HomepageSpeechJump.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/homepage/RecBookRandomly.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/homepage/RecBookRandomly.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/homepage/SearchPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/homepage/SearchPlugin.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -494,23 +489,14 @@
       <workItem from="1723362022959" duration="118000" />
       <workItem from="1723378961534" duration="1267000" />
       <workItem from="1723381705616" duration="481000" />
-      <workItem from="1723436183518" duration="8177000" />
-    </task>
-    <task id="LOCAL-00028" summary="feat(main): add redis &amp;&amp; some imgs">
-      <option name="closed" value="true" />
-      <created>1719496269806</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1719496269806</updated>
-    </task>
-    <task id="LOCAL-00029" summary="feat(adminfuns): add polish fun">
-      <option name="closed" value="true" />
-      <created>1719501671971</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1719501671971</updated>
+      <workItem from="1723436183518" duration="8506000" />
+      <workItem from="1723462934350" duration="2642000" />
+      <workItem from="1723474630970" duration="2798000" />
+      <workItem from="1723516734360" duration="8876000" />
+      <workItem from="1723533427559" duration="1261000" />
+      <workItem from="1723548705690" duration="3059000" />
+      <workItem from="1723602686367" duration="2064000" />
+      <workItem from="1723634459739" duration="3094000" />
     </task>
     <task id="LOCAL-00030" summary="feat(homepg): add JumpCredit &amp;&amp; ActivityContain &amp;&amp; GetShelfData">
       <option name="closed" value="true" />
@@ -888,7 +874,23 @@
       <option name="project" value="LOCAL" />
       <updated>1723362130298</updated>
     </task>
-    <option name="localTasksCounter" value="77" />
+    <task id="LOCAL-00077" summary="feat bookanal's KgView">
+      <option name="closed" value="true" />
+      <created>1723445945802</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1723445945802</updated>
+    </task>
+    <task id="LOCAL-00078" summary="feat LibraryQA">
+      <option name="closed" value="true" />
+      <created>1723477407778</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1723477407778</updated>
+    </task>
+    <option name="localTasksCounter" value="79" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -934,8 +936,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="feat(readhelper): add Reading keywordsearch" />
-    <MESSAGE value="feat(readhelper): fix Reading keywordsearch" />
     <MESSAGE value="feat(readhelper): add BookAnalHelper &amp;&amp; SearchForKeyWord &amp;&amp; DownLoadMd" />
     <MESSAGE value="feat(homepg): add recommend books function" />
     <MESSAGE value="feat(rdhealper): add tupu" />
@@ -959,7 +959,9 @@
     <MESSAGE value="fix pdf-downloader &amp;&amp; add KanBanIframe" />
     <MESSAGE value="fix mq" />
     <MESSAGE value="change the ip of KanBanIframe" />
-    <option name="LAST_COMMIT_MESSAGE" value="change the ip of KanBanIframe" />
+    <MESSAGE value="feat bookanal's KgView" />
+    <MESSAGE value="feat LibraryQA" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat LibraryQA" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

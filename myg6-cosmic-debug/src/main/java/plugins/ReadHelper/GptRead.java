@@ -32,7 +32,7 @@ import java.util.concurrent.Future;
 /**
  * 动态表单插件
  */
-public class GptRead extends AbstractFormPlugin implements Plugin {
+public class GptRead extends AbstractFormPlugin {
 
     private int chunk;
     private final String htmlCode1 = "<!DOCTYPE html>\n" +

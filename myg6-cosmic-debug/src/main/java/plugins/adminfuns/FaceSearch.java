@@ -129,7 +129,7 @@ public class FaceSearch extends AbstractFormPlugin implements Plugin {
             name = "雷翔麟";
         } else if (StringUtils.equals(userId, "maple")) {
             name = "金枫淋";
-        } else if (StringUtils.equals(userId, "yuzengqi")){
+        } else if (StringUtils.equals(userId, "yuzengqi")) {
             name = "余曾祺";
         } else {
             this.getView().showMessage("欢迎" + userId + "来到华科智能图书馆!!!\n");
@@ -151,6 +151,7 @@ public class FaceSearch extends AbstractFormPlugin implements Plugin {
         String infoBook = "借阅的书籍有:\n";
         for (DynamicObject o : dys) {
             DynamicObject creatorObj = (DynamicObject) o.get("creator");
+            if (creatorObj == null) continue;
             String creator = creatorObj.getString("name");
             if (creator == null) continue;
             if (StringUtils.equals(creator, name)) {

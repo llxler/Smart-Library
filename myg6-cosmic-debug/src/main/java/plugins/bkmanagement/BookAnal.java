@@ -32,8 +32,8 @@ import static myg6.cosmic.debug.DebugApplication.MY_IP;
 /**
  * 动态表单插件
  */
-public class BookAnal extends AbstractFormPlugin implements Plugin {
-    private static ThreadPool pool = ThreadPools.newCachedThreadPool("CustomThreadPool", 3, 5);
+public class BookAnal extends AbstractFormPlugin {
+    private static ThreadPool pool = ThreadPools.newCachedThreadPool("CustomThreadPooldick", 3, 5);
     @Override
     public void registerListener(EventObject e) {
         // 注册点击事件
