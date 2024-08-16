@@ -166,7 +166,11 @@ public class LibraryQA implements IGPTAction {
                     "</body>\n" +
                     "\n" +
                     "</html>";
-
+            try {
+                Thread.sleep(2000);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
             // 获取当前时间，我们可以在isv文件夹中根据时间来对相应的文件夹创建HTML文件
             SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
             String directoryName = simpleDateFormat.format(new Date());

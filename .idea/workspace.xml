@@ -7,10 +7,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4436a5f8-a7fe-413a-ab09-538ca3d435d9" name="更改" comment="feat LibraryQA">
-      <change afterPath="$PROJECT_DIR$/filestorage/User/DayEvaluate/6408728318524265632242333539615.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240812_0.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240813_0.log" afterDir="false" />
+    <list default="true" id="4436a5f8-a7fe-413a-ab09-538ca3d435d9" name="更改" comment="fix poolname &amp;&amp; add books">
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240815_0.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/speechrecognition/MermaidRender.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.6.3/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6.3/checksums/checksums.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.6.3/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6.3/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.6.3/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6.3/executionHistory/executionHistory.lock" afterDir="false" />
@@ -24,11 +23,8 @@
       <change beforePath="$PROJECT_DIR$/base/myg6-base-common/build/tmp/jar/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/base/myg6-base-common/build/tmp/jar/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/base/myg6-base-helper/build/libs/myg6-base-helper-1.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/base/myg6-base-helper/build/libs/myg6-base-helper-1.0.0.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/base/myg6-base-helper/build/tmp/jar/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/base/myg6-base-helper/build/tmp/jar/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/ReadHelper/GptRead.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/ReadHelper/GptRead.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/adminfuns/FaceSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/adminfuns/FaceSearch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/bkmanagement/BookAnal.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/bkmanagement/BookAnal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/homepage/RecBookRandomly.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/homepage/RecBookRandomly.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/homepage/SearchPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/homepage/SearchPlugin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/extendedfun/MindMap_GPT.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/extendedfun/MindMap_GPT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/speechrecognition/LibraryQA.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/speechrecognition/LibraryQA.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -496,15 +492,16 @@
       <workItem from="1723533427559" duration="1261000" />
       <workItem from="1723548705690" duration="3059000" />
       <workItem from="1723602686367" duration="2064000" />
-      <workItem from="1723634459739" duration="3094000" />
-    </task>
-    <task id="LOCAL-00030" summary="feat(homepg): add JumpCredit &amp;&amp; ActivityContain &amp;&amp; GetShelfData">
-      <option name="closed" value="true" />
-      <created>1719560446348</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1719560446348</updated>
+      <workItem from="1723634459739" duration="3243000" />
+      <workItem from="1723646151774" duration="671000" />
+      <workItem from="1723688590089" duration="299000" />
+      <workItem from="1723689505383" duration="648000" />
+      <workItem from="1723704646681" duration="2795000" />
+      <workItem from="1723715175913" duration="2956000" />
+      <workItem from="1723726814068" duration="23000" />
+      <workItem from="1723776717185" duration="4435000" />
+      <workItem from="1723786561091" duration="969000" />
+      <workItem from="1723807136442" duration="2725000" />
     </task>
     <task id="LOCAL-00031" summary="feat(homepg&amp;shelf&amp;extend): add shelfdoc &amp;&amp; ExtendedFunctionOpen &amp;&amp; HomepageBookShowPLUS">
       <option name="closed" value="true" />
@@ -890,7 +887,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723477407778</updated>
     </task>
-    <option name="localTasksCounter" value="79" />
+    <task id="LOCAL-00079" summary="fix poolname &amp;&amp; add books">
+      <option name="closed" value="true" />
+      <created>1723640261438</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1723640261439</updated>
+    </task>
+    <option name="localTasksCounter" value="80" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -936,8 +941,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="feat(readhelper): add BookAnalHelper &amp;&amp; SearchForKeyWord &amp;&amp; DownLoadMd" />
-    <MESSAGE value="feat(homepg): add recommend books function" />
     <MESSAGE value="feat(rdhealper): add tupu" />
     <MESSAGE value="fix tupu &amp;&amp; change MY_IP to public" />
     <MESSAGE value="fix bugs" />
@@ -961,7 +964,9 @@
     <MESSAGE value="change the ip of KanBanIframe" />
     <MESSAGE value="feat bookanal's KgView" />
     <MESSAGE value="feat LibraryQA" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat LibraryQA" />
+    <MESSAGE value="fix poolname" />
+    <MESSAGE value="fix poolname &amp;&amp; add books" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix poolname &amp;&amp; add books" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

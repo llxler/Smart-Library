@@ -39,6 +39,10 @@ public class MindMap_GPT extends AbstractFormPlugin implements Plugin {
                 // 获取日任务信息，并且以JSON字符串的形式展现
                 JSONObject jsonResultObject = new JSONObject();
                 DynamicObject book = (DynamicObject) this.getModel().getValue("myg6_bookinfo");
+                if (book == null) {
+                    this.getView().showMessage("请先选择图书！");
+                    return;
+                }
                 jsonResultObject.put("bookName", book.getString("name"));
 
                 // 调用GPT开发平台微服务
