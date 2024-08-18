@@ -10,8 +10,14 @@ import kd.bos.orm.query.QFilter;
 import kd.bos.servicehelper.BusinessDataServiceHelper;
 import kd.sdk.plugin.Plugin;
 
+import javax.crypto.Cipher;
+import javax.crypto.KeyGenerator;
+import javax.crypto.SecretKey;
+import javax.crypto.spec.SecretKeySpec;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.io.UnsupportedEncodingException;
+import java.security.SecureRandom;
 import java.time.Duration;
 import java.time.LocalDate;
 import java.time.LocalTime;
@@ -108,8 +114,9 @@ public class FaceSearch extends AbstractFormPlugin implements Plugin {
                 JSONObject jsonResponse = JSONObject.parseObject(response.toString());
                 JSONObject data = jsonResponse.getJSONObject("data");
                 String userId = data.getString("userId");
+                userId = decode(userId, PWD);
                 // 打印该人的信息
-                 render(userId);
+                render(userId);
             } else if (type == 1) { // 人脸注册
                 this.getView().showMessage("恭喜注册成功！欢迎新同学来到华科智能图书馆!!!\n");
                 this.getModel().setValue("myg6_textareafield", "欢迎新同学来到华科智能图书馆!!!\n您可以去借阅感兴趣的书籍。\n记得去学生中心上传照片！！！");
@@ -122,6 +129,30 @@ public class FaceSearch extends AbstractFormPlugin implements Plugin {
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    public String encode(String str,String pwd) {
+        byte[] result = null;
+        try {
+            KeyGenerator kgen = KeyGenerator.getInstance("AES");
+            SecureRandom random = SecureRandom.getInstance("SHA1PRNG");
+            random.setSeed(pwd.getBytes());
+            kgen.init(128, random);
+            SecretKey secretKey = kgen.generateKey();
+            byte[] enCodeFormat = secretKey.getEncoded();
+            SecretKeySpec key = new SecretKeySpec(enCodeFormat, "AES");
+
+            // 创建密码器
+            Cipher cipher = Cipher.getInstance("AES/ECB/PKCS5Padding");
+            cipher.init(Cipher.ENCRYPT_MODE, key);
+            byte[] byteContent = str.getBytes();
+            result = cipher.doFinal(byteContent);
+
+        } catch (Exception e) {
+            return null;
+        }
+
+        return new String (result);
     }
     public void render(String userId) {
         String name = "";
@@ -232,5 +263,47 @@ public class FaceSearch extends AbstractFormPlugin implements Plugin {
         DynamicObject faceInfo = BusinessDataServiceHelper.loadSingle("myg6_student_info", new QFilter[]{qFilterr});
         String imgurl = faceInfo.getString("myg6_student_photo");
         this.getModel().setValue("myg6_picturefield", imgurl);
+    }
+
+    static String PWD = "niwanyuanshenma?";
+
+    /**
+     * 将十六进制转换为二进制
+     *
+     * @param hexStr
+     * @return
+     */
+    private byte[] parseHexStr2Byte(String hexStr) {
+        if (hexStr.length() < 1) {
+            return null;
+        }
+        byte[] result = new byte[hexStr.length() / 2];
+        for (int i = 0; i < hexStr.length() / 2; i++) {
+            int high = Integer.parseInt(hexStr.substring(i * 2, i * 2 + 1), 16);
+            int low = Integer.parseInt(hexStr.substring(i * 2 + 1, i * 2 + 2), 16);
+            result[i] = (byte) (high * 16 + low);
+        }
+        return result;
+    }
+
+    public String decode(String str,String pwd) throws UnsupportedEncodingException {
+        byte[] result = null;
+        byte[] content = parseHexStr2Byte(str);
+        try {
+            KeyGenerator kgen = KeyGenerator.getInstance("AES");
+            SecureRandom random = SecureRandom.getInstance("SHA1PRNG");
+            random.setSeed(pwd.getBytes());
+            kgen.init(128, random);
+            SecretKey secretKey = kgen.generateKey();
+            byte[] enCodeFormat = secretKey.getEncoded();
+            SecretKeySpec key = new SecretKeySpec(enCodeFormat, "AES");
+            // 创建密码器
+            Cipher cipher = Cipher.getInstance("AES/ECB/PKCS5Padding");
+            cipher.init(Cipher.DECRYPT_MODE, key);
+            result = cipher.doFinal(content);
+        } catch (Exception e) {
+            return null;
+        }
+        return new String(result);
     }
 }
