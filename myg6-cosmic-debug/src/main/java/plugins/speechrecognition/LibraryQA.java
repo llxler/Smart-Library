@@ -21,103 +21,35 @@ public class LibraryQA implements IGPTAction {
                     "<head>\n" +
                     "    <meta charset=\"UTF-8\">\n" +
                     "    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n" +
-                    "    <title>Mermaid Diagram with Auto-fit and Zoom Controls</title>\n" +
+                    "    <title>Interactive Mermaid Diagram</title>\n" +
+                    "    <script type=\"module\">\n" +
+                    "        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';\n" +
+                    "        mermaid.initialize({ startOnLoad: true });\n" +
+                    "    </script>\n" +
                     "    <style>\n" +
-                    "        .mermaid-container {\n" +
+                    "        #mermaid-container {\n" +
+                    "            width: 100%;\n" +
                     "            max-width: 500px;\n" +
-                    "            height: 300px;\n" +
-                    "            background-color: #ffffff;\n" +
-                    "            overflow: auto;\n" +
+                    "            border: 1px solid #ccc;\n" +
+                    "            overflow: hidden;\n" +
+                    "            height: 500px;\n" +
                     "            position: relative;\n" +
                     "        }\n" +
                     "\n" +
-                    "        .mermaid {\n" +
-                    "            transform-origin: top left;\n" +
-                    "            position: absolute;\n" +
+                    "        #mermaid-diagram {\n" +
+                    "            transform-origin: center center;\n" +
+                    "            cursor: grab;\n" +
                     "        }\n" +
                     "\n" +
-                    "        .zoom-controls {\n" +
-                    "            /* width: 100%; */\n" +
-                    "            /* 将按钮容器的宽度设为 100% */\n" +
-                    "            /* text-align: center; */\n" +
-                    "            margin-top: 10px;\n" +
-                    "            margin-left: 205px;\n" +
-                    "            /* 确保按钮紧跟容器 */\n" +
-                    "        }\n" +
-                    "\n" +
-                    "        .zoom-controls button {\n" +
-                    "            padding: 5px 10px;\n" +
-                    "            margin: 0 5px;\n" +
-                    "            cursor: pointer;\n" +
-                    "            width: 30px;\n" +
-                    "            height: 30px;\n" +
+                    "        #mermaid-diagram:active {\n" +
+                    "            cursor: grabbing;\n" +
                     "        }\n" +
                     "    </style>\n" +
-                    "    <script type=\"module\">\n" +
-                    "        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';\n" +
-                    "        mermaid.initialize({\n" +
-                    "            startOnLoad: true,\n" +
-                    "            theme: 'base',\n" +
-                    "\n" +
-                    "            flowchart: {\n" +
-                    "                useMaxWidth: false,\n" +
-                    "            }\n" +
-                    "        });\n" +
-                    "\n" +
-                    "        document.addEventListener('DOMContentLoaded', () => {\n" +
-                    "            const container = document.querySelector('.mermaid-container');\n" +
-                    "            const mermaidElement = container.querySelector('.mermaid');\n" +
-                    "            let scale = 1;\n" +
-                    "\n" +
-                    "            const updateScale = () => {\n" +
-                    "                const svg = mermaidElement.querySelector('svg');\n" +
-                    "                const svgWidth = svg.getBBox().width;\n" +
-                    "                const svgHeight = svg.getBBox().height;\n" +
-                    "\n" +
-                    "                const containerWidth = container.clientWidth;\n" +
-                    "                const containerHeight = container.clientHeight;\n" +
-                    "\n" +
-                    "                const scaleX = containerWidth / svgWidth;\n" +
-                    "                const scaleY = containerHeight / svgHeight;\n" +
-                    "                const minScale = Math.min(scaleX, scaleY);\n" +
-                    "\n" +
-                    "                // Apply initial scale\n" +
-                    "                mermaidElement.style.transform = `scale(${scale * minScale})`;\n" +
-                    "\n" +
-                    "                // Adjust position to center the diagram\n" +
-                    "                const offsetX = (containerWidth - svgWidth * scale * minScale) / 2;\n" +
-                    "                const offsetY = (containerHeight - svgHeight * scale * minScale) / 2;\n" +
-                    "\n" +
-                    "                mermaidElement.style.left = `${offsetX}px`;\n" +
-                    "                mermaidElement.style.top = `${offsetY}px`;\n" +
-                    "            };\n" +
-                    "\n" +
-                    "            const initialFit = () => {\n" +
-                    "                setTimeout(() => {\n" +
-                    "                    updateScale();\n" +
-                    "                }, 100);\n" +
-                    "            };\n" +
-                    "\n" +
-                    "            // 放大按钮\n" +
-                    "            document.getElementById('zoom-in').addEventListener('click', () => {\n" +
-                    "                scale += 0.1;\n" +
-                    "                updateScale();\n" +
-                    "            });\n" +
-                    "\n" +
-                    "            // 缩小按钮\n" +
-                    "            document.getElementById('zoom-out').addEventListener('click', () => {\n" +
-                    "                scale = Math.max(0.1, scale - 0.1);\n" +
-                    "                updateScale();\n" +
-                    "            });\n" +
-                    "\n" +
-                    "            initialFit();\n" +
-                    "        });\n" +
-                    "    </script>\n" +
                     "</head>\n" +
                     "\n" +
                     "<body>\n" +
-                    "    <div class=\"mermaid-container\">\n" +
-                    "        <div class=\"mermaid\">\n" +
+                    "    <div id=\"mermaid-container\">\n" +
+                    "        <div id=\"mermaid-diagram\" class=\"mermaid\">" +
                     "graph TD\n" +
                     "    A[华中科技大学主校区] --> B[光谷广场]\n" +
                     "    A --> C[鲁巷]\n" +
@@ -157,12 +89,43 @@ public class LibraryQA implements IGPTAction {
                     "    U --> L\n" +
                     "    T --> G\n" +
                     "    M --> R\n" +
-                    "        </div>\n" +
+                    "</div>\n" +
                     "    </div>\n" +
-                    "    <div class=\"zoom-controls\">\n" +
-                    "        <button id=\"zoom-in\">+</button>\n" +
-                    "        <button id=\"zoom-out\">-</button>\n" +
-                    "    </div>\n" +
+                    "\n" +
+                    "    <script src=\"https://cdn.jsdelivr.net/npm/interactjs@1.10.11/dist/interact.min.js\"></script>\n" +
+                    "    <script>\n" +
+                    "        // Initial scale\n" +
+                    "        let scale = 1;\n" +
+                    "\n" +
+                    "        // Make the diagram draggable\n" +
+                    "        interact('#mermaid-diagram')\n" +
+                    "            .draggable({\n" +
+                    "                listeners: {\n" +
+                    "                    move(event) {\n" +
+                    "                        const target = event.target;\n" +
+                    "                        const x = (parseFloat(target.getAttribute('data-x')) || 0) + event.dx;\n" +
+                    "                        const y = (parseFloat(target.getAttribute('data-y')) || 0) + event.dy;\n" +
+                    "                        target.style.transform = `translate(${x}px, ${y}px) scale(${scale})`;\n" +
+                    "                        target.setAttribute('data-x', x);\n" +
+                    "                        target.setAttribute('data-y', y);\n" +
+                    "                    }\n" +
+                    "                }\n" +
+                    "            });\n" +
+                    "\n" +
+                    "        // Add mouse wheel event for zooming\n" +
+                    "        document.getElementById('mermaid-container').addEventListener('wheel', function (event) {\n" +
+                    "            event.preventDefault();\n" +
+                    "            if (event.deltaY < 0) {\n" +
+                    "                // Zoom in\n" +
+                    "                scale = Math.min(scale * 1.1, 10); // Limit max scale\n" +
+                    "            } else {\n" +
+                    "                // Zoom out\n" +
+                    "                scale = Math.max(scale * 0.9, 0.1); // Limit min scale\n" +
+                    "            }\n" +
+                    "            const target = document.getElementById('mermaid-diagram');\n" +
+                    "            target.style.transform = `translate(${parseFloat(target.getAttribute('data-x')) || 0}px, ${parseFloat(target.getAttribute('data-y')) || 0}px) scale(${scale})`;\n" +
+                    "        });\n" +
+                    "    </script>\n" +
                     "</body>\n" +
                     "\n" +
                     "</html>";

@@ -123,6 +123,7 @@ public class BookAnal extends AbstractFormPlugin {
                     message.setContent(data);
 
                     iframe.postMessage(message);
+                    System.out.println("eatdick" + message);
 
                 } catch (Exception emaple) {
                     emaple.printStackTrace();

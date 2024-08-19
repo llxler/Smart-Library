@@ -15,15 +15,15 @@ import kd.cosmic.debug.tools.CosmicLauncher;
 
 public class DebugApplication {
 
-    public static final String MY_IP = "10.21.204.111";
+    public static final String MY_IP = "127.0.0.1";
 
-    //这里是redis在本地的地址
+    // 这里是redis在本地的地址
 
     private static final String REDIS_IP = "127.0.0.1:6379";
 
     public static void main(String[] args) {
 
-//    	Thread.currentThread().setContextClassLoader(new KDSecurityClassLoader(Thread.currentThread().getContextClassLoader()));
+    // Thread.currentThread().setContextClassLoader(new KDSecurityClassLoader(Thread.currentThread().getContextClassLoader()));
 
         CosmicLauncher cosmic = new CosmicLauncher(false);
 
