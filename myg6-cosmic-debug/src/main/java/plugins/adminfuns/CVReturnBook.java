@@ -2,8 +2,12 @@ package plugins.adminfuns;
 
 import com.alibaba.druid.util.StringUtils;
 import com.alibaba.fastjson.JSONObject;
+import kd.bos.dataentity.entity.DynamicObject;
 import kd.bos.form.control.Button;
 import kd.bos.form.plugin.AbstractFormPlugin;
+import kd.bos.orm.query.QFilter;
+import kd.bos.servicehelper.BusinessDataServiceHelper;
+import kd.bos.servicehelper.operation.SaveServiceHelper;
 import kd.sdk.plugin.Plugin;
 
 import java.io.BufferedReader;
@@ -89,6 +93,8 @@ public class CVReturnBook extends AbstractFormPlugin implements Plugin {
 
                     this.getView().showMessage("识别成功，当前您还的书籍是 " + bookName);
                     this.getModel().setValue("myg6_textareafield", updatedTxt);
+
+                    solve(bookName);
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -110,5 +116,34 @@ public class CVReturnBook extends AbstractFormPlugin implements Plugin {
             }
         }
         return String.join("\n", updatedLines);
+    }
+
+    // 处理我的书架还书，
+    private void solve(String bookName) {
+        // 改变我的书架里面的书籍状态
+        String fields = "myg6_basedatafield,myg6_billstatusfield";
+        QFilter[] filters = new QFilter[0];
+        DynamicObject[] dys = BusinessDataServiceHelper.load("myg6_my_bookshelf", fields, filters);
+        for (DynamicObject dy : dys) {
+            DynamicObject book = (DynamicObject) dy.get("myg6_basedatafield");
+            String bookNameField = book.getString("name");
+            if (bookNameField.equals(bookName)) {
+                dy.set("myg6_billstatusfield", 1);
+                SaveServiceHelper.update(dy);
+            }
+        }
+        // 改变借书单据中的书籍状态
+        String fields1 = "myg6_nameofbook,myg6_billstatusfield";
+        QFilter[] filters1 = new QFilter[0];
+        DynamicObject[] dys1 = BusinessDataServiceHelper.load("myg6_book_subscribe", fields1, filters1);
+        for (DynamicObject dy : dys1) {
+            DynamicObject book = (DynamicObject) dy.get("myg6_nameofbook");
+            String bookNameField = book.getString("name");
+            if (bookNameField.equals(bookName)) {
+                System.out.println("找到你了！");
+                dy.set("myg6_billstatusfield", 3);
+                SaveServiceHelper.update(dy);
+            }
+        }
     }
 }

@@ -23,6 +23,7 @@ import kd.sdk.plugin.Plugin;
 import org.apache.commons.lang3.StringUtils;
 
 import java.util.*;
+import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Future;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -123,6 +124,7 @@ public class BookAnal extends AbstractFormPlugin {
                     message.setContent(data);
 
                     iframe.postMessage(message);
+                    Thread.sleep(100);
                     System.out.println("eatdick" + message);
 
                 } catch (Exception emaple) {
@@ -201,6 +203,16 @@ public class BookAnal extends AbstractFormPlugin {
             } else {
                 throw new IllegalArgumentException("Unexpected value type: " + value1.getClass().getName());
             }
+
+            for (Future<?> cfuture : futures) {
+                try {
+                    cfuture.get(); // 阻塞直到任务完成
+                } catch (InterruptedException | ExecutionException eve) {
+                    eve.printStackTrace();
+                }
+            }
+
+
             message.setType("book:" + bookName);
             message.setContent(jsonString);
             message.setOrigin("*");

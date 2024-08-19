@@ -36,6 +36,20 @@ public class AutoReturnBook extends AbstractListPlugin implements Plugin {
                 Integer curnum = Integer.valueOf(goalDynamic.getString("myg6_curnum")) + 1;
                 goalDynamic.set("myg6_curnum", curnum.toString());
 
+                // modify the 借书表单
+                String fields1 = "myg6_nameofbook,myg6_billstatusfield";
+                QFilter[] filters1 = new QFilter[0];
+                DynamicObject[] dys1 = BusinessDataServiceHelper.load("myg6_book_subscribe", fields1, filters1);
+                for (DynamicObject dy : dys1) {
+                    DynamicObject book = (DynamicObject) dy.get("myg6_nameofbook");
+                    String bookNameField = book.getString("name");
+                    if (bookNameField.equals(bookName)) {
+                        System.out.println("找到你了！");
+                        dy.set("myg6_billstatusfield", 3);
+                        SaveServiceHelper.update(dy);
+                    }
+                }
+
                 // modify the state
                 shelfDynamic.set("myg6_billstatusfield", 1);
 
