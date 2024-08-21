@@ -66,19 +66,26 @@ public class GptBorrowBook implements IGPTAction {
                         if (!StringUtils.equals(duringTime, "-1")) {
                             // 定义日期格式
                             DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yy-MM-dd");
+                            LocalDate beginDate, endDate;
 
-                            // 将字符串转换为 LocalDate
-                            LocalDate beginDate = LocalDate.parse(beginnum, formatter);
-                            LocalDate endDate = LocalDate.parse(endnum, formatter);
-                            int duringDays = Integer.parseInt(duringTime);
-
-                            // 获取当前日期
-                            LocalDate currentDate = LocalDate.now();
-
-                            // 判断beginDate是否小于当前日期
-                            if (beginDate.isBefore(currentDate)) {
-                                beginDate = currentDate;
+                            if(StringUtils.equals(beginnum, "-1") || StringUtils.equals(endnum, "-1")) {
+                                beginDate = LocalDate.now();
                                 endDate = beginDate.plusDays(Integer.parseInt(duringTime));
+                            }
+                            // 将字符串转换为 LocalDate
+                            else {
+                                beginDate = LocalDate.parse(beginnum, formatter);
+                                endDate = LocalDate.parse(endnum, formatter);
+                                int duringDays = Integer.parseInt(duringTime);
+
+                                // 获取当前日期
+                                LocalDate currentDate = LocalDate.now();
+
+                                // 判断beginDate是否小于当前日期
+                                if (beginDate.isBefore(currentDate)) {
+                                    beginDate = currentDate;
+                                    endDate = beginDate.plusDays(Integer.parseInt(duringTime));
+                                }
                             }
 
                             // 将 LocalDate 转换为 Date

@@ -54,7 +54,6 @@ public class QAbot extends AbstractFormPlugin implements Plugin {
                 // 调用GPT开发平台微服务
                 Map<String, String> variableMap = new HashMap<>();
                 variableMap.put("questionResult", jsonResultObject.toJSONString());
-
                 Object[] params = new Object[] {
                         //GPT提示编码
                         getPromptFid("prompt-24062984974936"),
@@ -66,7 +65,6 @@ public class QAbot extends AbstractFormPlugin implements Plugin {
                 JSONObject jsonObjectData = jsonObjectResult.getJSONObject("data");
                 // 设置值
                 String getInfo = jsonObjectData.getString("llmValue");
-
                 FormShowParameter billShowParameter = new FormShowParameter();
                 billShowParameter.setFormId("myg6_questions_render");
                 billShowParameter.setCaption("请开始答题~");

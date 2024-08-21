@@ -15,7 +15,7 @@ import kd.cosmic.debug.tools.CosmicLauncher;
 
 public class DebugApplication {
 
-    public static final String MY_IP = "127.0.0.1";
+    public static final String MY_IP = "10.100.136.143";
 
     // 这里是redis在本地的地址
 

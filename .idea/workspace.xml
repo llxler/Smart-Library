@@ -7,18 +7,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4436a5f8-a7fe-413a-ab09-538ca3d435d9" name="更改" comment="add some books">
-      <change afterPath="$PROJECT_DIR$/filestorage/User/DayEvaluate/0728560243835451008450298596743.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filestorage/User/DayEvaluate/4436751852431220097107180896847.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202408/myg6_booksmanage/myg6_book_list/0/images/2ux17aL4/平凡的世界：全三部（2021版）.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202408/myg6_booksmanage/myg6_book_list/0/images/MFJzpAfA/平凡的世界：全三部（2021版）.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202408/myg6_booksmanage/myg6_book_list/0/images/SWASH2SZ/现代操作系统.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202408/myg6_booksmanage/myg6_book_list/0/images/cg7ldhox/傅雷家书.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202408/myg6_booksmanage/myg6_book_list/0/images/md60cnNJ/傅雷家书.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/cosmic_out.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240817_0.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240818_0.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240819_0.log" afterDir="false" />
+    <list default="true" id="4436a5f8-a7fe-413a-ab09-538ca3d435d9" name="更改" comment="version 2.0!">
+      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240820_1.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.6.3/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6.3/checksums/checksums.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.6.3/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6.3/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.6.3/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6.3/executionHistory/executionHistory.lock" afterDir="false" />
@@ -32,9 +22,12 @@
       <change beforePath="$PROJECT_DIR$/base/myg6-base-common/build/tmp/jar/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/base/myg6-base-common/build/tmp/jar/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/base/myg6-base-helper/build/libs/myg6-base-helper-1.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/base/myg6-base-helper/build/libs/myg6-base-helper-1.0.0.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/base/myg6-base-helper/build/tmp/jar/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/base/myg6-base-helper/build/tmp/jar/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/PersonalLibrary/AutoReturnBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/PersonalLibrary/AutoReturnBook.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/adminfuns/CVReturnBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/adminfuns/CVReturnBook.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/bkmanagement/BookAnal.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/bkmanagement/BookAnal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cosmic.properties" beforeDir="false" afterPath="$PROJECT_DIR$/cosmic.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/build/classes/java/main/kd/cosmic/debug/tools/CosmicLauncher.class" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/build/classes/java/main/kd/cosmic/debug/tools/CosmicLauncher.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/build/classes/java/main/myg6/cosmic/debug/DebugApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/build/classes/java/main/myg6/cosmic/debug/DebugApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/myg6/cosmic/debug/DebugApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/myg6/cosmic/debug/DebugApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/extendedfun/QAbot.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/extendedfun/QAbot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/speechrecognition/GptBorrowBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/speechrecognition/GptBorrowBook.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -522,15 +515,13 @@
       <workItem from="1724038448206" duration="206000" />
       <workItem from="1724045909330" duration="2424000" />
       <workItem from="1724055695024" duration="14000" />
-      <workItem from="1724064934216" duration="6618000" />
-    </task>
-    <task id="LOCAL-00034" summary="fix: delete some debug outputs">
-      <option name="closed" value="true" />
-      <created>1719668795694</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1719668795694</updated>
+      <workItem from="1724064934216" duration="6914000" />
+      <workItem from="1724137982809" duration="236000" />
+      <workItem from="1724160280119" duration="326000" />
+      <workItem from="1724160664553" duration="85000" />
+      <workItem from="1724160843975" duration="4224000" />
+      <workItem from="1724201842816" duration="731000" />
+      <workItem from="1724202713892" duration="926000" />
     </task>
     <task id="LOCAL-00035" summary="feat(extendfuns): add EchartsFrame">
       <option name="closed" value="true" />
@@ -916,7 +907,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724055501391</updated>
     </task>
-    <option name="localTasksCounter" value="83" />
+    <task id="LOCAL-00083" summary="version 2.0!">
+      <option name="closed" value="true" />
+      <created>1724072433085</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1724072433086</updated>
+    </task>
+    <option name="localTasksCounter" value="84" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -962,7 +961,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="fix JumpToApp" />
     <MESSAGE value="add FaceRec &amp;&amp; Translator" />
     <MESSAGE value="fix GptRead" />
     <MESSAGE value="fix GptRead &amp;&amp; RecBookRandomly" />
@@ -987,7 +985,8 @@
     <MESSAGE value="add AES" />
     <MESSAGE value="change ip &amp; change the style of html" />
     <MESSAGE value="add some books" />
-    <option name="LAST_COMMIT_MESSAGE" value="add some books" />
+    <MESSAGE value="version 2.0!" />
+    <option name="LAST_COMMIT_MESSAGE" value="version 2.0!" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
