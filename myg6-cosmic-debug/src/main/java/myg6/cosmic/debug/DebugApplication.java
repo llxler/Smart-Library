@@ -15,7 +15,7 @@ import kd.cosmic.debug.tools.CosmicLauncher;
 
 public class DebugApplication {
 
-    public static final String MY_IP = "10.100.136.143";
+    public static final String MY_IP = "127.0.0.1";
 
     // 这里是redis在本地的地址
 
@@ -23,7 +23,7 @@ public class DebugApplication {
 
     public static void main(String[] args) {
 
-    // Thread.currentThread().setContextClassLoader(new KDSecurityClassLoader(Thread.currentThread().getContextClassLoader()));
+        // Thread.currentThread().setContextClassLoader(new KDSecurityClassLoader(Thread.currentThread().getContextClassLoader()));
 
         CosmicLauncher cosmic = new CosmicLauncher(false);
 
@@ -52,3 +52,4 @@ public class DebugApplication {
         cosmic.start();
     }
 }
+// http://127.0.0.1:8881/ierp/login.html

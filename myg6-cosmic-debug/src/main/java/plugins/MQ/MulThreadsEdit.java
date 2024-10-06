@@ -18,7 +18,7 @@ public class MulThreadsEdit extends AbstractBillPlugIn{
     public void itemClick(ItemClickEvent evt) {
         if (evt.getItemKey().equals("myg6_concurrent")) {
             // 普通处理
-            for (int i = 1; i < 5000; i++) {
+            for (int i = 1; i < 10000; i++) {
                 QFilter qFilter = new QFilter("billno", QCP.equals, "MQ8888888");
                 DynamicObject obj = BusinessDataServiceHelper.loadSingle("myg6_mq", new QFilter[]{qFilter});
                 obj.set("myg6_integerfield", i);
@@ -27,7 +27,7 @@ public class MulThreadsEdit extends AbstractBillPlugIn{
         } else if (evt.getItemKey().equals("myg6_mq_concurrent")) {
             // 使用MQ处理
             MessagePublisher mp = MQFactory.get().createSimplePublisher("myg6_Intelligent_lib", "erkai_queue");
-            for (int i = 1; i < 5000; i++) {
+            for (int i = 1; i < 10000; i++) {
                 mp.publish(i);
             }
         }

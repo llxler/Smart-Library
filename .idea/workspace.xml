@@ -7,8 +7,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4436a5f8-a7fe-413a-ab09-538ca3d435d9" name="更改" comment="version 2.0!">
-      <change afterPath="$PROJECT_DIR$/logs/cosmic_out_20240820_1.log" afterDir="false" />
+    <list default="true" id="4436a5f8-a7fe-413a-ab09-538ca3d435d9" name="更改" comment="final">
+      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202409/202409/myg6_booksmanage/myg6_book/images/FtrS5b2teqTej0AMmg/图标.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/filestorage/ierp/1565321489509515264/202409/202409/myg6_booksmanage/myg6_book/images/vvWD2XGGCxdxF6UoYm/高等数学.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/seatmng/SeatSelect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/seatmng/SeatSelectPanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/teach/Afterborrowbook.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/teach/BorrowOneBook.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/teach/Cosmic_borrowbook.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/teach/DynamicObject_plugins.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/teach/PluginSkills.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/teach/ReturnSeatSchedule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/teach/SearchPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/teach/buttom_Gpt_evaluate.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.6.3/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6.3/checksums/checksums.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.6.3/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6.3/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.6.3/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6.3/executionHistory/executionHistory.lock" afterDir="false" />
@@ -25,9 +36,14 @@
       <change beforePath="$PROJECT_DIR$/cosmic.properties" beforeDir="false" afterPath="$PROJECT_DIR$/cosmic.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/build/classes/java/main/kd/cosmic/debug/tools/CosmicLauncher.class" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/build/classes/java/main/kd/cosmic/debug/tools/CosmicLauncher.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/build/classes/java/main/myg6/cosmic/debug/DebugApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/build/classes/java/main/myg6/cosmic/debug/DebugApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/build/libs/myg6-cosmic-debug-1.0.0-sources.jar" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/build/libs/myg6-cosmic-debug-1.0.0-sources.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/build/libs/myg6-cosmic-debug-1.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/build/libs/myg6-cosmic-debug-1.0.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/build/tmp/jar/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/build/tmp/jar/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/myg6/cosmic/debug/DebugApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/myg6/cosmic/debug/DebugApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/extendedfun/QAbot.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/extendedfun/QAbot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/speechrecognition/GptBorrowBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/speechrecognition/GptBorrowBook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/MQ/DemoConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/MQ/DemoConsumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/MQ/MulThreadsEdit.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/MQ/MulThreadsEdit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/homepage/ActivityRendering.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/homepage/ActivityRendering.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/seatmng/SeatSelectBill101.java" beforeDir="false" afterPath="$PROJECT_DIR$/myg6-cosmic-debug/src/main/java/plugins/seatmng/SeatSelectBill101.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +137,12 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.highlight.mappings&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.highlight.symlinks&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.show.date&quot;: &quot;false&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.show.permissions&quot;: &quot;false&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.show.size&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;D:/UseForRuanjianbei/BookForum&quot;,
@@ -249,8 +270,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.DebugApplication" />
-        <item itemvalue="Application.LatchTest" />
         <item itemvalue="Gradle.cosmic [build]" />
+        <item itemvalue="Application.LatchTest" />
         <item itemvalue="Gradle.cosmic [jar]" />
         <item itemvalue="Gradle.cosmic:myg6-cosmic-debug [deployJar]" />
       </list>
@@ -521,15 +542,48 @@
       <workItem from="1724160664553" duration="85000" />
       <workItem from="1724160843975" duration="4224000" />
       <workItem from="1724201842816" duration="731000" />
-      <workItem from="1724202713892" duration="926000" />
-    </task>
-    <task id="LOCAL-00035" summary="feat(extendfuns): add EchartsFrame">
-      <option name="closed" value="true" />
-      <created>1719670028071</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1719670028071</updated>
+      <workItem from="1724202713892" duration="973000" />
+      <workItem from="1724206460587" duration="681000" />
+      <workItem from="1724209045701" duration="795000" />
+      <workItem from="1724214935408" duration="763000" />
+      <workItem from="1724311948053" duration="923000" />
+      <workItem from="1724398515812" duration="304000" />
+      <workItem from="1724399929876" duration="453000" />
+      <workItem from="1724401161242" duration="509000" />
+      <workItem from="1724401860954" duration="197000" />
+      <workItem from="1724402657632" duration="370000" />
+      <workItem from="1724572442081" duration="629000" />
+      <workItem from="1724573531569" duration="735000" />
+      <workItem from="1724722559083" duration="7476000" />
+      <workItem from="1724989055682" duration="79000" />
+      <workItem from="1725075046480" duration="7071000" />
+      <workItem from="1725102466316" duration="3675000" />
+      <workItem from="1725258890532" duration="1336000" />
+      <workItem from="1725348718074" duration="3040000" />
+      <workItem from="1725355050322" duration="14000" />
+      <workItem from="1725419195178" duration="11166000" />
+      <workItem from="1725508741127" duration="3106000" />
+      <workItem from="1725763772004" duration="745000" />
+      <workItem from="1725764737067" duration="832000" />
+      <workItem from="1725772597240" duration="631000" />
+      <workItem from="1725776020561" duration="12896000" />
+      <workItem from="1725966596025" duration="21000" />
+      <workItem from="1726032960120" duration="3451000" />
+      <workItem from="1726106709037" duration="3646000" />
+      <workItem from="1726202209168" duration="724000" />
+      <workItem from="1726277655114" duration="998000" />
+      <workItem from="1726290769439" duration="4657000" />
+      <workItem from="1726363315352" duration="4066000" />
+      <workItem from="1726376794941" duration="23000" />
+      <workItem from="1726536017683" duration="167000" />
+      <workItem from="1726537252992" duration="704000" />
+      <workItem from="1726716198220" duration="2562000" />
+      <workItem from="1726719858856" duration="5569000" />
+      <workItem from="1726745675381" duration="2701000" />
+      <workItem from="1726813138849" duration="2157000" />
+      <workItem from="1726982219200" duration="1435000" />
+      <workItem from="1727402844575" duration="3457000" />
+      <workItem from="1727492309797" duration="2812000" />
     </task>
     <task id="LOCAL-00036" summary="feat(extendfuns): add EchartsFrame into the gpt">
       <option name="closed" value="true" />
@@ -915,7 +969,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724072433086</updated>
     </task>
-    <option name="localTasksCounter" value="84" />
+    <task id="LOCAL-00084" summary="final">
+      <option name="closed" value="true" />
+      <created>1724204374520</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1724204374521</updated>
+    </task>
+    <option name="localTasksCounter" value="85" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -961,7 +1023,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="add FaceRec &amp;&amp; Translator" />
     <MESSAGE value="fix GptRead" />
     <MESSAGE value="fix GptRead &amp;&amp; RecBookRandomly" />
     <MESSAGE value="fix NextRecbooks" />
@@ -986,7 +1047,8 @@
     <MESSAGE value="change ip &amp; change the style of html" />
     <MESSAGE value="add some books" />
     <MESSAGE value="version 2.0!" />
-    <option name="LAST_COMMIT_MESSAGE" value="version 2.0!" />
+    <MESSAGE value="final" />
+    <option name="LAST_COMMIT_MESSAGE" value="final" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1003,7 +1065,7 @@
     <select />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/myg6_cosmic$DebugApplication.ic" NAME="DebugApplication Coverage Results" MODIFIED="1720924307635" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/myg6_cosmic$DebugApplication.ic" NAME="DebugApplication Coverage Results" MODIFIED="1726719860980" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>myg6.cosmic.debug.*</FILTER>
     </SUITE>
   </component>
